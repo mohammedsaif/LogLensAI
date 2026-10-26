@@ -1,0 +1,11 @@
+# Runtime dependencies (pinned; verified with Python 3.12.10 on 2026-10-26)
+fastapi==0.162.0
+starlette==1.10.0
+uvicorn[standard]==0.54.0
+pydantic==2.14.1
+pydantic-settings==2.16.1
+SQLAlchemy==2.1.6
+alembic==1.20.1
+psycopg[binary]==3.3.6
+anthropic==2.3.0
+python-multipart==0.0.32

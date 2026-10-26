@@ -1,0 +1,500 @@
+2026-03-14T09:00:01.160Z DEBUG [auth-service] Token validated for client web-6
+2026-03-14T09:00:02.921Z INFO  [auth-service] Session refreshed
+2026-03-14T09:00:03.975Z DEBUG [auth-service] Token validated for client web-7
+2026-03-14T09:00:05.704Z INFO  [auth-service] Session refreshed
+2026-03-14T09:00:07.317Z INFO  [order-service] Order 42014 created for customer 113
+2026-03-14T09:00:08.214Z INFO  [auth-service] Session refreshed
+2026-03-14T09:00:09.368Z INFO  [api-gateway] POST /api/cart 201 53ms
+2026-03-14T09:00:09.944Z INFO  [order-service] Order 57476 created for customer 359
+2026-03-14T09:00:11.172Z INFO  [auth-service] Session refreshed
+2026-03-14T09:00:12.973Z INFO  [inventory-service] Reserved 4 units of SKU-910
+2026-03-14T09:00:14.324Z INFO  [order-service] Order 63887 created for customer 726
+2026-03-14T09:00:15.483Z INFO  [payment-service] Payment authorized in 228ms
+2026-03-14T09:00:16.363Z DEBUG [order-service] Cache hit ratio 87 for key namespace orders
+2026-03-14T09:00:18.136Z INFO  [order-service] Order 55383 created for customer 598
+2026-03-14T09:00:19.839Z INFO  [auth-service] Session refreshed
+2026-03-14T09:00:20.426Z INFO  [api-gateway] GET /api/orders/6230 200 46ms
+2026-03-14T09:00:22.112Z INFO  [payment-service] Payment authorized in 204ms
+2026-03-14T09:00:22.787Z DEBUG [auth-service] Token validated for client web-7
+2026-03-14T09:00:24.391Z DEBUG [auth-service] Token validated for client web-1
+2026-03-14T09:00:25.434Z DEBUG [order-service] Cache hit ratio 99 for key namespace orders
+2026-03-14T09:00:26.691Z INFO  [payment-service] Payment authorized in 255ms
+2026-03-14T09:00:27.944Z INFO  [payment-service] Payment authorized in 162ms
+2026-03-14T09:00:29.972Z INFO  [api-gateway] GET /api/orders/7494 200 13ms
+2026-03-14T09:00:32.085Z DEBUG [auth-service] Token validated for client web-6
+2026-03-14T09:00:32.652Z INFO  [api-gateway] GET /api/orders/6576 200 118ms
+2026-03-14T09:00:33.470Z INFO  [api-gateway] POST /api/cart 201 31ms
+2026-03-14T09:00:34.760Z INFO  [order-service] Order 88296 created for customer 329
+2026-03-14T09:00:36.830Z INFO  [inventory-service] Reserved 2 units of SKU-453
+2026-03-14T09:00:37.542Z INFO  [api-gateway] GET /api/orders/1627 200 114ms
+2026-03-14T09:00:38.013Z INFO  [api-gateway] GET /api/orders/2742 200 55ms
+2026-03-14T09:00:39.039Z INFO  [inventory-service] Reserved 5 units of SKU-179
+2026-03-14T09:00:41.170Z DEBUG [order-service] Cache hit ratio 83 for key namespace orders
+2026-03-14T09:00:43.315Z INFO  [api-gateway] GET /api/orders/3417 200 75ms
+2026-03-14T09:00:45.310Z DEBUG [order-service] Cache hit ratio 86 for key namespace orders
+2026-03-14T09:00:46.233Z DEBUG [order-service] Cache hit ratio 86 for key namespace orders
+2026-03-14T09:00:47.677Z INFO  [api-gateway] GET /api/orders/7607 200 110ms
+2026-03-14T09:00:49.416Z DEBUG [order-service] Cache hit ratio 80 for key namespace orders
+2026-03-14T09:00:50.665Z INFO  [api-gateway] POST /api/cart 201 10ms
+2026-03-14T09:00:51.199Z INFO  [inventory-service] Reserved 2 units of SKU-297
+2026-03-14T09:00:52.561Z DEBUG [auth-service] Token validated for client web-5
+2026-03-14T09:00:54.339Z INFO  [inventory-service] Reserved 1 units of SKU-253
+2026-03-14T09:00:55.992Z INFO  [payment-service] Payment authorized in 248ms
+2026-03-14T09:00:56.826Z INFO  [api-gateway] GET /api/orders/2244 200 100ms
+2026-03-14T09:00:58.411Z DEBUG [order-service] Cache hit ratio 99 for key namespace orders
+2026-03-14T09:00:59.642Z INFO  [inventory-service] Reserved 3 units of SKU-325
+2026-03-14T09:01:01.605Z INFO  [api-gateway] GET /api/orders/1692 200 33ms
+2026-03-14T09:01:02.738Z INFO  [payment-service] Payment authorized in 66ms
+2026-03-14T09:01:04.731Z INFO  [api-gateway] POST /api/cart 201 51ms
+2026-03-14T09:01:05.447Z INFO  [order-service] Order 87519 created for customer 597
+2026-03-14T09:01:06.939Z INFO  [auth-service] Session refreshed
+2026-03-14T09:01:08.122Z DEBUG [order-service] Cache hit ratio 83 for key namespace orders
+2026-03-14T09:01:09.983Z INFO  [inventory-service] Reserved 5 units of SKU-699
+2026-03-14T09:01:12.003Z INFO  [order-service] Order 32037 created for customer 667
+2026-03-14T09:01:12.664Z INFO  [inventory-service] Reserved 4 units of SKU-318
+2026-03-14T09:01:14.000Z INFO  [auth-service] Session refreshed
+2026-03-14T09:01:14.900Z INFO  [inventory-service] Reserved 4 units of SKU-553
+2026-03-14T09:01:16.391Z INFO  [order-service] Order 43555 created for customer 341
+2026-03-14T09:01:17.931Z INFO  [payment-service] Payment authorized in 128ms
+2026-03-14T09:01:18.723Z DEBUG [auth-service] Token validated for client web-3
+2026-03-14T09:01:20.267Z INFO  [auth-service] Session refreshed
+2026-03-14T09:01:22.018Z INFO  [payment-service] Payment authorized in 267ms
+2026-03-14T09:01:23.586Z INFO  [api-gateway] POST /api/cart 201 78ms
+2026-03-14T09:01:25.014Z DEBUG [auth-service] Token validated for client web-5
+2026-03-14T09:01:26.325Z INFO  [auth-service] Session refreshed
+2026-03-14T09:01:26.873Z DEBUG [auth-service] Token validated for client web-9
+2026-03-14T09:01:28.229Z INFO  [auth-service] Session refreshed
+2026-03-14T09:01:29.025Z INFO  [api-gateway] POST /api/cart 201 36ms
+2026-03-14T09:01:30.162Z INFO  [payment-service] Payment authorized in 283ms
+2026-03-14T09:01:31.347Z DEBUG [order-service] Cache hit ratio 81 for key namespace orders
+2026-03-14T09:01:33.339Z INFO  [api-gateway] GET /api/orders/3069 200 16ms
+2026-03-14T09:01:34.862Z INFO  [auth-service] Session refreshed
+2026-03-14T09:01:36.742Z INFO  [api-gateway] POST /api/cart 201 12ms
+2026-03-14T09:01:37.235Z INFO  [auth-service] Session refreshed
+2026-03-14T09:01:38.129Z INFO  [order-service] Order 96059 created for customer 513
+2026-03-14T09:01:40.030Z INFO  [api-gateway] POST /api/cart 201 27ms
+2026-03-14T09:01:40.898Z DEBUG [auth-service] Token validated for client web-4
+2026-03-14T09:01:41.569Z INFO  [auth-service] Session refreshed
+2026-03-14T09:01:43.391Z DEBUG [auth-service] Token validated for client web-4
+2026-03-14T09:01:45.498Z INFO  [api-gateway] POST /api/cart 201 28ms
+2026-03-14T09:01:46.412Z INFO  [auth-service] Session refreshed
+2026-03-14T09:01:48.500Z INFO  [api-gateway] POST /api/cart 201 73ms
+2026-03-14T09:01:50.660Z DEBUG [auth-service] Token validated for client web-1
+2026-03-14T09:01:52.152Z INFO  [auth-service] Session refreshed
+2026-03-14T09:01:53.957Z INFO  [auth-service] Session refreshed
+2026-03-14T09:01:55.122Z INFO  [order-service] Order 13374 created for customer 119
+2026-03-14T09:01:56.464Z DEBUG [order-service] Cache hit ratio 90 for key namespace orders
+2026-03-14T09:01:57.584Z INFO  [payment-service] Payment authorized in 106ms
+2026-03-14T09:01:58.394Z DEBUG [order-service] Cache hit ratio 87 for key namespace orders
+2026-03-14T09:01:59.956Z INFO  [inventory-service] Reserved 1 units of SKU-938
+2026-03-14T09:02:01.929Z INFO  [order-service] Order 68778 created for customer 901
+2026-03-14T09:02:03.298Z INFO  [api-gateway] POST /api/cart 201 41ms
+2026-03-14T09:02:05.229Z DEBUG [order-service] Cache hit ratio 82 for key namespace orders
+2026-03-14T09:02:06.106Z INFO  [order-service] Order 62438 created for customer 576
+2026-03-14T09:02:08.160Z INFO  [auth-service] Session refreshed
+2026-03-14T09:02:10.228Z INFO  [order-service] Order 47707 created for customer 146
+2026-03-14T09:02:10.673Z INFO  [inventory-service] Reserved 3 units of SKU-484
+2026-03-14T09:02:11.963Z INFO  [api-gateway] POST /api/cart 201 10ms
+2026-03-14T09:02:13.061Z DEBUG [auth-service] Token validated for client web-4
+2026-03-14T09:02:14.395Z INFO  [payment-service] Payment authorized in 236ms
+2026-03-14T09:02:16.285Z INFO  [api-gateway] GET /api/orders/2018 200 105ms
+2026-03-14T09:02:17.938Z INFO  [api-gateway] GET /api/orders/6473 200 71ms
+2026-03-14T09:02:20.060Z INFO  [auth-service] Session refreshed
+2026-03-14T09:02:20.717Z INFO  [auth-service] Session refreshed
+2026-03-14T09:02:21.932Z INFO  [inventory-service] Reserved 5 units of SKU-612
+2026-03-14T09:02:23.442Z INFO  [api-gateway] POST /api/cart 201 70ms
+2026-03-14T09:02:24.141Z INFO  [api-gateway] GET /api/orders/7217 200 9ms
+2026-03-14T09:02:25.565Z INFO  [inventory-service] Reserved 4 units of SKU-861
+2026-03-14T09:02:27.243Z INFO  [order-service] Order 36159 created for customer 373
+2026-03-14T09:02:29.016Z INFO  [inventory-service] Reserved 2 units of SKU-493
+2026-03-14T09:02:30.767Z DEBUG [auth-service] Token validated for client web-4
+2026-03-14T09:02:32.613Z DEBUG [auth-service] Token validated for client web-1
+2026-03-14T09:02:33.516Z INFO  [api-gateway] GET /api/orders/9083 200 53ms
+2026-03-14T09:02:34.045Z INFO  [auth-service] Session refreshed
+2026-03-14T09:02:35.410Z DEBUG [order-service] Cache hit ratio 86 for key namespace orders
+2026-03-14T09:02:36.975Z INFO  [order-service] Order 49414 created for customer 999
+2026-03-14T09:02:38.246Z INFO  [api-gateway] GET /api/orders/1386 200 22ms
+2026-03-14T09:02:39.939Z INFO  [api-gateway] GET /api/orders/4195 200 61ms
+2026-03-14T09:02:40.530Z DEBUG [order-service] Cache hit ratio 87 for key namespace orders
+2026-03-14T09:02:41.072Z INFO  [api-gateway] POST /api/cart 201 75ms
+2026-03-14T09:02:41.639Z DEBUG [order-service] Cache hit ratio 98 for key namespace orders
+2026-03-14T09:02:42.394Z INFO  [api-gateway] POST /api/cart 201 18ms
+2026-03-14T09:02:43.981Z INFO  [auth-service] Session refreshed
+2026-03-14T09:02:44.563Z DEBUG [auth-service] Token validated for client web-6
+2026-03-14T09:02:45.731Z DEBUG [order-service] Cache hit ratio 95 for key namespace orders
+2026-03-14T09:02:47.304Z DEBUG [order-service] Cache hit ratio 80 for key namespace orders
+2026-03-14T09:02:48.267Z INFO  [api-gateway] GET /api/orders/1208 200 38ms
+2026-03-14T09:02:50.119Z INFO  [api-gateway] POST /api/cart 201 31ms
+2026-03-14T09:02:50.545Z INFO  [api-gateway] GET /api/orders/1693 200 51ms
+2026-03-14T09:02:51.950Z INFO  [inventory-service] Reserved 4 units of SKU-262
+2026-03-14T09:02:52.960Z INFO  [payment-service] Payment authorized in 287ms
+2026-03-14T09:02:54.478Z DEBUG [auth-service] Token validated for client web-1
+2026-03-14T09:02:55.324Z INFO  [api-gateway] GET /api/orders/7889 200 16ms
+2026-03-14T09:02:56.036Z INFO  [auth-service] Session refreshed
+2026-03-14T09:02:56.450Z INFO  [api-gateway] GET /api/orders/4894 200 35ms
+2026-03-14T09:02:57.076Z INFO  [api-gateway] GET /api/orders/2316 200 82ms
+2026-03-14T09:02:57.703Z DEBUG [order-service] Cache hit ratio 97 for key namespace orders
+2026-03-14T09:02:59.524Z INFO  [order-service] Order 92032 created for customer 496
+2026-03-14T09:03:01.114Z INFO  [api-gateway] POST /api/cart 201 79ms
+2026-03-14T09:03:01.843Z DEBUG [auth-service] Token validated for client web-7
+2026-03-14T09:03:02.830Z DEBUG [auth-service] Token validated for client web-1
+2026-03-14T09:03:03.567Z INFO  [auth-service] Session refreshed
+2026-03-14T09:03:04.629Z INFO  [auth-service] Session refreshed
+2026-03-14T09:03:06.067Z INFO  [inventory-service] Reserved 5 units of SKU-302
+2026-03-14T09:03:06.594Z INFO  [payment-service] Payment authorized in 228ms
+2026-03-14T09:03:07.622Z DEBUG [auth-service] Token validated for client web-7
+2026-03-14T09:03:09.520Z INFO  [auth-service] Session refreshed
+2026-03-14T09:03:11.608Z INFO  [payment-service] Payment authorized in 103ms
+2026-03-14T09:03:13.562Z INFO  [auth-service] Session refreshed
+2026-03-14T09:03:14.887Z INFO  [inventory-service] Reserved 1 units of SKU-419
+2026-03-14T09:03:15.846Z INFO  [api-gateway] GET /api/orders/4891 200 66ms
+2026-03-14T09:03:16.594Z INFO  [inventory-service] Reserved 2 units of SKU-284
+2026-03-14T09:03:17.808Z INFO  [order-service] Order 24497 created for customer 280
+2026-03-14T09:03:19.864Z INFO  [inventory-service] Reserved 4 units of SKU-454
+2026-03-14T09:03:21.181Z DEBUG [order-service] Cache hit ratio 97 for key namespace orders
+2026-03-14T09:03:21.802Z INFO  [inventory-service] Reserved 4 units of SKU-416
+2026-03-14T09:03:23.705Z INFO  [payment-service] Payment authorized in 223ms
+2026-03-14T09:03:25.325Z INFO  [order-service] Order 43566 created for customer 236
+2026-03-14T09:03:25.858Z INFO  [auth-service] Session refreshed
+2026-03-14T09:03:26.621Z INFO  [inventory-service] Reserved 3 units of SKU-397
+2026-03-14T09:03:27.118Z DEBUG [order-service] Cache hit ratio 97 for key namespace orders
+2026-03-14T09:03:28.851Z INFO  [order-service] Order 65229 created for customer 929
+2026-03-14T09:03:30.094Z INFO  [api-gateway] POST /api/cart 201 78ms
+2026-03-14T09:03:31.499Z DEBUG [auth-service] Token validated for client web-3
+2026-03-14T09:03:32.704Z INFO  [api-gateway] GET /api/orders/6611 200 43ms
+2026-03-14T09:03:34.797Z DEBUG [auth-service] Token validated for client web-4
+2026-03-14T09:03:36.734Z DEBUG [order-service] Cache hit ratio 84 for key namespace orders
+2026-03-14T09:03:38.275Z DEBUG [order-service] Cache hit ratio 81 for key namespace orders
+2026-03-14T09:03:40.163Z INFO  [api-gateway] GET /api/orders/2680 200 85ms
+2026-03-14T09:03:41.546Z INFO  [inventory-service] Reserved 5 units of SKU-174
+2026-03-14T09:03:42.727Z DEBUG [order-service] Cache hit ratio 84 for key namespace orders
+2026-03-14T09:03:43.672Z INFO  [payment-service] Payment authorized in 65ms
+2026-03-14T09:03:44.866Z INFO  [api-gateway] POST /api/cart 201 25ms
+2026-03-14T09:03:46.804Z INFO  [inventory-service] Reserved 2 units of SKU-483
+2026-03-14T09:03:48.994Z INFO  [auth-service] Session refreshed
+2026-03-14T09:03:50.225Z INFO  [inventory-service] Reserved 2 units of SKU-634
+2026-03-14T09:03:51.585Z INFO  [order-service] Order 76265 created for customer 731
+2026-03-14T09:03:52.979Z INFO  [api-gateway] POST /api/cart 201 52ms
+2026-03-14T09:03:53.425Z INFO  [auth-service] Session refreshed
+2026-03-14T09:03:54.508Z INFO  [api-gateway] POST /api/cart 201 80ms
+2026-03-14T09:03:56.434Z INFO  [order-service] Order 62742 created for customer 722
+2026-03-14T09:03:58.623Z INFO  [order-service] Order 84045 created for customer 714
+2026-03-14T09:04:00.472Z INFO  [api-gateway] POST /api/cart 201 35ms
+2026-03-14T09:04:01.834Z INFO  [inventory-service] Reserved 5 units of SKU-935
+2026-03-14T09:04:03.189Z DEBUG [order-service] Cache hit ratio 90 for key namespace orders
+2026-03-14T09:04:04.538Z INFO  [order-service] Order 89382 created for customer 700
+2026-03-14T09:04:06.485Z INFO  [auth-service] Session refreshed
+2026-03-14T09:04:08.480Z DEBUG [order-service] Cache hit ratio 88 for key namespace orders
+2026-03-14T09:04:09.922Z INFO  [auth-service] Session refreshed
+2026-03-14T09:04:11.377Z INFO  [api-gateway] POST /api/cart 201 74ms
+2026-03-14T09:04:12.007Z INFO  [order-service] Order 36374 created for customer 527
+2026-03-14T09:04:13.030Z INFO  [order-service] Order 93106 created for customer 534
+2026-03-14T09:04:13.946Z DEBUG [auth-service] Token validated for client web-1
+2026-03-14T09:04:15.223Z INFO  [order-service] Order 86095 created for customer 712
+2026-03-14T09:04:17.160Z DEBUG [order-service] Cache hit ratio 95 for key namespace orders
+2026-03-14T09:04:18.303Z INFO  [order-service] Order 53052 created for customer 205
+2026-03-14T09:04:19.615Z INFO  [api-gateway] GET /api/orders/3258 200 90ms
+2026-03-14T09:04:21.540Z INFO  [auth-service] Session refreshed
+2026-03-14T09:04:22.944Z INFO  [inventory-service] Reserved 4 units of SKU-990
+2026-03-14T09:04:24.200Z INFO  [inventory-service] Reserved 1 units of SKU-512
+2026-03-14T09:04:25.545Z INFO  [api-gateway] POST /api/cart 201 71ms
+2026-03-14T09:04:27.375Z INFO  [api-gateway] POST /api/cart 201 71ms
+2026-03-14T09:04:28.377Z INFO  [inventory-service] Reserved 4 units of SKU-673
+2026-03-14T09:04:28.962Z INFO  [api-gateway] POST /api/cart 201 86ms
+2026-03-14T09:04:30.748Z INFO  [auth-service] Session refreshed
+2026-03-14T09:04:32.631Z INFO  [order-service] Order 78372 created for customer 246
+2026-03-14T09:04:33.623Z DEBUG [auth-service] Token validated for client web-5
+2026-03-14T09:04:35.670Z DEBUG [order-service] Cache hit ratio 91 for key namespace orders
+2026-03-14T09:04:36.895Z INFO  [auth-service] Session refreshed
+2026-03-14T09:04:37.537Z INFO  [order-service] Order 75339 created for customer 410
+2026-03-14T09:04:39.415Z INFO  [payment-service] Payment authorized in 119ms
+2026-03-14T09:04:40.309Z INFO  [api-gateway] GET /api/orders/7283 200 34ms
+2026-03-14T09:04:40.869Z DEBUG [order-service] Cache hit ratio 99 for key namespace orders
+2026-03-14T09:04:41.367Z INFO  [api-gateway] GET /api/orders/8467 200 10ms
+2026-03-14T09:04:42.614Z INFO  [inventory-service] Reserved 1 units of SKU-378
+2026-03-14T09:04:44.443Z INFO  [api-gateway] POST /api/cart 201 16ms
+2026-03-14T09:04:46.526Z INFO  [order-service] Order 75902 created for customer 286
+2026-03-14T09:04:47.134Z INFO  [api-gateway] POST /api/cart 201 67ms
+2026-03-14T09:04:48.434Z INFO  [api-gateway] GET /api/orders/2032 200 15ms
+2026-03-14T09:04:50.428Z DEBUG [order-service] Cache hit ratio 93 for key namespace orders
+2026-03-14T09:04:51.227Z INFO  [payment-service] Payment authorized in 272ms
+2026-03-14T09:04:52.170Z DEBUG [auth-service] Token validated for client web-5
+2026-03-14T09:04:52.740Z INFO  [auth-service] Session refreshed
+2026-03-14T09:04:54.897Z INFO  [auth-service] Session refreshed
+2026-03-14T09:04:55.344Z INFO  [order-service] Order 21019 created for customer 117
+2026-03-14T09:04:57.007Z DEBUG [auth-service] Token validated for client web-4
+2026-03-14T09:04:58.201Z INFO  [payment-service] Payment authorized in 47ms
+2026-03-14T09:04:59.216Z INFO  [payment-service] Payment authorized in 207ms
+2026-03-14T09:05:01.208Z DEBUG [auth-service] Token validated for client web-6
+2026-03-14T09:05:01.863Z INFO  [api-gateway] POST /api/cart 201 44ms
+2026-03-14T09:05:02.419Z INFO  [api-gateway] POST /api/cart 201 35ms
+2026-03-14T09:05:03.142Z INFO  [api-gateway] GET /api/orders/4857 200 12ms
+2026-03-14T09:05:04.251Z INFO  [order-service] Order 41799 created for customer 672
+2026-03-14T09:05:05.715Z INFO  [payment-service] Payment authorized in 299ms
+2026-03-14T09:05:07.205Z INFO  [order-service] Order 61991 created for customer 294
+2026-03-14T09:05:07.819Z INFO  [inventory-service] Reserved 1 units of SKU-506
+2026-03-14T09:05:09.843Z INFO  [api-gateway] GET /api/orders/2452 200 30ms
+2026-03-14T09:05:11.291Z INFO  [order-service] Order 41369 created for customer 712
+2026-03-14T09:05:12.337Z INFO  [inventory-service] Reserved 3 units of SKU-243
+2026-03-14T09:05:13.500Z INFO  [api-gateway] GET /api/orders/7447 200 106ms
+2026-03-14T09:05:13.928Z INFO  [api-gateway] POST /api/cart 201 88ms
+2026-03-14T09:05:14.669Z INFO  [api-gateway] GET /api/orders/9839 200 87ms
+2026-03-14T09:05:15.288Z INFO  [inventory-service] Reserved 2 units of SKU-583
+2026-03-14T09:05:15.917Z INFO  [inventory-service] Reserved 3 units of SKU-893
+2026-03-14T09:05:16.906Z INFO  [api-gateway] GET /api/orders/3746 200 78ms
+2026-03-14T09:05:17.677Z INFO  [payment-service] Payment authorized in 87ms
+2026-03-14T09:05:19.466Z INFO  [payment-service] Payment authorized in 92ms
+2026-03-14T09:05:20.994Z INFO  [api-gateway] GET /api/orders/2832 200 53ms
+2026-03-14T09:05:22.139Z DEBUG [auth-service] Token validated for client web-8
+2026-03-14T09:05:23.163Z INFO  [api-gateway] GET /api/orders/4825 200 33ms
+2026-03-14T09:05:25.281Z DEBUG [auth-service] Token validated for client web-3
+2026-03-14T09:05:26.007Z INFO  [order-service] Order 83408 created for customer 637
+2026-03-14T09:05:26.877Z INFO  [payment-service] Payment authorized in 48ms
+2026-03-14T09:05:28.073Z INFO  [api-gateway] POST /api/cart 201 13ms
+2026-03-14T09:05:28.603Z INFO  [api-gateway] POST /api/cart 201 82ms
+2026-03-14T09:05:29.876Z DEBUG [auth-service] Token validated for client web-4
+2026-03-14T09:05:30.901Z INFO  [api-gateway] POST /api/cart 201 64ms
+2026-03-14T09:05:32.482Z INFO  [api-gateway] POST /api/cart 201 61ms
+2026-03-14T09:05:32.996Z INFO  [inventory-service] Reserved 2 units of SKU-294
+2026-03-14T09:05:34.760Z INFO  [api-gateway] POST /api/cart 201 63ms
+2026-03-14T09:05:36.069Z INFO  [payment-service] Payment authorized in 86ms
+2026-03-14T09:05:37.912Z INFO  [api-gateway] GET /api/orders/4843 200 42ms
+2026-03-14T09:05:38.982Z DEBUG [order-service] Cache hit ratio 85 for key namespace orders
+2026-03-14T09:05:40.099Z INFO  [api-gateway] POST /api/cart 201 13ms
+2026-03-14T09:05:41.491Z INFO  [auth-service] Session refreshed
+2026-03-14T09:05:42.539Z INFO  [api-gateway] POST /api/cart 201 33ms
+2026-03-14T09:05:42.973Z INFO  [api-gateway] POST /api/cart 201 48ms
+2026-03-14T09:05:43.445Z DEBUG [auth-service] Token validated for client web-4
+2026-03-14T09:05:45.617Z WARN  [payment-service] Retrying webhook delivery (attempt 2/5)
+2026-03-14T09:05:47.486Z DEBUG [auth-service] Token validated for client web-2
+2026-03-14T09:05:48.145Z DEBUG [order-service] Cache hit ratio 89 for key namespace orders
+2026-03-14T09:05:48.873Z DEBUG [order-service] Cache hit ratio 84 for key namespace orders
+2026-03-14T09:05:49.325Z INFO  [api-gateway] POST /api/cart 201 83ms
+2026-03-14T09:05:51.277Z INFO  [api-gateway] POST /api/cart 201 36ms
+2026-03-14T09:05:51.990Z DEBUG [order-service] Cache hit ratio 98 for key namespace orders
+2026-03-14T09:05:53.899Z INFO  [inventory-service] Reserved 1 units of SKU-180
+2026-03-14T09:05:54.477Z INFO  [order-service] Order 53971 created for customer 236
+2026-03-14T09:05:55.941Z INFO  [order-service] Order 58874 created for customer 908
+2026-03-14T09:05:56.548Z DEBUG [auth-service] Token validated for client web-2
+2026-03-14T09:05:57.454Z INFO  [order-service] Order 89886 created for customer 174
+2026-03-14T09:05:59.332Z DEBUG [order-service] Cache hit ratio 96 for key namespace orders
+2026-03-14T09:06:00.309Z DEBUG [order-service] Cache hit ratio 97 for key namespace orders
+2026-03-14T09:06:00.943Z INFO  [auth-service] Session refreshed
+2026-03-14T09:06:02.178Z INFO  [api-gateway] GET /api/orders/1995 200 112ms
+2026-03-14T09:06:03.446Z INFO  [order-service] Order 20820 created for customer 812
+2026-03-14T09:06:04.165Z INFO  [order-service] Order 18993 created for customer 291
+2026-03-14T09:06:06.327Z INFO  [inventory-service] Reserved 3 units of SKU-503
+2026-03-14T09:06:07.743Z DEBUG [auth-service] Token validated for client web-8
+2026-03-14T09:06:09.300Z INFO  [payment-service] Payment authorized in 129ms
+2026-03-14T09:06:11.126Z INFO  [payment-service] Payment authorized in 293ms
+2026-03-14T09:06:12.806Z INFO  [auth-service] Session refreshed
+2026-03-14T09:06:14.561Z INFO  [payment-service] Payment authorized in 277ms
+2026-03-14T09:06:16.552Z INFO  [api-gateway] POST /api/cart 201 57ms
+2026-03-14T09:06:18.138Z DEBUG [auth-service] Token validated for client web-3
+2026-03-14T09:06:19.296Z INFO  [api-gateway] POST /api/cart 201 36ms
+2026-03-14T09:06:20.041Z INFO  [api-gateway] POST /api/cart 201 79ms
+2026-03-14T09:06:22.162Z INFO  [api-gateway] POST /api/cart 201 13ms
+2026-03-14T09:06:23.172Z INFO  [api-gateway] GET /api/orders/1999 200 20ms
+2026-03-14T09:06:23.631Z DEBUG [auth-service] Token validated for client web-4
+2026-03-14T09:06:24.626Z INFO  [inventory-service] Reserved 5 units of SKU-879
+2026-03-14T09:06:26.675Z INFO  [api-gateway] GET /api/orders/7803 200 30ms
+2026-03-14T09:06:28.680Z INFO  [api-gateway] GET /api/orders/4657 200 14ms
+2026-03-14T09:06:29.856Z INFO  [auth-service] Session refreshed
+2026-03-14T09:06:31.649Z INFO  [payment-service] Payment authorized in 240ms
+2026-03-14T09:06:32.952Z INFO  [payment-service] Payment authorized in 174ms
+2026-03-14T09:06:33.447Z INFO  [inventory-service] Reserved 4 units of SKU-726
+2026-03-14T09:06:34.749Z INFO  [api-gateway] GET /api/orders/4717 200 8ms
+2026-03-14T09:06:36.910Z INFO  [payment-service] Payment authorized in 187ms
+2026-03-14T09:06:38.877Z DEBUG [auth-service] Token validated for client web-6
+2026-03-14T09:06:39.599Z INFO  [auth-service] Session refreshed
+2026-03-14T09:06:40.922Z INFO  [order-service] Order 75428 created for customer 149
+2026-03-14T09:06:42.607Z DEBUG [order-service] Cache hit ratio 84 for key namespace orders
+2026-03-14T09:06:43.580Z DEBUG [order-service] Cache hit ratio 90 for key namespace orders
+2026-03-14T09:06:44.666Z INFO  [payment-service] Payment authorized in 56ms
+2026-03-14T09:06:46.683Z INFO  [order-service] Order 74945 created for customer 223
+2026-03-14T09:06:47.262Z DEBUG [auth-service] Token validated for client web-7
+2026-03-14T09:06:48.552Z INFO  [api-gateway] POST /api/cart 201 63ms
+2026-03-14T09:06:49.350Z INFO  [inventory-service] Reserved 1 units of SKU-569
+2026-03-14T09:06:49.777Z INFO  [api-gateway] POST /api/cart 201 58ms
+2026-03-14T09:06:51.619Z INFO  [api-gateway] POST /api/cart 201 37ms
+2026-03-14T09:06:52.512Z INFO  [auth-service] Session refreshed
+2026-03-14T09:06:53.729Z INFO  [order-service] Order 33468 created for customer 872
+2026-03-14T09:06:55.324Z INFO  [inventory-service] Reserved 4 units of SKU-555
+2026-03-14T09:06:56.123Z INFO  [inventory-service] Reserved 3 units of SKU-435
+2026-03-14T09:06:58.177Z INFO  [payment-service] Payment authorized in 97ms
+2026-03-14T09:06:58.764Z INFO  [inventory-service] Reserved 5 units of SKU-695
+2026-03-14T09:07:00.265Z INFO  [order-service] Order 59222 created for customer 179
+2026-03-14T09:07:00.768Z INFO  [order-service] Order 92017 created for customer 977
+2026-03-14T09:07:01.386Z INFO  [auth-service] Session refreshed
+2026-03-14T09:07:02.269Z INFO  [payment-service] Payment authorized in 258ms
+2026-03-14T09:07:04.149Z DEBUG [order-service] Cache hit ratio 82 for key namespace orders
+2026-03-14T09:07:04.818Z INFO  [inventory-service] Reserved 3 units of SKU-622
+2026-03-14T09:07:05.898Z INFO  [auth-service] Session refreshed
+2026-03-14T09:07:07.004Z INFO  [api-gateway] GET /api/orders/1497 200 40ms
+2026-03-14T09:07:07.703Z INFO  [api-gateway] POST /api/cart 201 54ms
+2026-03-14T09:07:09.497Z INFO  [api-gateway] GET /api/orders/6556 200 69ms
+2026-03-14T09:07:11.005Z INFO  [api-gateway] GET /api/orders/4598 200 56ms
+2026-03-14T09:07:12.996Z INFO  [api-gateway] GET /api/orders/6113 200 25ms
+2026-03-14T09:07:13.643Z INFO  [inventory-service] Reserved 3 units of SKU-551
+2026-03-14T09:07:14.552Z INFO  [inventory-service] Reserved 2 units of SKU-941
+2026-03-14T09:07:15.733Z INFO  [auth-service] Session refreshed
+2026-03-14T09:07:16.169Z INFO  [api-gateway] GET /api/orders/3720 200 68ms
+2026-03-14T09:07:18.365Z INFO  [auth-service] Session refreshed
+2026-03-14T09:07:19.584Z DEBUG [order-service] Cache hit ratio 98 for key namespace orders
+2026-03-14T09:07:20.490Z INFO  [api-gateway] POST /api/cart 201 57ms
+2026-03-14T09:07:21.060Z INFO  [api-gateway] GET /api/orders/5134 200 111ms
+2026-03-14T09:07:22.935Z INFO  [api-gateway] POST /api/cart 201 11ms
+2026-03-14T09:07:24.603Z INFO  [inventory-service] Reserved 4 units of SKU-418
+2026-03-14T09:07:25.820Z INFO  [api-gateway] GET /api/orders/6815 200 23ms
+2026-03-14T09:07:26.979Z INFO  [api-gateway] POST /api/cart 201 67ms
+2026-03-14T09:07:27.535Z INFO  [api-gateway] POST /api/cart 201 74ms
+2026-03-14T09:07:29.068Z DEBUG [order-service] Cache hit ratio 97 for key namespace orders
+2026-03-14T09:07:29.785Z INFO  [api-gateway] POST /api/cart 201 82ms
+2026-03-14T09:07:30.779Z DEBUG [auth-service] Token validated for client web-5
+2026-03-14T09:07:32.304Z INFO  [inventory-service] Reserved 5 units of SKU-563
+2026-03-14T09:07:33.294Z INFO  [order-service] Order 79156 created for customer 828
+2026-03-14T09:07:35.393Z INFO  [api-gateway] GET /api/orders/6246 200 33ms
+2026-03-14T09:07:36.580Z INFO  [api-gateway] GET /api/orders/3035 200 106ms
+2026-03-14T09:07:37.982Z INFO  [order-service] Order 76507 created for customer 220
+2026-03-14T09:07:38.397Z INFO  [api-gateway] POST /api/cart 201 64ms
+2026-03-14T09:07:40.151Z DEBUG [auth-service] Token validated for client web-3
+2026-03-14T09:07:41.093Z DEBUG [order-service] Cache hit ratio 97 for key namespace orders
+2026-03-14T09:07:42.454Z INFO  [inventory-service] Reserved 3 units of SKU-737
+2026-03-14T09:07:44.377Z INFO  [order-service] Order 44991 created for customer 423
+2026-03-14T09:07:45.391Z INFO  [order-service] Order 97265 created for customer 211
+2026-03-14T09:07:45.978Z DEBUG [auth-service] Token validated for client web-9
+2026-03-14T09:07:47.860Z INFO  [inventory-service] Reserved 5 units of SKU-534
+2026-03-14T09:07:48.996Z DEBUG [auth-service] Token validated for client web-8
+2026-03-14T09:07:50.111Z DEBUG [auth-service] Token validated for client web-2
+2026-03-14T09:07:50.893Z INFO  [order-service] Order 87500 created for customer 118
+2026-03-14T09:07:51.618Z DEBUG [order-service] Cache hit ratio 94 for key namespace orders
+2026-03-14T09:07:52.598Z INFO  [auth-service] Session refreshed
+2026-03-14T09:07:53.474Z INFO  [api-gateway] POST /api/cart 201 26ms
+2026-03-14T09:07:54.879Z DEBUG [auth-service] Token validated for client web-6
+2026-03-14T09:07:55.311Z INFO  [payment-service] Payment authorized in 66ms
+2026-03-14T09:07:56.596Z INFO  [payment-service] Payment authorized in 137ms
+2026-03-14T09:07:58.386Z DEBUG [auth-service] Token validated for client web-4
+2026-03-14T09:08:00.387Z DEBUG [auth-service] Token validated for client web-2
+2026-03-14T09:08:01.010Z INFO  [payment-service] Payment authorized in 105ms
+2026-03-14T09:08:02.712Z INFO  [api-gateway] GET /api/orders/3603 200 60ms
+2026-03-14T09:08:03.406Z INFO  [api-gateway] POST /api/cart 201 58ms
+2026-03-14T09:08:04.126Z INFO  [api-gateway] GET /api/orders/7322 200 13ms
+2026-03-14T09:08:06.162Z INFO  [inventory-service] Reserved 1 units of SKU-172
+2026-03-14T09:08:06.798Z INFO  [order-service] Order 14673 created for customer 678
+2026-03-14T09:08:08.741Z INFO  [auth-service] Session refreshed
+2026-03-14T09:08:10.755Z INFO  [api-gateway] GET /api/orders/7352 200 31ms
+2026-03-14T09:08:12.020Z DEBUG [order-service] Cache hit ratio 88 for key namespace orders
+2026-03-14T09:08:13.404Z INFO  [api-gateway] POST /api/cart 201 19ms
+2026-03-14T09:08:15.569Z INFO  [api-gateway] GET /api/orders/9410 200 63ms
+2026-03-14T09:08:16.883Z INFO  [inventory-service] Reserved 4 units of SKU-195
+2026-03-14T09:08:17.612Z INFO  [api-gateway] POST /api/cart 201 24ms
+2026-03-14T09:08:18.462Z INFO  [order-service] Order 22171 created for customer 282
+2026-03-14T09:08:19.006Z INFO  [auth-service] Session refreshed
+2026-03-14T09:08:19.636Z INFO  [payment-service] Payment authorized in 250ms
+2026-03-14T09:08:21.608Z INFO  [inventory-service] Reserved 1 units of SKU-778
+2026-03-14T09:08:22.886Z INFO  [payment-service] Payment authorized in 146ms
+2026-03-14T09:08:24.535Z INFO  [inventory-service] Reserved 4 units of SKU-181
+2026-03-14T09:08:26.501Z INFO  [payment-service] Payment authorized in 120ms
+2026-03-14T09:08:27.866Z INFO  [api-gateway] POST /api/cart 201 84ms
+2026-03-14T09:08:29.289Z DEBUG [auth-service] Token validated for client web-6
+2026-03-14T09:08:30.243Z INFO  [payment-service] Payment authorized in 176ms
+2026-03-14T09:08:31.998Z INFO  [api-gateway] POST /api/cart 201 84ms
+2026-03-14T09:08:33.471Z INFO  [api-gateway] GET /api/orders/1292 200 92ms
+2026-03-14T09:08:34.523Z DEBUG [order-service] Cache hit ratio 96 for key namespace orders
+2026-03-14T09:08:35.205Z DEBUG [order-service] Cache hit ratio 84 for key namespace orders
+2026-03-14T09:08:36.700Z INFO  [payment-service] Payment authorized in 234ms
+2026-03-14T09:08:37.883Z INFO  [inventory-service] Reserved 3 units of SKU-468
+2026-03-14T09:08:38.912Z INFO  [inventory-service] Reserved 2 units of SKU-300
+2026-03-14T09:08:41.031Z INFO  [api-gateway] POST /api/cart 201 81ms
+2026-03-14T09:08:41.588Z INFO  [payment-service] Payment authorized in 275ms
+2026-03-14T09:08:43.623Z DEBUG [order-service] Cache hit ratio 81 for key namespace orders
+2026-03-14T09:08:44.482Z INFO  [api-gateway] POST /api/cart 201 18ms
+2026-03-14T09:08:45.671Z DEBUG [order-service] Cache hit ratio 83 for key namespace orders
+2026-03-14T09:08:46.679Z INFO  [auth-service] Session refreshed
+2026-03-14T09:08:47.446Z INFO  [order-service] Order 21909 created for customer 120
+2026-03-14T09:08:48.932Z INFO  [payment-service] Payment authorized in 173ms
+2026-03-14T09:08:50.432Z INFO  [api-gateway] POST /api/cart 201 66ms
+2026-03-14T09:08:51.449Z INFO  [auth-service] Session refreshed
+2026-03-14T09:08:53.043Z INFO  [inventory-service] Reserved 4 units of SKU-849
+2026-03-14T09:08:53.813Z INFO  [api-gateway] GET /api/orders/5507 200 78ms
+2026-03-14T09:08:54.393Z DEBUG [auth-service] Token validated for client web-4
+2026-03-14T09:08:54.930Z INFO  [api-gateway] GET /api/orders/4043 200 90ms
+2026-03-14T09:08:55.817Z INFO  [api-gateway] GET /api/orders/6688 200 42ms
+2026-03-14T09:08:56.977Z INFO  [inventory-service] Reserved 3 units of SKU-741
+2026-03-14T09:08:57.685Z INFO  [api-gateway] POST /api/cart 201 48ms
+2026-03-14T09:08:59.166Z INFO  [order-service] Order 20732 created for customer 468
+2026-03-14T09:09:01.136Z INFO  [inventory-service] Reserved 1 units of SKU-427
+2026-03-14T09:09:01.963Z DEBUG [order-service] Cache hit ratio 99 for key namespace orders
+2026-03-14T09:09:03.041Z INFO  [inventory-service] Reserved 1 units of SKU-131
+2026-03-14T09:09:05.137Z INFO  [payment-service] Payment authorized in 123ms
+2026-03-14T09:09:06.912Z INFO  [auth-service] Session refreshed
+2026-03-14T09:09:08.063Z INFO  [payment-service] Payment authorized in 126ms
+2026-03-14T09:09:09.764Z DEBUG [auth-service] Token validated for client web-2
+2026-03-14T09:09:11.087Z INFO  [order-service] Order 72930 created for customer 259
+2026-03-14T09:09:11.732Z DEBUG [order-service] Cache hit ratio 87 for key namespace orders
+2026-03-14T09:09:12.213Z INFO  [auth-service] Session refreshed
+2026-03-14T09:09:13.380Z INFO  [inventory-service] Reserved 5 units of SKU-357
+2026-03-14T09:09:15.536Z INFO  [api-gateway] GET /api/orders/8100 200 27ms
+2026-03-14T09:09:16.473Z DEBUG [order-service] Cache hit ratio 85 for key namespace orders
+2026-03-14T09:09:18.458Z INFO  [payment-service] Payment authorized in 225ms
+2026-03-14T09:09:19.750Z DEBUG [auth-service] Token validated for client web-1
+2026-03-14T09:09:21.317Z INFO  [order-service] Order 66406 created for customer 871
+2026-03-14T09:09:23.268Z INFO  [auth-service] Session refreshed
+2026-03-14T09:09:24.313Z INFO  [payment-service] Payment authorized in 203ms
+2026-03-14T09:09:26.256Z INFO  [auth-service] Session refreshed
+2026-03-14T09:09:28.308Z INFO  [inventory-service] Reserved 2 units of SKU-227
+2026-03-14T09:09:30.139Z INFO  [api-gateway] POST /api/cart 201 78ms
+2026-03-14T09:09:31.937Z INFO  [api-gateway] POST /api/cart 201 47ms
+2026-03-14T09:09:33.440Z INFO  [api-gateway] GET /api/orders/4686 200 79ms
+2026-03-14T09:09:35.472Z INFO  [inventory-service] Reserved 2 units of SKU-693
+2026-03-14T09:09:37.229Z INFO  [order-service] Order 59105 created for customer 458
+2026-03-14T09:09:37.756Z INFO  [auth-service] Session refreshed
+2026-03-14T09:09:39.838Z INFO  [auth-service] Session refreshed
+2026-03-14T09:09:41.378Z DEBUG [order-service] Cache hit ratio 86 for key namespace orders
+2026-03-14T09:09:43.118Z INFO  [inventory-service] Reserved 1 units of SKU-211
+2026-03-14T09:09:43.626Z DEBUG [order-service] Cache hit ratio 90 for key namespace orders
+2026-03-14T09:09:44.888Z DEBUG [auth-service] Token validated for client web-2
+2026-03-14T09:09:46.297Z INFO  [payment-service] Payment authorized in 233ms
+2026-03-14T09:09:47.430Z INFO  [api-gateway] POST /api/cart 201 53ms
+2026-03-14T09:09:48.793Z INFO  [api-gateway] POST /api/cart 201 63ms
+2026-03-14T09:09:50.095Z INFO  [payment-service] Payment authorized in 99ms
+2026-03-14T09:09:51.756Z DEBUG [order-service] Cache hit ratio 96 for key namespace orders
+2026-03-14T09:09:53.951Z INFO  [order-service] Order 10473 created for customer 960
+2026-03-14T09:09:54.433Z INFO  [api-gateway] GET /api/orders/4378 200 45ms
+2026-03-14T09:09:55.446Z INFO  [api-gateway] POST /api/cart 201 73ms
+2026-03-14T09:09:57.292Z INFO  [payment-service] Payment authorized in 77ms
+2026-03-14T09:09:59.455Z INFO  [api-gateway] POST /api/cart 201 34ms
+2026-03-14T09:10:00.681Z INFO  [inventory-service] Reserved 4 units of SKU-915
+2026-03-14T09:10:02.151Z INFO  [order-service] Order 72833 created for customer 445
+2026-03-14T09:10:02.975Z INFO  [api-gateway] POST /api/cart 201 59ms
+2026-03-14T09:10:05.141Z INFO  [api-gateway] GET /api/orders/3147 200 19ms
+2026-03-14T09:10:06.327Z INFO  [inventory-service] Reserved 4 units of SKU-288
+2026-03-14T09:10:06.861Z INFO  [inventory-service] Reserved 2 units of SKU-926
+2026-03-14T09:10:07.516Z INFO  [api-gateway] GET /api/orders/4906 200 74ms
+2026-03-14T09:10:08.943Z INFO  [payment-service] Payment authorized in 176ms
+2026-03-14T09:10:09.458Z INFO  [api-gateway] POST /api/cart 201 66ms
+2026-03-14T09:10:10.306Z DEBUG [order-service] Cache hit ratio 89 for key namespace orders
+2026-03-14T09:10:11.561Z INFO  [payment-service] Payment authorized in 75ms
+2026-03-14T09:10:12.797Z INFO  [order-service] Order 15838 created for customer 227
+2026-03-14T09:10:14.467Z DEBUG [auth-service] Token validated for client web-6
+2026-03-14T09:10:16.144Z INFO  [api-gateway] POST /api/cart 201 54ms
+2026-03-14T09:10:18.051Z INFO  [order-service] Order 87538 created for customer 779
+2026-03-14T09:10:19.373Z DEBUG [auth-service] Token validated for client web-6
+2026-03-14T09:10:20.608Z DEBUG [order-service] Cache hit ratio 87 for key namespace orders
+2026-03-14T09:10:21.517Z INFO  [order-service] Order 27876 created for customer 602
+2026-03-14T09:10:23.463Z INFO  [auth-service] Session refreshed
+2026-03-14T09:10:25.357Z DEBUG [auth-service] Token validated for client web-2
+2026-03-14T09:10:25.965Z INFO  [payment-service] Payment authorized in 117ms
+2026-03-14T09:10:27.153Z DEBUG [auth-service] Token validated for client web-4
+2026-03-14T09:10:27.847Z INFO  [inventory-service] Reserved 3 units of SKU-332
+2026-03-14T09:10:28.295Z INFO  [api-gateway] POST /api/cart 201 89ms
+2026-03-14T09:10:28.954Z INFO  [auth-service] Session refreshed
+2026-03-14T09:10:29.801Z INFO  [order-service] Order 60734 created for customer 645
+2026-03-14T09:10:30.574Z INFO  [api-gateway] GET /api/orders/4503 200 65ms
+2026-03-14T09:10:31.140Z INFO  [api-gateway] GET /api/orders/4082 200 64ms
+2026-03-14T09:10:32.409Z DEBUG [auth-service] Token validated for client web-9
+2026-03-14T09:10:34.216Z INFO  [api-gateway] POST /api/cart 201 84ms
+2026-03-14T09:10:34.786Z INFO  [api-gateway] GET /api/orders/3648 200 99ms
+2026-03-14T09:10:36.925Z DEBUG [auth-service] Token validated for client web-6
+2026-03-14T09:10:37.436Z INFO  [order-service] Order 64638 created for customer 634
+2026-03-14T09:10:38.567Z INFO  [api-gateway] GET /api/orders/3594 200 116ms

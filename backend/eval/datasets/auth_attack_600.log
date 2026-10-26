@@ -1,0 +1,600 @@
+2026-03-14T09:00:02.143Z INFO  [inventory-service] Reserved 5 units of SKU-872
+2026-03-14T09:00:02.666Z DEBUG [auth-service] Token validated for client web-8
+2026-03-14T09:00:03.192Z INFO  [auth-service] Session refreshed
+2026-03-14T09:00:04.832Z INFO  [auth-service] Session refreshed
+2026-03-14T09:00:05.791Z INFO  [order-service] Order 93630 created for customer 322
+2026-03-14T09:00:07.194Z INFO  [order-service] Order 38867 created for customer 399
+2026-03-14T09:00:07.608Z INFO  [api-gateway] GET /api/orders/1477 200 64ms
+2026-03-14T09:00:08.059Z INFO  [inventory-service] Reserved 5 units of SKU-180
+2026-03-14T09:00:09.813Z DEBUG [auth-service] Token validated for client web-2
+2026-03-14T09:00:10.795Z DEBUG [auth-service] Token validated for client web-1
+2026-03-14T09:00:12.405Z DEBUG [auth-service] Token validated for client web-9
+2026-03-14T09:00:13.411Z INFO  [api-gateway] GET /api/orders/2234 200 46ms
+2026-03-14T09:00:15.533Z INFO  [payment-service] Payment authorized in 168ms
+2026-03-14T09:00:17.355Z INFO  [payment-service] Payment authorized in 211ms
+2026-03-14T09:00:17.984Z INFO  [auth-service] Session refreshed
+2026-03-14T09:00:19.100Z INFO  [order-service] Order 19653 created for customer 298
+2026-03-14T09:00:20.642Z INFO  [auth-service] Session refreshed
+2026-03-14T09:00:21.308Z INFO  [order-service] Order 87635 created for customer 831
+2026-03-14T09:00:22.858Z DEBUG [auth-service] Token validated for client web-5
+2026-03-14T09:00:24.463Z INFO  [api-gateway] GET /api/orders/5941 200 54ms
+2026-03-14T09:00:26.373Z INFO  [payment-service] Payment authorized in 215ms
+2026-03-14T09:00:28.218Z INFO  [auth-service] Session refreshed
+2026-03-14T09:00:30.346Z INFO  [payment-service] Payment authorized in 204ms
+2026-03-14T09:00:32.373Z INFO  [inventory-service] Reserved 2 units of SKU-978
+2026-03-14T09:00:33.716Z INFO  [auth-service] Session refreshed
+2026-03-14T09:00:35.272Z INFO  [order-service] Order 49559 created for customer 513
+2026-03-14T09:00:36.182Z INFO  [inventory-service] Reserved 2 units of SKU-522
+2026-03-14T09:00:36.744Z INFO  [inventory-service] Reserved 2 units of SKU-492
+2026-03-14T09:00:37.165Z DEBUG [auth-service] Token validated for client web-6
+2026-03-14T09:00:38.778Z INFO  [payment-service] Payment authorized in 77ms
+2026-03-14T09:00:40.382Z INFO  [order-service] Order 70145 created for customer 109
+2026-03-14T09:00:42.479Z INFO  [inventory-service] Reserved 2 units of SKU-223
+2026-03-14T09:00:43.794Z INFO  [api-gateway] GET /api/orders/6396 200 74ms
+2026-03-14T09:00:44.598Z INFO  [api-gateway] POST /api/cart 201 80ms
+2026-03-14T09:00:45.799Z INFO  [inventory-service] Reserved 3 units of SKU-630
+2026-03-14T09:00:46.307Z INFO  [payment-service] Payment authorized in 73ms
+2026-03-14T09:00:48.298Z INFO  [order-service] Order 50274 created for customer 461
+2026-03-14T09:00:49.865Z DEBUG [order-service] Cache hit ratio 84 for key namespace orders
+2026-03-14T09:00:51.724Z DEBUG [order-service] Cache hit ratio 84 for key namespace orders
+2026-03-14T09:00:53.759Z DEBUG [auth-service] Token validated for client web-5
+2026-03-14T09:00:55.112Z INFO  [order-service] Order 77697 created for customer 975
+2026-03-14T09:00:56.914Z INFO  [inventory-service] Reserved 4 units of SKU-924
+2026-03-14T09:00:57.572Z INFO  [payment-service] Payment authorized in 238ms
+2026-03-14T09:00:58.321Z INFO  [payment-service] Payment authorized in 99ms
+2026-03-14T09:00:59.823Z INFO  [inventory-service] Reserved 3 units of SKU-252
+2026-03-14T09:01:00.627Z DEBUG [order-service] Cache hit ratio 80 for key namespace orders
+2026-03-14T09:01:02.025Z INFO  [order-service] Order 38434 created for customer 321
+2026-03-14T09:01:04.149Z INFO  [api-gateway] GET /api/orders/4613 200 98ms
+2026-03-14T09:01:05.591Z DEBUG [order-service] Cache hit ratio 99 for key namespace orders
+2026-03-14T09:01:07.428Z DEBUG [order-service] Cache hit ratio 83 for key namespace orders
+2026-03-14T09:01:09.320Z INFO  [payment-service] Payment authorized in 139ms
+2026-03-14T09:01:10.525Z INFO  [order-service] Order 73836 created for customer 431
+2026-03-14T09:01:12.196Z INFO  [order-service] Order 21480 created for customer 271
+2026-03-14T09:01:13.139Z INFO  [payment-service] Payment authorized in 292ms
+2026-03-14T09:01:13.586Z INFO  [api-gateway] POST /api/cart 201 48ms
+2026-03-14T09:01:15.603Z INFO  [auth-service] Session refreshed
+2026-03-14T09:01:17.341Z INFO  [auth-service] Session refreshed
+2026-03-14T09:01:19.231Z INFO  [payment-service] Payment authorized in 205ms
+2026-03-14T09:01:20.532Z INFO  [api-gateway] POST /api/cart 201 11ms
+2026-03-14T09:01:22.597Z INFO  [auth-service] Session refreshed
+2026-03-14T09:01:24.041Z INFO  [order-service] Order 16426 created for customer 445
+2026-03-14T09:01:25.962Z INFO  [payment-service] Payment authorized in 150ms
+2026-03-14T09:01:27.663Z INFO  [api-gateway] POST /api/cart 201 66ms
+2026-03-14T09:01:28.969Z INFO  [inventory-service] Reserved 5 units of SKU-375
+2026-03-14T09:01:30.696Z INFO  [api-gateway] GET /api/orders/8657 200 86ms
+2026-03-14T09:01:31.252Z DEBUG [api-gateway] Forwarding request with Authorization: Bearer abcDEF123456ghiJKL789mnoPQR
+2026-03-14T09:01:32.943Z INFO  [auth-service] Session refreshed
+2026-03-14T09:01:34.209Z INFO  [auth-service] Session refreshed
+2026-03-14T09:01:36.002Z DEBUG [order-service] Cache hit ratio 97 for key namespace orders
+2026-03-14T09:01:37.049Z INFO  [order-service] Order 44622 created for customer 381
+2026-03-14T09:01:38.263Z INFO  [api-gateway] POST /api/cart 201 26ms
+2026-03-14T09:01:39.125Z INFO  [inventory-service] Reserved 5 units of SKU-733
+2026-03-14T09:01:39.618Z INFO  [payment-service] Payment authorized in 277ms
+2026-03-14T09:01:41.355Z INFO  [payment-service] Payment authorized in 183ms
+2026-03-14T09:01:41.873Z DEBUG [auth-service] Token validated for client web-6
+2026-03-14T09:01:42.896Z DEBUG [order-service] Cache hit ratio 87 for key namespace orders
+2026-03-14T09:01:44.118Z INFO  [inventory-service] Reserved 4 units of SKU-717
+2026-03-14T09:01:45.122Z INFO  [api-gateway] GET /api/orders/1777 200 16ms
+2026-03-14T09:01:45.779Z INFO  [api-gateway] POST /api/cart 201 49ms
+2026-03-14T09:01:46.386Z INFO  [auth-service] Session refreshed
+2026-03-14T09:01:47.703Z INFO  [auth-service] Session refreshed
+2026-03-14T09:01:48.456Z INFO  [api-gateway] GET /api/orders/2918 200 120ms
+2026-03-14T09:01:50.535Z INFO  [api-gateway] GET /api/orders/8904 200 31ms
+2026-03-14T09:01:51.690Z INFO  [payment-service] Payment authorized in 226ms
+2026-03-14T09:01:52.935Z INFO  [api-gateway] GET /api/orders/5170 200 96ms
+2026-03-14T09:01:53.945Z INFO  [auth-service] Session refreshed
+2026-03-14T09:01:55.245Z INFO  [auth-service] Session refreshed
+2026-03-14T09:01:57.009Z DEBUG [order-service] Cache hit ratio 81 for key namespace orders
+2026-03-14T09:01:58.808Z INFO  [auth-service] Session refreshed
+2026-03-14T09:02:00.765Z DEBUG [auth-service] Token validated for client web-2
+2026-03-14T09:02:01.991Z INFO  [api-gateway] POST /api/cart 201 29ms
+2026-03-14T09:02:03.320Z INFO  [inventory-service] Reserved 1 units of SKU-491
+2026-03-14T09:02:03.727Z INFO  [api-gateway] POST /api/cart 201 57ms
+2026-03-14T09:02:04.149Z INFO  [payment-service] Payment authorized in 191ms
+2026-03-14T09:02:04.996Z INFO  [api-gateway] POST /api/cart 201 71ms
+2026-03-14T09:02:06.475Z INFO  [payment-service] Payment authorized in 227ms
+2026-03-14T09:02:07.464Z DEBUG [order-service] Cache hit ratio 83 for key namespace orders
+2026-03-14T09:02:07.932Z DEBUG [order-service] Cache hit ratio 97 for key namespace orders
+2026-03-14T09:02:09.131Z INFO  [api-gateway] POST /api/cart 201 53ms
+2026-03-14T09:02:09.738Z INFO  [payment-service] Payment authorized in 160ms
+2026-03-14T09:02:11.769Z INFO  [auth-service] Session refreshed
+2026-03-14T09:02:12.439Z INFO  [order-service] Order 97069 created for customer 578
+2026-03-14T09:02:14.420Z DEBUG [auth-service] Token validated for client web-4
+2026-03-14T09:02:14.913Z DEBUG [auth-service] Token validated for client web-8
+2026-03-14T09:02:16.681Z DEBUG [order-service] Cache hit ratio 83 for key namespace orders
+2026-03-14T09:02:18.026Z INFO  [payment-service] Payment authorized in 107ms
+2026-03-14T09:02:19.058Z INFO  [api-gateway] POST /api/cart 201 64ms
+2026-03-14T09:02:19.945Z DEBUG [auth-service] Token validated for client web-4
+2026-03-14T09:02:21.037Z INFO  [api-gateway] POST /api/cart 201 28ms
+2026-03-14T09:02:22.271Z DEBUG [order-service] Cache hit ratio 98 for key namespace orders
+2026-03-14T09:02:22.845Z DEBUG [order-service] Cache hit ratio 87 for key namespace orders
+2026-03-14T09:02:23.706Z INFO  [api-gateway] POST /api/cart 201 53ms
+2026-03-14T09:02:24.722Z INFO  [order-service] Order 58886 created for customer 645
+2026-03-14T09:02:25.861Z INFO  [inventory-service] Reserved 3 units of SKU-103
+2026-03-14T09:02:27.299Z INFO  [api-gateway] GET /api/orders/7168 200 8ms
+2026-03-14T09:02:28.852Z DEBUG [order-service] Cache hit ratio 92 for key namespace orders
+2026-03-14T09:02:30.380Z INFO  [payment-service] Payment authorized in 210ms
+2026-03-14T09:02:31.757Z INFO  [api-gateway] GET /api/orders/4679 200 110ms
+2026-03-14T09:02:32.254Z INFO  [inventory-service] Reserved 5 units of SKU-766
+2026-03-14T09:02:34.295Z DEBUG [order-service] Cache hit ratio 87 for key namespace orders
+2026-03-14T09:02:35.848Z INFO  [inventory-service] Reserved 3 units of SKU-967
+2026-03-14T09:02:38.021Z INFO  [order-service] Order 92791 created for customer 844
+2026-03-14T09:02:39.529Z DEBUG [auth-service] Token validated for client web-7
+2026-03-14T09:02:41.569Z INFO  [api-gateway] GET /api/orders/9944 200 70ms
+2026-03-14T09:02:42.557Z DEBUG [auth-service] Token validated for client web-3
+2026-03-14T09:02:43.128Z DEBUG [order-service] Cache hit ratio 89 for key namespace orders
+2026-03-14T09:02:43.625Z INFO  [api-gateway] GET /api/orders/2544 200 27ms
+2026-03-14T09:02:45.006Z INFO  [auth-service] Session refreshed
+2026-03-14T09:02:46.559Z INFO  [payment-service] Payment authorized in 57ms
+2026-03-14T09:02:46.972Z INFO  [order-service] Order 60950 created for customer 733
+2026-03-14T09:02:47.568Z INFO  [payment-service] Payment authorized in 139ms
+2026-03-14T09:02:48.290Z INFO  [inventory-service] Reserved 2 units of SKU-178
+2026-03-14T09:02:49.791Z DEBUG [order-service] Cache hit ratio 84 for key namespace orders
+2026-03-14T09:02:51.869Z INFO  [payment-service] Payment authorized in 63ms
+2026-03-14T09:02:53.892Z INFO  [payment-service] Payment authorized in 90ms
+2026-03-14T09:02:54.447Z ERROR [payment-service] Provider auth rejected api_key=sk-live-FAKEFAKEFAKEFAKE1234 password=hunter2 (401 Unauthorized)
+2026-03-14T09:02:55.136Z INFO  [auth-service] Session refreshed
+2026-03-14T09:02:56.257Z INFO  [payment-service] Payment authorized in 53ms
+2026-03-14T09:02:57.442Z DEBUG [auth-service] Token validated for client web-7
+2026-03-14T09:02:58.621Z INFO  [inventory-service] Reserved 2 units of SKU-847
+2026-03-14T09:03:00.721Z INFO  [api-gateway] GET /api/orders/2056 200 24ms
+2026-03-14T09:03:02.468Z INFO  [inventory-service] Reserved 1 units of SKU-257
+2026-03-14T09:03:04.344Z DEBUG [order-service] Cache hit ratio 83 for key namespace orders
+2026-03-14T09:03:05.078Z INFO  [api-gateway] GET /api/orders/6433 200 80ms
+2026-03-14T09:03:06.209Z INFO  [order-service] Order 54766 created for customer 833
+2026-03-14T09:03:07.592Z INFO  [api-gateway] GET /api/orders/4995 200 115ms
+2026-03-14T09:03:09.590Z INFO  [payment-service] Payment authorized in 46ms
+2026-03-14T09:03:10.101Z DEBUG [auth-service] Token validated for client web-7
+2026-03-14T09:03:11.937Z DEBUG [auth-service] Token validated for client web-8
+2026-03-14T09:03:13.564Z INFO  [inventory-service] Reserved 3 units of SKU-478
+2026-03-14T09:03:15.703Z INFO  [auth-service] Session refreshed
+2026-03-14T09:03:16.626Z DEBUG [auth-service] Token validated for client web-4
+2026-03-14T09:03:17.319Z INFO  [auth-service] Session refreshed
+2026-03-14T09:03:19.295Z DEBUG [order-service] Cache hit ratio 92 for key namespace orders
+2026-03-14T09:03:19.886Z INFO  [payment-service] Payment authorized in 109ms
+2026-03-14T09:03:21.886Z DEBUG [auth-service] Token validated for client web-8
+2026-03-14T09:03:23.708Z DEBUG [auth-service] Token validated for client web-8
+2026-03-14T09:03:24.451Z INFO  [api-gateway] POST /api/cart 201 23ms
+2026-03-14T09:03:24.916Z INFO  [api-gateway] GET /api/orders/2629 200 104ms
+2026-03-14T09:03:26.618Z INFO  [api-gateway] POST /api/cart 201 27ms
+2026-03-14T09:03:28.454Z INFO  [api-gateway] POST /api/cart 201 66ms
+2026-03-14T09:03:29.618Z INFO  [api-gateway] POST /api/cart 201 52ms
+2026-03-14T09:03:30.558Z DEBUG [order-service] Cache hit ratio 87 for key namespace orders
+2026-03-14T09:03:31.454Z DEBUG [auth-service] Token validated for client web-1
+2026-03-14T09:03:32.489Z DEBUG [order-service] Cache hit ratio 80 for key namespace orders
+2026-03-14T09:03:34.670Z INFO  [inventory-service] Reserved 5 units of SKU-748
+2026-03-14T09:03:35.243Z DEBUG [auth-service] Token validated for client web-4
+2026-03-14T09:03:35.879Z DEBUG [auth-service] Token validated for client web-5
+2026-03-14T09:03:37.632Z DEBUG [order-service] Cache hit ratio 81 for key namespace orders
+2026-03-14T09:03:39.475Z INFO  [payment-service] Payment authorized in 227ms
+2026-03-14T09:03:41.187Z INFO  [order-service] Order 59517 created for customer 358
+2026-03-14T09:03:42.343Z INFO  [order-service] Order 54640 created for customer 952
+2026-03-14T09:03:44.430Z INFO  [payment-service] Payment authorized in 93ms
+2026-03-14T09:03:44.842Z INFO  [auth-service] Session refreshed
+2026-03-14T09:03:46.750Z INFO  [inventory-service] Reserved 3 units of SKU-241
+2026-03-14T09:03:47.486Z INFO  [api-gateway] POST /api/cart 201 27ms
+2026-03-14T09:03:48.581Z DEBUG [order-service] Cache hit ratio 94 for key namespace orders
+2026-03-14T09:03:49.189Z DEBUG [auth-service] Token validated for client web-3
+2026-03-14T09:03:50.439Z DEBUG [order-service] Cache hit ratio 91 for key namespace orders
+2026-03-14T09:03:50.853Z INFO  [api-gateway] GET /api/orders/8847 200 98ms
+2026-03-14T09:03:51.933Z DEBUG [order-service] Cache hit ratio 92 for key namespace orders
+2026-03-14T09:03:53.931Z DEBUG [auth-service] Token validated for client web-1
+2026-03-14T09:03:55.765Z DEBUG [auth-service] Token validated for client web-7
+2026-03-14T09:03:57.166Z DEBUG [order-service] Cache hit ratio 97 for key namespace orders
+2026-03-14T09:03:58.301Z INFO  [auth-service] Session refreshed
+2026-03-14T09:03:59.817Z INFO  [api-gateway] GET /api/orders/5587 200 74ms
+2026-03-14T09:04:01.903Z INFO  [order-service] Order 37091 created for customer 739
+2026-03-14T09:04:03.413Z DEBUG [auth-service] Token validated for client web-4
+2026-03-14T09:04:04.786Z INFO  [order-service] Order 49065 created for customer 217
+2026-03-14T09:04:05.756Z DEBUG [order-service] Cache hit ratio 93 for key namespace orders
+2026-03-14T09:04:06.590Z INFO  [auth-service] Session refreshed
+2026-03-14T09:04:08.185Z DEBUG [order-service] Cache hit ratio 99 for key namespace orders
+2026-03-14T09:04:09.117Z INFO  [auth-service] Session refreshed
+2026-03-14T09:04:09.565Z INFO  [api-gateway] GET /api/orders/8034 200 16ms
+2026-03-14T09:04:11.118Z INFO  [api-gateway] POST /api/cart 201 13ms
+2026-03-14T09:04:12.175Z INFO  [api-gateway] POST /api/cart 201 79ms
+2026-03-14T09:04:12.810Z INFO  [payment-service] Payment authorized in 144ms
+2026-03-14T09:04:14.792Z INFO  [api-gateway] GET /api/orders/4538 200 78ms
+2026-03-14T09:04:15.951Z INFO  [payment-service] Payment authorized in 238ms
+2026-03-14T09:04:17.681Z INFO  [api-gateway] GET /api/orders/6709 200 81ms
+2026-03-14T09:04:18.652Z INFO  [inventory-service] Reserved 3 units of SKU-279
+2026-03-14T09:04:19.623Z DEBUG [order-service] Cache hit ratio 85 for key namespace orders
+2026-03-14T09:04:21.690Z INFO  [api-gateway] POST /api/cart 201 87ms
+2026-03-14T09:04:23.382Z INFO  [order-service] Order 59974 created for customer 271
+2026-03-14T09:04:23.862Z INFO  [api-gateway] GET /api/orders/6020 200 28ms
+2026-03-14T09:04:25.939Z INFO  [auth-service] Session refreshed
+2026-03-14T09:04:26.381Z INFO  [auth-service] Session refreshed
+2026-03-14T09:04:28.042Z INFO  [payment-service] Payment authorized in 211ms
+2026-03-14T09:04:29.806Z DEBUG [auth-service] Token validated for client web-6
+2026-03-14T09:04:31.980Z INFO  [payment-service] Payment authorized in 90ms
+2026-03-14T09:04:33.519Z DEBUG [order-service] Cache hit ratio 95 for key namespace orders
+2026-03-14T09:04:35.244Z DEBUG [auth-service] Token validated for client web-3
+2026-03-14T09:04:37.022Z INFO  [api-gateway] POST /api/cart 201 13ms
+2026-03-14T09:04:39.109Z INFO  [order-service] Order 33251 created for customer 471
+2026-03-14T09:04:39.713Z INFO  [payment-service] Payment authorized in 291ms
+2026-03-14T09:04:41.432Z DEBUG [auth-service] Token validated for client web-4
+2026-03-14T09:04:43.584Z INFO  [auth-service] Session refreshed
+2026-03-14T09:04:44.683Z INFO  [order-service] Order 15899 created for customer 262
+2026-03-14T09:04:45.590Z INFO  [inventory-service] Reserved 5 units of SKU-559
+2026-03-14T09:04:46.264Z INFO  [order-service] Order 23748 created for customer 503
+2026-03-14T09:04:48.207Z DEBUG [auth-service] Token validated for client web-1
+2026-03-14T09:04:49.897Z INFO  [inventory-service] Reserved 2 units of SKU-594
+2026-03-14T09:04:50.804Z INFO  [payment-service] Payment authorized in 277ms
+2026-03-14T09:04:52.996Z INFO  [order-service] Order 56415 created for customer 455
+2026-03-14T09:04:53.617Z INFO  [inventory-service] Reserved 5 units of SKU-633
+2026-03-14T09:04:54.208Z DEBUG [auth-service] Token validated for client web-6
+2026-03-14T09:04:56.331Z INFO  [payment-service] Payment authorized in 57ms
+2026-03-14T09:04:57.901Z INFO  [payment-service] Payment authorized in 186ms
+2026-03-14T09:04:59.762Z INFO  [api-gateway] GET /api/orders/5818 200 47ms
+2026-03-14T09:05:00.341Z INFO  [auth-service] Session refreshed
+2026-03-14T09:05:01.988Z INFO  [inventory-service] Reserved 5 units of SKU-486
+2026-03-14T09:05:03.845Z INFO  [api-gateway] GET /api/orders/4172 200 23ms
+2026-03-14T09:05:04.976Z DEBUG [order-service] Cache hit ratio 98 for key namespace orders
+2026-03-14T09:05:06.089Z INFO  [api-gateway] GET /api/orders/8495 200 117ms
+2026-03-14T09:05:07.221Z INFO  [api-gateway] GET /api/orders/8487 200 36ms
+2026-03-14T09:05:08.445Z DEBUG [auth-service] Token validated for client web-9
+2026-03-14T09:05:09.340Z INFO  [order-service] Order 36501 created for customer 997
+2026-03-14T09:05:10.574Z INFO  [order-service] Order 37448 created for customer 210
+2026-03-14T09:05:12.521Z INFO  [order-service] Order 91744 created for customer 448
+2026-03-14T09:05:14.299Z INFO  [order-service] Order 45342 created for customer 777
+2026-03-14T09:05:15.814Z INFO  [payment-service] Payment authorized in 144ms
+2026-03-14T09:05:16.334Z WARN  [auth-service] Login failed for user root@example.com from 203.0.113.66: invalid credentials
+2026-03-14T09:05:17.998Z INFO  [order-service] Order 76336 created for customer 277
+2026-03-14T09:05:18.483Z INFO  [api-gateway] GET /api/orders/9839 200 17ms
+2026-03-14T09:05:18.903Z INFO  [auth-service] Session refreshed
+2026-03-14T09:05:19.530Z INFO  [payment-service] Payment authorized in 216ms
+2026-03-14T09:05:20.122Z INFO  [auth-service] Session refreshed
+2026-03-14T09:05:21.514Z INFO  [api-gateway] POST /api/cart 201 16ms
+2026-03-14T09:05:22.100Z WARN  [auth-service] Login failed for user bob@example.com from 203.0.113.5: invalid credentials
+2026-03-14T09:05:22.707Z WARN  [auth-service] Login failed for user svc-batch@example.com from 203.0.113.16: invalid credentials
+2026-03-14T09:05:23.481Z INFO  [payment-service] Payment authorized in 247ms
+2026-03-14T09:05:24.333Z WARN  [auth-service] Login failed for user root@example.com from 203.0.113.189: invalid credentials
+2026-03-14T09:05:26.407Z INFO  [payment-service] Payment authorized in 154ms
+2026-03-14T09:05:27.038Z INFO  [api-gateway] GET /api/orders/7802 200 28ms
+2026-03-14T09:05:28.333Z DEBUG [auth-service] Token validated for client web-8
+2026-03-14T09:05:29.770Z INFO  [auth-service] Session refreshed
+2026-03-14T09:05:31.302Z INFO  [inventory-service] Reserved 3 units of SKU-280
+2026-03-14T09:05:32.330Z INFO  [inventory-service] Reserved 4 units of SKU-715
+2026-03-14T09:05:34.143Z WARN  [auth-service] Login failed for user carol@example.com from 203.0.113.169: invalid credentials
+2026-03-14T09:05:35.582Z INFO  [inventory-service] Reserved 5 units of SKU-372
+2026-03-14T09:05:36.728Z DEBUG [order-service] Cache hit ratio 93 for key namespace orders
+2026-03-14T09:05:37.129Z INFO  [api-gateway] GET /api/orders/5713 200 87ms
+2026-03-14T09:05:37.899Z WARN  [auth-service] Login failed for user svc-batch@example.com from 203.0.113.77: invalid credentials
+2026-03-14T09:05:39.209Z INFO  [order-service] Order 82872 created for customer 701
+2026-03-14T09:05:41.397Z INFO  [api-gateway] POST /api/cart 201 69ms
+2026-03-14T09:05:42.903Z WARN  [auth-service] Login failed for user svc-batch@example.com from 203.0.113.33: invalid credentials
+2026-03-14T09:05:44.831Z INFO  [inventory-service] Reserved 1 units of SKU-481
+2026-03-14T09:05:45.381Z INFO  [api-gateway] POST /api/cart 201 16ms
+2026-03-14T09:05:45.993Z WARN  [auth-service] Login failed for user root@example.com from 203.0.113.83: invalid credentials
+2026-03-14T09:05:48.086Z INFO  [payment-service] Payment authorized in 97ms
+2026-03-14T09:05:48.516Z WARN  [auth-service] Login failed for user admin@example.com from 203.0.113.144: invalid credentials
+2026-03-14T09:05:48.998Z WARN  [auth-service] Login failed for user carol@example.com from 203.0.113.118: invalid credentials
+2026-03-14T09:05:51.085Z INFO  [inventory-service] Reserved 3 units of SKU-451
+2026-03-14T09:05:52.944Z INFO  [api-gateway] POST /api/cart 201 85ms
+2026-03-14T09:05:54.507Z INFO  [api-gateway] GET /api/orders/3071 200 47ms
+2026-03-14T09:05:55.637Z DEBUG [order-service] Cache hit ratio 85 for key namespace orders
+2026-03-14T09:05:56.466Z INFO  [payment-service] Payment authorized in 174ms
+2026-03-14T09:05:57.312Z DEBUG [auth-service] Token validated for client web-7
+2026-03-14T09:05:58.993Z INFO  [api-gateway] GET /api/orders/9864 200 84ms
+2026-03-14T09:06:00.438Z INFO  [api-gateway] GET /api/orders/9430 200 37ms
+2026-03-14T09:06:02.337Z WARN  [auth-service] Login failed for user carol@example.com from 203.0.113.27: invalid credentials
+2026-03-14T09:06:03.911Z DEBUG [order-service] Cache hit ratio 86 for key namespace orders
+2026-03-14T09:06:05.139Z INFO  [payment-service] Payment authorized in 264ms
+2026-03-14T09:06:05.911Z INFO  [inventory-service] Reserved 5 units of SKU-142
+2026-03-14T09:06:06.324Z WARN  [auth-service] Login failed for user carol@example.com from 203.0.113.212: invalid credentials
+2026-03-14T09:06:07.109Z DEBUG [auth-service] Token validated for client web-9
+2026-03-14T09:06:07.638Z WARN  [auth-service] Login failed for user carol@example.com from 203.0.113.56: invalid credentials
+2026-03-14T09:06:08.212Z INFO  [inventory-service] Reserved 5 units of SKU-187
+2026-03-14T09:06:09.790Z WARN  [auth-service] Login failed for user carol@example.com from 203.0.113.72: invalid credentials
+2026-03-14T09:06:10.764Z INFO  [api-gateway] GET /api/orders/4328 200 35ms
+2026-03-14T09:06:12.825Z WARN  [auth-service] Login failed for user admin@example.com from 203.0.113.175: invalid credentials
+2026-03-14T09:06:13.702Z WARN  [auth-service] Login failed for user carol@example.com from 203.0.113.219: invalid credentials
+2026-03-14T09:06:15.587Z WARN  [auth-service] Login failed for user admin@example.com from 203.0.113.129: invalid credentials
+2026-03-14T09:06:17.549Z WARN  [auth-service] Login failed for user root@example.com from 203.0.113.97: invalid credentials
+2026-03-14T09:06:18.883Z INFO  [api-gateway] POST /api/cart 201 21ms
+2026-03-14T09:06:20.764Z INFO  [auth-service] Session refreshed
+2026-03-14T09:06:22.463Z WARN  [auth-service] Login failed for user carol@example.com from 203.0.113.253: invalid credentials
+2026-03-14T09:06:23.043Z INFO  [order-service] Order 68114 created for customer 480
+2026-03-14T09:06:24.619Z INFO  [auth-service] Session refreshed
+2026-03-14T09:06:26.477Z DEBUG [order-service] Cache hit ratio 80 for key namespace orders
+2026-03-14T09:06:27.144Z WARN  [auth-service] Login failed for user svc-batch@example.com from 203.0.113.137: invalid credentials
+2026-03-14T09:06:27.819Z WARN  [auth-service] Login failed for user admin@example.com from 203.0.113.118: invalid credentials
+2026-03-14T09:06:29.824Z INFO  [order-service] Order 87992 created for customer 142
+2026-03-14T09:06:31.700Z WARN  [auth-service] Login failed for user root@example.com from 203.0.113.25: invalid credentials
+2026-03-14T09:06:33.567Z WARN  [auth-service] Login failed for user admin@example.com from 203.0.113.233: invalid credentials
+2026-03-14T09:06:34.268Z INFO  [payment-service] Payment authorized in 232ms
+2026-03-14T09:06:35.964Z WARN  [auth-service] Login failed for user alice@example.com from 203.0.113.177: invalid credentials
+2026-03-14T09:06:37.906Z INFO  [payment-service] Payment authorized in 300ms
+2026-03-14T09:06:40.093Z WARN  [auth-service] Login failed for user admin@example.com from 203.0.113.239: invalid credentials
+2026-03-14T09:06:42.214Z WARN  [auth-service] Login failed for user bob@example.com from 203.0.113.23: invalid credentials
+2026-03-14T09:06:44.348Z WARN  [auth-service] Login failed for user root@example.com from 203.0.113.103: invalid credentials
+2026-03-14T09:06:46.444Z INFO  [payment-service] Payment authorized in 256ms
+2026-03-14T09:06:47.349Z INFO  [payment-service] Payment authorized in 161ms
+2026-03-14T09:06:47.903Z INFO  [auth-service] Session refreshed
+2026-03-14T09:06:49.133Z INFO  [payment-service] Payment authorized in 150ms
+2026-03-14T09:06:51.296Z DEBUG [order-service] Cache hit ratio 81 for key namespace orders
+2026-03-14T09:06:52.585Z INFO  [api-gateway] POST /api/cart 201 46ms
+2026-03-14T09:06:53.592Z INFO  [api-gateway] POST /api/cart 201 39ms
+2026-03-14T09:06:54.454Z DEBUG [auth-service] Token validated for client web-6
+2026-03-14T09:06:54.885Z WARN  [auth-service] Login failed for user svc-batch@example.com from 203.0.113.101: invalid credentials
+2026-03-14T09:06:55.600Z WARN  [auth-service] Login failed for user carol@example.com from 203.0.113.161: invalid credentials
+2026-03-14T09:06:57.536Z WARN  [auth-service] Login failed for user admin@example.com from 203.0.113.28: invalid credentials
+2026-03-14T09:06:58.916Z INFO  [inventory-service] Reserved 1 units of SKU-744
+2026-03-14T09:07:00.196Z DEBUG [auth-service] Token validated for client web-2
+2026-03-14T09:07:01.644Z INFO  [order-service] Order 58893 created for customer 257
+2026-03-14T09:07:02.488Z WARN  [auth-service] Login failed for user svc-batch@example.com from 203.0.113.229: invalid credentials
+2026-03-14T09:07:03.195Z INFO  [inventory-service] Reserved 2 units of SKU-331
+2026-03-14T09:07:05.120Z WARN  [auth-service] Login failed for user admin@example.com from 203.0.113.73: invalid credentials
+2026-03-14T09:07:06.571Z INFO  [inventory-service] Reserved 4 units of SKU-679
+2026-03-14T09:07:08.476Z INFO  [api-gateway] GET /api/orders/1974 200 94ms
+2026-03-14T09:07:10.468Z INFO  [api-gateway] POST /api/cart 201 20ms
+2026-03-14T09:07:12.087Z WARN  [auth-service] Login failed for user carol@example.com from 203.0.113.169: invalid credentials
+2026-03-14T09:07:12.990Z WARN  [auth-service] Login failed for user alice@example.com from 203.0.113.160: invalid credentials
+2026-03-14T09:07:13.777Z WARN  [auth-service] Login failed for user admin@example.com from 203.0.113.206: invalid credentials
+2026-03-14T09:07:15.177Z INFO  [payment-service] Payment authorized in 204ms
+2026-03-14T09:07:15.622Z WARN  [auth-service] Login failed for user carol@example.com from 203.0.113.39: invalid credentials
+2026-03-14T09:07:16.537Z WARN  [auth-service] Login failed for user svc-batch@example.com from 203.0.113.189: invalid credentials
+2026-03-14T09:07:17.138Z WARN  [auth-service] Login failed for user admin@example.com from 203.0.113.148: invalid credentials
+2026-03-14T09:07:17.743Z WARN  [auth-service] Login failed for user svc-batch@example.com from 203.0.113.20: invalid credentials
+2026-03-14T09:07:19.501Z INFO  [order-service] Order 30083 created for customer 596
+2026-03-14T09:07:20.537Z INFO  [api-gateway] POST /api/cart 201 23ms
+2026-03-14T09:07:21.137Z WARN  [auth-service] Login failed for user svc-batch@example.com from 203.0.113.130: invalid credentials
+2026-03-14T09:07:22.427Z WARN  [auth-service] Login failed for user root@example.com from 203.0.113.69: invalid credentials
+2026-03-14T09:07:22.904Z DEBUG [order-service] Cache hit ratio 88 for key namespace orders
+2026-03-14T09:07:24.844Z INFO  [inventory-service] Reserved 5 units of SKU-870
+2026-03-14T09:07:26.143Z INFO  [inventory-service] Reserved 3 units of SKU-337
+2026-03-14T09:07:28.201Z DEBUG [auth-service] Token validated for client web-8
+2026-03-14T09:07:28.857Z INFO  [payment-service] Payment authorized in 92ms
+2026-03-14T09:07:29.829Z INFO  [auth-service] Session refreshed
+2026-03-14T09:07:31.986Z WARN  [auth-service] Login failed for user alice@example.com from 203.0.113.50: invalid credentials
+2026-03-14T09:07:33.246Z WARN  [auth-service] Login failed for user admin@example.com from 203.0.113.87: invalid credentials
+2026-03-14T09:07:34.506Z INFO  [order-service] Order 95891 created for customer 624
+2026-03-14T09:07:35.086Z WARN  [auth-service] Login failed for user root@example.com from 203.0.113.168: invalid credentials
+2026-03-14T09:07:36.941Z INFO  [api-gateway] POST /api/cart 201 10ms
+2026-03-14T09:07:39.033Z WARN  [auth-service] Login failed for user alice@example.com from 203.0.113.141: invalid credentials
+2026-03-14T09:07:39.808Z INFO  [inventory-service] Reserved 3 units of SKU-409
+2026-03-14T09:07:41.045Z INFO  [auth-service] Session refreshed
+2026-03-14T09:07:42.354Z INFO  [order-service] Order 45385 created for customer 125
+2026-03-14T09:07:42.997Z WARN  [auth-service] Login failed for user admin@example.com from 203.0.113.116: invalid credentials
+2026-03-14T09:07:43.717Z INFO  [auth-service] Session refreshed
+2026-03-14T09:07:45.461Z WARN  [auth-service] Login failed for user bob@example.com from 203.0.113.182: invalid credentials
+2026-03-14T09:07:47.434Z WARN  [auth-service] Login failed for user svc-batch@example.com from 203.0.113.154: invalid credentials
+2026-03-14T09:07:48.777Z WARN  [auth-service] Login failed for user carol@example.com from 203.0.113.204: invalid credentials
+2026-03-14T09:07:49.336Z DEBUG [order-service] Cache hit ratio 98 for key namespace orders
+2026-03-14T09:07:51.084Z WARN  [auth-service] Login failed for user alice@example.com from 203.0.113.2: invalid credentials
+2026-03-14T09:07:52.470Z WARN  [auth-service] Login failed for user alice@example.com from 203.0.113.129: invalid credentials
+2026-03-14T09:07:54.193Z WARN  [auth-service] Login failed for user alice@example.com from 203.0.113.189: invalid credentials
+2026-03-14T09:07:55.073Z INFO  [auth-service] Session refreshed
+2026-03-14T09:07:57.154Z INFO  [auth-service] Session refreshed
+2026-03-14T09:07:58.786Z WARN  [auth-service] Login failed for user alice@example.com from 203.0.113.64: invalid credentials
+2026-03-14T09:07:59.233Z INFO  [api-gateway] POST /api/cart 201 14ms
+2026-03-14T09:08:00.631Z WARN  [auth-service] Login failed for user admin@example.com from 203.0.113.8: invalid credentials
+2026-03-14T09:08:02.241Z WARN  [auth-service] Login failed for user bob@example.com from 203.0.113.174: invalid credentials
+2026-03-14T09:08:03.628Z WARN  [auth-service] Login failed for user carol@example.com from 203.0.113.215: invalid credentials
+2026-03-14T09:08:05.727Z INFO  [api-gateway] GET /api/orders/3435 200 46ms
+2026-03-14T09:08:07.619Z DEBUG [auth-service] Token validated for client web-1
+2026-03-14T09:08:09.087Z INFO  [api-gateway] POST /api/cart 201 22ms
+2026-03-14T09:08:10.422Z WARN  [auth-service] Login failed for user bob@example.com from 203.0.113.131: invalid credentials
+2026-03-14T09:08:10.908Z WARN  [auth-service] Login failed for user bob@example.com from 203.0.113.153: invalid credentials
+2026-03-14T09:08:12.404Z INFO  [auth-service] Session refreshed
+2026-03-14T09:08:13.313Z WARN  [auth-service] Login failed for user admin@example.com from 203.0.113.218: invalid credentials
+2026-03-14T09:08:13.858Z INFO  [payment-service] Payment authorized in 129ms
+2026-03-14T09:08:15.320Z DEBUG [order-service] Cache hit ratio 95 for key namespace orders
+2026-03-14T09:08:17.103Z INFO  [api-gateway] POST /api/cart 201 43ms
+2026-03-14T09:08:17.959Z INFO  [inventory-service] Reserved 4 units of SKU-872
+2026-03-14T09:08:19.824Z WARN  [auth-service] Login failed for user svc-batch@example.com from 203.0.113.228: invalid credentials
+2026-03-14T09:08:21.917Z INFO  [payment-service] Payment authorized in 254ms
+2026-03-14T09:08:23.186Z WARN  [auth-service] Login failed for user admin@example.com from 203.0.113.55: invalid credentials
+2026-03-14T09:08:24.810Z WARN  [auth-service] Login failed for user svc-batch@example.com from 203.0.113.119: invalid credentials
+2026-03-14T09:08:26.293Z WARN  [auth-service] Login failed for user admin@example.com from 203.0.113.18: invalid credentials
+2026-03-14T09:08:27.350Z WARN  [auth-service] Login failed for user carol@example.com from 203.0.113.49: invalid credentials
+2026-03-14T09:08:28.943Z INFO  [api-gateway] POST /api/cart 201 48ms
+2026-03-14T09:08:29.388Z INFO  [api-gateway] GET /api/orders/1832 200 55ms
+2026-03-14T09:08:30.159Z DEBUG [auth-service] Token validated for client web-8
+2026-03-14T09:08:30.822Z INFO  [payment-service] Payment authorized in 262ms
+2026-03-14T09:08:31.327Z WARN  [auth-service] Login failed for user admin@example.com from 203.0.113.138: invalid credentials
+2026-03-14T09:08:32.088Z WARN  [auth-service] Login failed for user root@example.com from 203.0.113.129: invalid credentials
+2026-03-14T09:08:34.223Z INFO  [api-gateway] POST /api/cart 201 23ms
+2026-03-14T09:08:35.048Z INFO  [auth-service] Session refreshed
+2026-03-14T09:08:35.528Z DEBUG [auth-service] Token validated for client web-8
+2026-03-14T09:08:37.608Z INFO  [order-service] Order 92881 created for customer 766
+2026-03-14T09:08:38.787Z WARN  [auth-service] Login failed for user svc-batch@example.com from 203.0.113.91: invalid credentials
+2026-03-14T09:08:40.205Z WARN  [auth-service] Login failed for user carol@example.com from 203.0.113.103: invalid credentials
+2026-03-14T09:08:42.211Z DEBUG [order-service] Cache hit ratio 90 for key namespace orders
+2026-03-14T09:08:43.067Z WARN  [auth-service] Login failed for user alice@example.com from 203.0.113.197: invalid credentials
+2026-03-14T09:08:43.933Z INFO  [inventory-service] Reserved 1 units of SKU-788
+2026-03-14T09:08:45.434Z DEBUG [order-service] Cache hit ratio 94 for key namespace orders
+2026-03-14T09:08:47.567Z INFO  [auth-service] Session refreshed
+2026-03-14T09:08:48.248Z WARN  [auth-service] Login failed for user svc-batch@example.com from 203.0.113.249: invalid credentials
+2026-03-14T09:08:48.810Z INFO  [order-service] Order 10542 created for customer 298
+2026-03-14T09:08:50.968Z INFO  [api-gateway] GET /api/orders/3564 200 43ms
+2026-03-14T09:08:51.832Z WARN  [auth-service] Login failed for user admin@example.com from 203.0.113.179: invalid credentials
+2026-03-14T09:08:52.398Z WARN  [auth-service] Login failed for user bob@example.com from 203.0.113.222: invalid credentials
+2026-03-14T09:08:54.342Z INFO  [inventory-service] Reserved 1 units of SKU-152
+2026-03-14T09:08:54.773Z INFO  [api-gateway] POST /api/cart 201 13ms
+2026-03-14T09:08:56.860Z WARN  [auth-service] Login failed for user root@example.com from 203.0.113.6: invalid credentials
+2026-03-14T09:08:57.666Z INFO  [auth-service] Session refreshed
+2026-03-14T09:08:58.480Z WARN  [auth-service] Login failed for user alice@example.com from 203.0.113.191: invalid credentials
+2026-03-14T09:08:59.851Z WARN  [auth-service] Login failed for user root@example.com from 203.0.113.181: invalid credentials
+2026-03-14T09:09:01.537Z WARN  [auth-service] Login failed for user svc-batch@example.com from 203.0.113.140: invalid credentials
+2026-03-14T09:09:03.295Z WARN  [auth-service] Login failed for user carol@example.com from 203.0.113.32: invalid credentials
+2026-03-14T09:09:03.730Z WARN  [auth-service] Login failed for user root@example.com from 203.0.113.179: invalid credentials
+2026-03-14T09:09:05.898Z WARN  [auth-service] Login failed for user carol@example.com from 203.0.113.164: invalid credentials
+2026-03-14T09:09:08.057Z INFO  [inventory-service] Reserved 1 units of SKU-538
+2026-03-14T09:09:08.602Z INFO  [payment-service] Payment authorized in 285ms
+2026-03-14T09:09:10.256Z INFO  [api-gateway] GET /api/orders/8474 200 110ms
+2026-03-14T09:09:10.890Z WARN  [auth-service] Login failed for user alice@example.com from 203.0.113.95: invalid credentials
+2026-03-14T09:09:12.469Z INFO  [inventory-service] Reserved 1 units of SKU-135
+2026-03-14T09:09:14.497Z WARN  [auth-service] Login failed for user admin@example.com from 203.0.113.11: invalid credentials
+2026-03-14T09:09:16.432Z DEBUG [auth-service] Token validated for client web-3
+2026-03-14T09:09:17.243Z DEBUG [order-service] Cache hit ratio 86 for key namespace orders
+2026-03-14T09:09:18.300Z WARN  [auth-service] Login failed for user root@example.com from 203.0.113.182: invalid credentials
+2026-03-14T09:09:19.142Z WARN  [auth-service] Login failed for user root@example.com from 203.0.113.187: invalid credentials
+2026-03-14T09:09:20.641Z WARN  [auth-service] Login failed for user admin@example.com from 203.0.113.37: invalid credentials
+2026-03-14T09:09:22.841Z WARN  [auth-service] Login failed for user carol@example.com from 203.0.113.151: invalid credentials
+2026-03-14T09:09:24.126Z INFO  [inventory-service] Reserved 5 units of SKU-293
+2026-03-14T09:09:25.803Z INFO  [inventory-service] Reserved 4 units of SKU-429
+2026-03-14T09:09:26.403Z INFO  [order-service] Order 64956 created for customer 665
+2026-03-14T09:09:28.292Z INFO  [order-service] Order 91591 created for customer 765
+2026-03-14T09:09:28.746Z WARN  [auth-service] Login failed for user alice@example.com from 203.0.113.93: invalid credentials
+2026-03-14T09:09:29.643Z WARN  [auth-service] Login failed for user bob@example.com from 203.0.113.109: invalid credentials
+2026-03-14T09:09:30.128Z WARN  [auth-service] Login failed for user alice@example.com from 203.0.113.93: invalid credentials
+2026-03-14T09:09:31.560Z DEBUG [order-service] Cache hit ratio 98 for key namespace orders
+2026-03-14T09:09:32.172Z INFO  [inventory-service] Reserved 4 units of SKU-402
+2026-03-14T09:09:34.292Z WARN  [auth-service] Login failed for user carol@example.com from 203.0.113.6: invalid credentials
+2026-03-14T09:09:34.832Z INFO  [auth-service] Session refreshed
+2026-03-14T09:09:35.678Z WARN  [auth-service] Login failed for user bob@example.com from 203.0.113.58: invalid credentials
+2026-03-14T09:09:36.758Z WARN  [auth-service] Login failed for user bob@example.com from 203.0.113.79: invalid credentials
+2026-03-14T09:09:37.812Z INFO  [order-service] Order 89725 created for customer 760
+2026-03-14T09:09:38.385Z WARN  [auth-service] Login failed for user carol@example.com from 203.0.113.167: invalid credentials
+2026-03-14T09:09:40.331Z INFO  [order-service] Order 45761 created for customer 858
+2026-03-14T09:09:41.291Z INFO  [auth-service] Session refreshed
+2026-03-14T09:09:42.067Z DEBUG [order-service] Cache hit ratio 93 for key namespace orders
+2026-03-14T09:09:43.468Z WARN  [auth-service] Login failed for user admin@example.com from 203.0.113.85: invalid credentials
+2026-03-14T09:09:44.121Z INFO  [api-gateway] GET /api/orders/8952 200 23ms
+2026-03-14T09:09:44.643Z DEBUG [order-service] Cache hit ratio 83 for key namespace orders
+2026-03-14T09:09:45.441Z INFO  [api-gateway] GET /api/orders/8786 200 90ms
+2026-03-14T09:09:46.266Z INFO  [inventory-service] Reserved 3 units of SKU-838
+2026-03-14T09:09:47.338Z INFO  [payment-service] Payment authorized in 63ms
+2026-03-14T09:09:47.980Z WARN  [auth-service] Login failed for user carol@example.com from 203.0.113.104: invalid credentials
+2026-03-14T09:09:48.537Z INFO  [auth-service] Session refreshed
+2026-03-14T09:09:50.086Z WARN  [auth-service] Login failed for user alice@example.com from 203.0.113.174: invalid credentials
+2026-03-14T09:09:51.180Z WARN  [auth-service] Login failed for user alice@example.com from 203.0.113.165: invalid credentials
+2026-03-14T09:09:51.685Z INFO  [api-gateway] POST /api/cart 201 48ms
+2026-03-14T09:09:52.690Z WARN  [auth-service] Login failed for user svc-batch@example.com from 203.0.113.219: invalid credentials
+2026-03-14T09:09:53.541Z WARN  [auth-service] Login failed for user admin@example.com from 203.0.113.243: invalid credentials
+2026-03-14T09:09:54.641Z INFO  [auth-service] Session refreshed
+2026-03-14T09:09:56.732Z INFO  [order-service] Order 80565 created for customer 258
+2026-03-14T09:09:58.920Z INFO  [inventory-service] Reserved 2 units of SKU-286
+2026-03-14T09:09:59.475Z INFO  [payment-service] Payment authorized in 170ms
+2026-03-14T09:10:00.947Z WARN  [auth-service] Login failed for user root@example.com from 203.0.113.54: invalid credentials
+2026-03-14T09:10:02.118Z WARN  [auth-service] Login failed for user carol@example.com from 203.0.113.33: invalid credentials
+2026-03-14T09:10:04.252Z WARN  [auth-service] Login failed for user carol@example.com from 203.0.113.159: invalid credentials
+2026-03-14T09:10:05.954Z WARN  [auth-service] Login failed for user svc-batch@example.com from 203.0.113.38: invalid credentials
+2026-03-14T09:10:07.409Z DEBUG [auth-service] Token validated for client web-3
+2026-03-14T09:10:08.541Z INFO  [inventory-service] Reserved 4 units of SKU-591
+2026-03-14T09:10:09.727Z INFO  [payment-service] Payment authorized in 245ms
+2026-03-14T09:10:10.475Z WARN  [auth-service] Login failed for user carol@example.com from 203.0.113.52: invalid credentials
+2026-03-14T09:10:12.175Z INFO  [order-service] Order 37640 created for customer 634
+2026-03-14T09:10:13.704Z WARN  [auth-service] Login failed for user root@example.com from 203.0.113.123: invalid credentials
+2026-03-14T09:10:15.760Z INFO  [payment-service] Payment authorized in 261ms
+2026-03-14T09:10:17.206Z DEBUG [order-service] Cache hit ratio 95 for key namespace orders
+2026-03-14T09:10:18.704Z WARN  [auth-service] Login failed for user alice@example.com from 203.0.113.139: invalid credentials
+2026-03-14T09:10:19.710Z WARN  [auth-service] Login failed for user carol@example.com from 203.0.113.233: invalid credentials
+2026-03-14T09:10:21.066Z WARN  [auth-service] Login failed for user svc-batch@example.com from 203.0.113.51: invalid credentials
+2026-03-14T09:10:22.500Z INFO  [order-service] Order 15517 created for customer 147
+2026-03-14T09:10:24.322Z INFO  [order-service] Order 99992 created for customer 880
+2026-03-14T09:10:26.058Z WARN  [auth-service] Login failed for user bob@example.com from 203.0.113.81: invalid credentials
+2026-03-14T09:10:27.688Z WARN  [auth-service] Login failed for user bob@example.com from 203.0.113.59: invalid credentials
+2026-03-14T09:10:28.385Z WARN  [auth-service] Login failed for user bob@example.com from 203.0.113.35: invalid credentials
+2026-03-14T09:10:29.644Z WARN  [auth-service] Login failed for user alice@example.com from 203.0.113.128: invalid credentials
+2026-03-14T09:10:30.476Z DEBUG [order-service] Cache hit ratio 92 for key namespace orders
+2026-03-14T09:10:32.422Z WARN  [auth-service] Login failed for user bob@example.com from 203.0.113.209: invalid credentials
+2026-03-14T09:10:34.538Z WARN  [auth-service] Login failed for user carol@example.com from 203.0.113.253: invalid credentials
+2026-03-14T09:10:35.777Z INFO  [api-gateway] POST /api/cart 201 32ms
+2026-03-14T09:10:37.110Z WARN  [auth-service] Login failed for user svc-batch@example.com from 203.0.113.200: invalid credentials
+2026-03-14T09:10:38.843Z DEBUG [auth-service] Token validated for client web-5
+2026-03-14T09:10:40.574Z INFO  [api-gateway] POST /api/cart 201 59ms
+2026-03-14T09:10:40.991Z WARN  [auth-service] Login failed for user root@example.com from 203.0.113.137: invalid credentials
+2026-03-14T09:10:41.603Z DEBUG [auth-service] Token validated for client web-4
+2026-03-14T09:10:42.641Z WARN  [auth-service] Login failed for user svc-batch@example.com from 203.0.113.80: invalid credentials
+2026-03-14T09:10:44.179Z WARN  [auth-service] Login failed for user root@example.com from 203.0.113.107: invalid credentials
+2026-03-14T09:10:45.281Z INFO  [api-gateway] GET /api/orders/6106 200 29ms
+2026-03-14T09:10:46.897Z INFO  [api-gateway] POST /api/cart 201 28ms
+2026-03-14T09:10:48.510Z WARN  [auth-service] Login failed for user root@example.com from 203.0.113.146: invalid credentials
+2026-03-14T09:10:49.000Z DEBUG [order-service] Cache hit ratio 98 for key namespace orders
+2026-03-14T09:10:49.533Z DEBUG [order-service] Cache hit ratio 89 for key namespace orders
+2026-03-14T09:10:51.696Z INFO  [api-gateway] POST /api/cart 201 25ms
+2026-03-14T09:10:52.504Z WARN  [auth-service] Login failed for user svc-batch@example.com from 203.0.113.177: invalid credentials
+2026-03-14T09:10:53.690Z WARN  [auth-service] Login failed for user alice@example.com from 203.0.113.216: invalid credentials
+2026-03-14T09:10:55.141Z DEBUG [order-service] Cache hit ratio 81 for key namespace orders
+2026-03-14T09:10:56.462Z DEBUG [order-service] Cache hit ratio 91 for key namespace orders
+2026-03-14T09:10:58.058Z INFO  [auth-service] Session refreshed
+2026-03-14T09:10:59.086Z INFO  [api-gateway] GET /api/orders/9696 200 90ms
+2026-03-14T09:11:01.209Z INFO  [order-service] Order 45160 created for customer 617
+2026-03-14T09:11:02.505Z CRITICAL [auth-service] Account lockout threshold exceeded for user admin@example.com
+2026-03-14T09:11:02.977Z INFO  [order-service] Order 78444 created for customer 503
+2026-03-14T09:11:03.438Z INFO  [auth-service] Session refreshed
+2026-03-14T09:11:05.605Z DEBUG [order-service] Cache hit ratio 83 for key namespace orders
+2026-03-14T09:11:06.556Z INFO  [api-gateway] GET /api/orders/3806 200 117ms
+2026-03-14T09:11:07.798Z INFO  [inventory-service] Reserved 1 units of SKU-824
+2026-03-14T09:11:09.162Z INFO  [payment-service] Payment authorized in 156ms
+2026-03-14T09:11:09.584Z INFO  [payment-service] Payment authorized in 241ms
+2026-03-14T09:11:11.193Z INFO  [api-gateway] GET /api/orders/9951 200 8ms
+2026-03-14T09:11:13.139Z INFO  [order-service] Order 33406 created for customer 194
+2026-03-14T09:11:15.140Z INFO  [order-service] Order 26578 created for customer 106
+2026-03-14T09:11:16.056Z INFO  [order-service] Order 19681 created for customer 151
+2026-03-14T09:11:16.549Z INFO  [payment-service] Payment authorized in 163ms
+2026-03-14T09:11:17.200Z INFO  [inventory-service] Reserved 1 units of SKU-197
+2026-03-14T09:11:19.353Z INFO  [payment-service] Payment authorized in 247ms
+2026-03-14T09:11:20.938Z INFO  [payment-service] Payment authorized in 299ms
+2026-03-14T09:11:21.402Z INFO  [api-gateway] POST /api/cart 201 35ms
+2026-03-14T09:11:22.498Z INFO  [api-gateway] GET /api/orders/6263 200 62ms
+2026-03-14T09:11:24.225Z INFO  [auth-service] Session refreshed
+2026-03-14T09:11:25.218Z DEBUG [auth-service] Token validated for client web-7
+2026-03-14T09:11:27.411Z INFO  [auth-service] Session refreshed
+2026-03-14T09:11:28.442Z DEBUG [order-service] Cache hit ratio 81 for key namespace orders
+2026-03-14T09:11:28.994Z INFO  [auth-service] Session refreshed
+2026-03-14T09:11:29.816Z INFO  [api-gateway] GET /api/orders/4712 200 92ms
+2026-03-14T09:11:31.709Z DEBUG [auth-service] Token validated for client web-9
+2026-03-14T09:11:32.127Z INFO  [api-gateway] GET /api/orders/1198 200 54ms
+2026-03-14T09:11:32.588Z INFO  [inventory-service] Reserved 2 units of SKU-763
+2026-03-14T09:11:33.564Z INFO  [api-gateway] POST /api/cart 201 48ms
+2026-03-14T09:11:34.435Z INFO  [order-service] Order 43098 created for customer 526
+2026-03-14T09:11:35.387Z DEBUG [order-service] Cache hit ratio 92 for key namespace orders
+2026-03-14T09:11:36.953Z INFO  [inventory-service] Reserved 4 units of SKU-962
+2026-03-14T09:11:37.511Z DEBUG [order-service] Cache hit ratio 95 for key namespace orders
+2026-03-14T09:11:39.015Z INFO  [inventory-service] Reserved 3 units of SKU-538
+2026-03-14T09:11:40.678Z INFO  [inventory-service] Reserved 4 units of SKU-999
+2026-03-14T09:11:42.756Z INFO  [order-service] Order 17846 created for customer 240
+2026-03-14T09:11:44.639Z DEBUG [order-service] Cache hit ratio 97 for key namespace orders
+2026-03-14T09:11:46.428Z DEBUG [auth-service] Token validated for client web-2
+2026-03-14T09:11:47.616Z INFO  [payment-service] Payment authorized in 201ms
+2026-03-14T09:11:49.438Z DEBUG [auth-service] Token validated for client web-1
+2026-03-14T09:11:50.354Z INFO  [order-service] Order 20889 created for customer 616
+2026-03-14T09:11:52.032Z DEBUG [order-service] Cache hit ratio 95 for key namespace orders
+2026-03-14T09:11:53.121Z INFO  [api-gateway] POST /api/cart 201 83ms
+2026-03-14T09:11:54.794Z DEBUG [order-service] Cache hit ratio 98 for key namespace orders
+2026-03-14T09:11:56.991Z INFO  [auth-service] Session refreshed
+2026-03-14T09:11:58.192Z INFO  [payment-service] Payment authorized in 139ms
+2026-03-14T09:11:58.782Z INFO  [api-gateway] POST /api/cart 201 57ms
+2026-03-14T09:12:00.854Z INFO  [payment-service] Payment authorized in 97ms
+2026-03-14T09:12:02.061Z DEBUG [order-service] Cache hit ratio 85 for key namespace orders
+2026-03-14T09:12:02.873Z DEBUG [auth-service] Token validated for client web-4
+2026-03-14T09:12:03.404Z INFO  [payment-service] Payment authorized in 186ms
+2026-03-14T09:12:04.110Z INFO  [payment-service] Payment authorized in 92ms
+2026-03-14T09:12:04.580Z DEBUG [auth-service] Token validated for client web-3
+2026-03-14T09:12:06.748Z INFO  [api-gateway] GET /api/orders/6273 200 20ms
+2026-03-14T09:12:07.715Z DEBUG [auth-service] Token validated for client web-3
+2026-03-14T09:12:08.945Z INFO  [auth-service] Session refreshed
+2026-03-14T09:12:09.536Z INFO  [payment-service] Payment authorized in 254ms
+2026-03-14T09:12:10.108Z INFO  [api-gateway] POST /api/cart 201 81ms
+2026-03-14T09:12:11.794Z INFO  [api-gateway] GET /api/orders/1372 200 39ms
+2026-03-14T09:12:13.120Z INFO  [payment-service] Payment authorized in 278ms
+2026-03-14T09:12:14.824Z INFO  [order-service] Order 45607 created for customer 386
+2026-03-14T09:12:16.467Z INFO  [api-gateway] POST /api/cart 201 88ms
+2026-03-14T09:12:18.306Z DEBUG [auth-service] Token validated for client web-5
+2026-03-14T09:12:20.007Z INFO  [auth-service] Session refreshed
+2026-03-14T09:12:21.279Z INFO  [auth-service] Session refreshed
+2026-03-14T09:12:22.036Z INFO  [api-gateway] GET /api/orders/3355 200 27ms
+2026-03-14T09:12:23.168Z DEBUG [order-service] Cache hit ratio 94 for key namespace orders
+2026-03-14T09:12:24.700Z INFO  [payment-service] Payment authorized in 178ms
+2026-03-14T09:12:25.355Z INFO  [auth-service] Session refreshed
+2026-03-14T09:12:26.450Z INFO  [inventory-service] Reserved 3 units of SKU-935
+2026-03-14T09:12:27.065Z INFO  [payment-service] Payment authorized in 265ms
+2026-03-14T09:12:28.340Z INFO  [payment-service] Payment authorized in 229ms
+2026-03-14T09:12:30.061Z INFO  [payment-service] Payment authorized in 132ms
+2026-03-14T09:12:32.045Z INFO  [inventory-service] Reserved 5 units of SKU-101
+2026-03-14T09:12:32.488Z INFO  [api-gateway] POST /api/cart 201 86ms
+2026-03-14T09:12:33.514Z INFO  [api-gateway] POST /api/cart 201 23ms
+2026-03-14T09:12:35.087Z INFO  [auth-service] Session refreshed
+2026-03-14T09:12:36.294Z INFO  [api-gateway] GET /api/orders/3461 200 24ms
+2026-03-14T09:12:36.954Z INFO  [payment-service] Payment authorized in 195ms
+2026-03-14T09:12:38.225Z INFO  [inventory-service] Reserved 5 units of SKU-532
+2026-03-14T09:12:39.129Z INFO  [inventory-service] Reserved 5 units of SKU-878
+2026-03-14T09:12:40.683Z DEBUG [auth-service] Token validated for client web-4
+2026-03-14T09:12:42.774Z INFO  [api-gateway] POST /api/cart 201 89ms
+2026-03-14T09:12:43.305Z INFO  [auth-service] Session refreshed
+2026-03-14T09:12:43.749Z DEBUG [order-service] Cache hit ratio 89 for key namespace orders
+2026-03-14T09:12:44.844Z INFO  [payment-service] Payment authorized in 132ms

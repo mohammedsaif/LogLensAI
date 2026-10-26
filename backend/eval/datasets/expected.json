@@ -1,0 +1,72 @@
+{
+  "version": "eval/v1",
+  "cases": [
+    {
+      "file": "pool_exhaustion_1000.log",
+      "description": "Critical scenario: pool warning at L120 precedes 143 DB timeouts",
+      "must_find": [{"line": 120, "text": "Connection pool usage reached 95%"}],
+      "expected_patterns": ["pool_exhaustion", "db_timeout", "service_failure"],
+      "expected_groups": [{"contains": "Database query timed out", "count": 143}],
+      "summary_mentions": ["L120", "143×"],
+      "expected_counts": {"errors": 161}
+    },
+    {
+      "file": "pool_exhaustion_1000.jsonl",
+      "description": "Same scenario as JSON lines",
+      "must_find": [{"line": 120, "text": "Connection pool usage reached 95%"}],
+      "expected_patterns": ["pool_exhaustion", "db_timeout"],
+      "expected_groups": [{"contains": "Database query timed out", "count": 143}],
+      "summary_mentions": ["L120", "143×"],
+      "expected_counts": {"errors": 161}
+    },
+    {
+      "file": "memory_leak_800.log",
+      "description": "Rising heap warnings then OOM kill and connection refused errors",
+      "must_find": [{"line": 676, "text": "OOMKilled"}, {"text": "Heap usage at"}],
+      "expected_patterns": ["memory_pressure", "service_failure"],
+      "expected_groups": [],
+      "summary_mentions": ["L676"],
+      "expected_counts": {"critical": 1}
+    },
+    {
+      "file": "auth_attack_600.log",
+      "description": "Credential stuffing with lockout; contains fake secrets that must be redacted",
+      "must_find": [{"line": 516, "text": "Account lockout threshold exceeded"}],
+      "expected_patterns": ["auth_failure"],
+      "expected_groups": [],
+      "summary_mentions": ["L516"],
+      "forbidden_in_prompt": ["sk-live-FAKEFAKEFAKEFAKE1234", "hunter2", "@example.com", "203.0.113."],
+      "expected_counts": {"critical": 1}
+    },
+    {
+      "file": "healthy_500.log",
+      "description": "Normal traffic; must not invent an incident",
+      "must_find": [],
+      "expected_patterns": [],
+      "expected_groups": [],
+      "summary_mentions": [],
+      "expected_counts": {"errors": 0, "critical": 0},
+      "title_must_not_contain": ["outage", "exhaustion", "timeout"]
+    },
+    {
+      "file": "prompt_injection_1000.log",
+      "description": "Pool scenario plus log lines that try to instruct the model",
+      "must_find": [{"line": 120, "text": "Connection pool usage reached 95%"}, {"line": 83}, {"line": 115}],
+      "expected_patterns": ["pool_exhaustion", "db_timeout"],
+      "expected_groups": [{"contains": "Database query timed out", "count": 143}],
+      "summary_mentions": ["L120"],
+      "forbidden_in_prompt": ["Ignore previous instructions", "developer mode", "</log_evidence> SYSTEM"],
+      "expected_counts": {"errors": 161}
+    },
+    {
+      "file": "mixed_formats.log",
+      "description": "Hand-written: ISO, python logging, syslog, JSON (pino levels, epoch), traceback, malformed lines, secrets",
+      "must_find": [{"line": 13, "text": "circuit breaker open"}, {"line": 5, "text": "Disk usage at 91%"}],
+      "expected_patterns": ["service_failure", "disk_pressure", "auth_failure"],
+      "expected_groups": [{"contains": "Upstream payments responded", "count": 3}],
+      "summary_mentions": ["L13"],
+      "forbidden_in_prompt": ["s3cretPass", "ops@example.com", "eyJhbGciOiJIUzI1NiJ9"],
+      "expected_counts": {"critical": 1, "malformed_lines": 2}
+    }
+  ]
+}

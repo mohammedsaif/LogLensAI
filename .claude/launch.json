@@ -1,0 +1,18 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "loglens-backend",
+      "runtimeExecutable": "C:\Users\Dell\Searches\loglens-ai\backend\.venv\Scripts\uvicorn.exe",
+      "runtimeArgs": ["app.main:create_app", "--factory", "--port", "8000", "--app-dir", "C:\Users\Dell\Searches\loglens-ai\backend"],
+      "cwd": "C:\Users\Dell\Searches\loglens-ai\backend",
+      "port": 8000
+    },
+    {
+      "name": "loglens-frontend",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev", "--prefix", "C:\Users\Dell\Searches\loglens-ai\frontend"],
+      "port": 5173
+    }
+  ]
+}

@@ -1,0 +1,1000 @@
+2026-03-14T09:00:01.787Z DEBUG [auth-service] Token validated for client web-7
+2026-03-14T09:00:03.112Z INFO  [payment-service] Payment authorized in 229ms
+2026-03-14T09:00:04.821Z INFO  [auth-service] Session refreshed
+2026-03-14T09:00:06.722Z INFO  [api-gateway] POST /api/cart 201 59ms
+2026-03-14T09:00:08.330Z DEBUG [order-service] Cache hit ratio 84 for key namespace orders
+2026-03-14T09:00:09.388Z INFO  [api-gateway] POST /api/cart 201 89ms
+2026-03-14T09:00:10.629Z DEBUG [auth-service] Token validated for client web-6
+2026-03-14T09:00:12.825Z INFO  [api-gateway] GET /api/orders/6639 200 44ms
+2026-03-14T09:00:14.439Z INFO  [payment-service] Payment authorized in 97ms
+2026-03-14T09:00:14.945Z INFO  [api-gateway] POST /api/cart 201 65ms
+2026-03-14T09:00:15.883Z INFO  [api-gateway] POST /api/cart 201 10ms
+2026-03-14T09:00:17.204Z INFO  [api-gateway] GET /api/orders/2883 200 70ms
+2026-03-14T09:00:17.911Z DEBUG [order-service] Cache hit ratio 89 for key namespace orders
+2026-03-14T09:00:19.207Z DEBUG [order-service] Cache hit ratio 86 for key namespace orders
+2026-03-14T09:00:20.439Z DEBUG [auth-service] Token validated for client web-2
+2026-03-14T09:00:21.723Z INFO  [api-gateway] GET /api/orders/8339 200 58ms
+2026-03-14T09:00:22.758Z DEBUG [order-service] Cache hit ratio 89 for key namespace orders
+2026-03-14T09:00:24.674Z DEBUG [order-service] Cache hit ratio 86 for key namespace orders
+2026-03-14T09:00:25.328Z INFO  [inventory-service] Reserved 1 units of SKU-891
+2026-03-14T09:00:25.960Z DEBUG [auth-service] Token validated for client web-9
+2026-03-14T09:00:28.133Z INFO  [auth-service] Session refreshed
+2026-03-14T09:00:29.673Z DEBUG [order-service] Cache hit ratio 88 for key namespace orders
+2026-03-14T09:00:31.528Z INFO  [api-gateway] POST /api/cart 201 90ms
+2026-03-14T09:00:31.972Z INFO  [auth-service] Session refreshed
+2026-03-14T09:00:32.780Z INFO  [auth-service] Session refreshed
+2026-03-14T09:00:34.499Z DEBUG [order-service] Cache hit ratio 83 for key namespace orders
+2026-03-14T09:00:35.965Z INFO  [payment-service] Payment authorized in 283ms
+2026-03-14T09:00:37.756Z DEBUG [auth-service] Token validated for client web-7
+2026-03-14T09:00:38.716Z INFO  [api-gateway] GET /api/orders/9169 200 48ms
+2026-03-14T09:00:39.233Z DEBUG [auth-service] Token validated for client web-1
+2026-03-14T09:00:40.006Z INFO  [order-service] Order 52940 created for customer 475
+2026-03-14T09:00:40.734Z DEBUG [auth-service] Token validated for client web-2
+2026-03-14T09:00:42.451Z DEBUG [auth-service] Token validated for client web-1
+2026-03-14T09:00:44.446Z INFO  [payment-service] Payment authorized in 116ms
+2026-03-14T09:00:45.030Z DEBUG [order-service] Cache hit ratio 84 for key namespace orders
+2026-03-14T09:00:46.571Z INFO  [payment-service] Payment authorized in 131ms
+2026-03-14T09:00:48.148Z INFO  [auth-service] Session refreshed
+2026-03-14T09:00:48.759Z INFO  [order-service] Order 20934 created for customer 108
+2026-03-14T09:00:50.155Z INFO  [order-service] Order 76127 created for customer 191
+2026-03-14T09:00:50.920Z DEBUG [order-service] Cache hit ratio 95 for key namespace orders
+2026-03-14T09:00:51.619Z INFO  [api-gateway] POST /api/cart 201 63ms
+2026-03-14T09:00:52.696Z DEBUG [order-service] Cache hit ratio 96 for key namespace orders
+2026-03-14T09:00:53.397Z INFO  [payment-service] Payment authorized in 239ms
+2026-03-14T09:00:55.015Z DEBUG [order-service] Cache hit ratio 89 for key namespace orders
+2026-03-14T09:00:55.474Z INFO  [inventory-service] Reserved 1 units of SKU-859
+2026-03-14T09:00:57.601Z INFO  [inventory-service] Reserved 3 units of SKU-942
+2026-03-14T09:00:59.354Z INFO  [auth-service] Session refreshed
+2026-03-14T09:01:00.330Z INFO  [payment-service] Payment authorized in 180ms
+2026-03-14T09:01:01.810Z INFO  [inventory-service] Reserved 1 units of SKU-889
+2026-03-14T09:01:03.303Z INFO  [auth-service] Session refreshed
+2026-03-14T09:01:04.238Z INFO  [order-service] Order 83489 created for customer 235
+2026-03-14T09:01:05.509Z INFO  [payment-service] Payment authorized in 203ms
+2026-03-14T09:01:06.847Z INFO  [auth-service] Session refreshed
+2026-03-14T09:01:07.316Z INFO  [inventory-service] Reserved 4 units of SKU-340
+2026-03-14T09:01:07.899Z DEBUG [order-service] Cache hit ratio 82 for key namespace orders
+2026-03-14T09:01:09.024Z INFO  [auth-service] Session refreshed
+2026-03-14T09:01:10.646Z INFO  [api-gateway] POST /api/cart 201 14ms
+2026-03-14T09:01:11.734Z INFO  [api-gateway] POST /api/cart 201 72ms
+2026-03-14T09:01:12.780Z DEBUG [auth-service] Token validated for client web-4
+2026-03-14T09:01:13.796Z INFO  [api-gateway] POST /api/cart 201 20ms
+2026-03-14T09:01:15.309Z DEBUG [order-service] Cache hit ratio 95 for key namespace orders
+2026-03-14T09:01:16.565Z INFO  [inventory-service] Reserved 2 units of SKU-950
+2026-03-14T09:01:17.856Z INFO  [payment-service] Payment authorized in 182ms
+2026-03-14T09:01:18.358Z DEBUG [auth-service] Token validated for client web-5
+2026-03-14T09:01:19.350Z INFO  [inventory-service] Reserved 3 units of SKU-165
+2026-03-14T09:01:21.083Z INFO  [order-service] Order 94791 created for customer 159
+2026-03-14T09:01:22.541Z INFO  [order-service] Order 56622 created for customer 218
+2026-03-14T09:01:23.132Z INFO  [api-gateway] POST /api/cart 201 72ms
+2026-03-14T09:01:24.953Z INFO  [api-gateway] GET /api/orders/8844 200 48ms
+2026-03-14T09:01:25.354Z INFO  [api-gateway] GET /api/orders/4747 200 22ms
+2026-03-14T09:01:26.007Z INFO  [payment-service] Payment authorized in 79ms
+2026-03-14T09:01:28.010Z DEBUG [order-service] Cache hit ratio 93 for key namespace orders
+2026-03-14T09:01:28.932Z DEBUG [auth-service] Token validated for client web-4
+2026-03-14T09:01:30.293Z INFO  [auth-service] Session refreshed
+2026-03-14T09:01:31.773Z INFO  [api-gateway] POST /api/cart 201 18ms
+2026-03-14T09:01:33.011Z INFO  [payment-service] Payment authorized in 93ms
+2026-03-14T09:01:34.633Z INFO  [payment-service] Payment authorized in 263ms
+2026-03-14T09:01:36.107Z INFO  [api-gateway] GET /api/orders/1024 200 59ms
+2026-03-14T09:01:36.745Z INFO  [api-gateway] GET /api/orders/8038 200 13ms
+2026-03-14T09:01:37.949Z INFO  [payment-service] Payment authorized in 191ms
+2026-03-14T09:01:39.395Z INFO  [inventory-service] Reserved 5 units of SKU-995
+2026-03-14T09:01:40.497Z DEBUG [order-service] Cache hit ratio 82 for key namespace orders
+2026-03-14T09:01:41.923Z INFO  [inventory-service] Reserved 4 units of SKU-707
+2026-03-14T09:01:44.054Z INFO  [order-service] Order 37720 created for customer 827
+2026-03-14T09:01:45.917Z INFO  [auth-service] Session refreshed
+2026-03-14T09:01:46.638Z DEBUG [order-service] Cache hit ratio 84 for key namespace orders
+2026-03-14T09:01:48.470Z INFO  [auth-service] Session refreshed
+2026-03-14T09:01:49.513Z INFO  [auth-service] Session refreshed
+2026-03-14T09:01:50.499Z INFO  [auth-service] Session refreshed
+2026-03-14T09:01:52.360Z DEBUG [auth-service] Token validated for client web-5
+2026-03-14T09:01:52.830Z DEBUG [auth-service] Token validated for client web-2
+2026-03-14T09:01:54.998Z INFO  [auth-service] Session refreshed
+2026-03-14T09:01:56.028Z INFO  [inventory-service] Reserved 4 units of SKU-423
+2026-03-14T09:01:57.088Z INFO  [payment-service] Payment authorized in 149ms
+2026-03-14T09:01:57.542Z INFO  [inventory-service] Reserved 1 units of SKU-652
+2026-03-14T09:01:58.244Z INFO  [payment-service] Payment authorized in 204ms
+2026-03-14T09:01:59.768Z DEBUG [order-service] Cache hit ratio 86 for key namespace orders
+2026-03-14T09:02:01.048Z INFO  [order-service] Order 29038 created for customer 602
+2026-03-14T09:02:01.861Z INFO  [order-service] Order 57396 created for customer 224
+2026-03-14T09:02:02.479Z INFO  [payment-service] Payment authorized in 105ms
+2026-03-14T09:02:04.098Z INFO  [api-gateway] GET /api/orders/8285 200 47ms
+2026-03-14T09:02:05.837Z INFO  [api-gateway] GET /api/orders/9373 200 56ms
+2026-03-14T09:02:06.522Z DEBUG [auth-service] Token validated for client web-1
+2026-03-14T09:02:08.641Z DEBUG [auth-service] Token validated for client web-3
+2026-03-14T09:02:09.999Z INFO  [auth-service] Session refreshed
+2026-03-14T09:02:12.117Z DEBUG [order-service] Cache hit ratio 85 for key namespace orders
+2026-03-14T09:02:13.453Z INFO  [api-gateway] GET /api/orders/5046 200 46ms
+2026-03-14T09:02:14.220Z INFO  [payment-service] Payment authorized in 144ms
+2026-03-14T09:02:16.377Z INFO  [payment-service] Payment authorized in 290ms
+2026-03-14T09:02:17.496Z WARN  [payment-service] Retrying webhook delivery (attempt 2/5)
+2026-03-14T09:02:18.331Z INFO  [payment-service] Payment authorized in 159ms
+2026-03-14T09:02:19.789Z INFO  [payment-service] Payment authorized in 113ms
+2026-03-14T09:02:20.316Z INFO  [api-gateway] GET /api/orders/6962 200 23ms
+2026-03-14T09:02:20.895Z INFO  [inventory-service] Reserved 5 units of SKU-671
+2026-03-14T09:02:22.419Z INFO  [payment-service] Payment authorized in 129ms
+2026-03-14T09:02:24.513Z INFO  [api-gateway] GET /api/orders/3089 200 41ms
+2026-03-14T09:02:25.664Z INFO  [payment-service] Payment authorized in 139ms
+2026-03-14T09:02:27.017Z INFO  [inventory-service] Reserved 5 units of SKU-373
+2026-03-14T09:02:28.062Z INFO  [api-gateway] POST /api/cart 201 37ms
+2026-03-14T09:02:29.232Z WARN  [order-service] Connection pool usage reached 95%
+2026-03-14T09:02:30.351Z INFO  [order-service] Order 22730 created for customer 350
+2026-03-14T09:02:32.550Z INFO  [payment-service] Payment authorized in 65ms
+2026-03-14T09:02:33.676Z WARN  [payment-service] Retrying webhook delivery (attempt 2/5)
+2026-03-14T09:02:35.153Z INFO  [auth-service] Session refreshed
+2026-03-14T09:02:35.697Z INFO  [auth-service] Session refreshed
+2026-03-14T09:02:37.241Z INFO  [auth-service] Session refreshed
+2026-03-14T09:02:39.224Z INFO  [inventory-service] Reserved 1 units of SKU-168
+2026-03-14T09:02:39.949Z INFO  [payment-service] Payment authorized in 228ms
+2026-03-14T09:02:41.601Z INFO  [auth-service] Session refreshed
+2026-03-14T09:02:43.450Z INFO  [auth-service] Session refreshed
+2026-03-14T09:02:44.397Z INFO  [order-service] Order 83368 created for customer 265
+2026-03-14T09:02:46.026Z INFO  [inventory-service] Reserved 1 units of SKU-167
+2026-03-14T09:02:46.934Z DEBUG [auth-service] Token validated for client web-2
+2026-03-14T09:02:47.738Z DEBUG [auth-service] Token validated for client web-6
+2026-03-14T09:02:48.697Z DEBUG [auth-service] Token validated for client web-2
+2026-03-14T09:02:49.686Z DEBUG [auth-service] Token validated for client web-6
+2026-03-14T09:02:50.845Z INFO  [api-gateway] GET /api/orders/8034 200 11ms
+2026-03-14T09:02:52.060Z INFO  [api-gateway] POST /api/cart 201 65ms
+2026-03-14T09:02:52.663Z DEBUG [order-service] Cache hit ratio 84 for key namespace orders
+2026-03-14T09:02:54.717Z INFO  [order-service] Order 32748 created for customer 648
+2026-03-14T09:02:56.542Z INFO  [api-gateway] GET /api/orders/7684 200 91ms
+2026-03-14T09:02:58.174Z INFO  [api-gateway] POST /api/cart 201 90ms
+2026-03-14T09:02:59.417Z INFO  [api-gateway] GET /api/orders/3211 200 110ms
+2026-03-14T09:03:00.110Z INFO  [auth-service] Session refreshed
+2026-03-14T09:03:02.128Z INFO  [auth-service] Session refreshed
+2026-03-14T09:03:03.615Z INFO  [api-gateway] POST /api/cart 201 73ms
+2026-03-14T09:03:05.792Z INFO  [order-service] Order 85460 created for customer 185
+2026-03-14T09:03:06.972Z INFO  [payment-service] Payment authorized in 152ms
+2026-03-14T09:03:08.302Z WARN  [payment-service] Retrying webhook delivery (attempt 2/5)
+2026-03-14T09:03:09.971Z INFO  [inventory-service] Reserved 5 units of SKU-436
+2026-03-14T09:03:12.027Z INFO  [payment-service] Payment authorized in 240ms
+2026-03-14T09:03:13.386Z INFO  [payment-service] Payment authorized in 125ms
+2026-03-14T09:03:14.859Z INFO  [payment-service] Payment authorized in 217ms
+2026-03-14T09:03:15.895Z INFO  [order-service] Order 44316 created for customer 336
+2026-03-14T09:03:16.569Z INFO  [api-gateway] POST /api/cart 201 55ms
+2026-03-14T09:03:18.276Z INFO  [api-gateway] POST /api/cart 201 78ms
+2026-03-14T09:03:20.003Z DEBUG [auth-service] Token validated for client web-3
+2026-03-14T09:03:21.130Z INFO  [auth-service] Session refreshed
+2026-03-14T09:03:22.685Z INFO  [inventory-service] Reserved 1 units of SKU-346
+2026-03-14T09:03:23.736Z INFO  [inventory-service] Reserved 5 units of SKU-857
+2026-03-14T09:03:25.884Z INFO  [api-gateway] GET /api/orders/8765 200 91ms
+2026-03-14T09:03:26.525Z INFO  [inventory-service] Reserved 5 units of SKU-644
+2026-03-14T09:03:28.603Z INFO  [payment-service] Payment authorized in 257ms
+2026-03-14T09:03:30.578Z DEBUG [auth-service] Token validated for client web-5
+2026-03-14T09:03:32.711Z INFO  [inventory-service] Reserved 5 units of SKU-431
+2026-03-14T09:03:33.554Z INFO  [order-service] Order 64778 created for customer 324
+2026-03-14T09:03:35.506Z INFO  [api-gateway] GET /api/orders/7829 200 21ms
+2026-03-14T09:03:37.667Z INFO  [order-service] Order 20748 created for customer 636
+2026-03-14T09:03:39.093Z INFO  [api-gateway] GET /api/orders/1159 200 95ms
+2026-03-14T09:03:40.687Z DEBUG [auth-service] Token validated for client web-4
+2026-03-14T09:03:42.154Z INFO  [order-service] Order 41568 created for customer 206
+2026-03-14T09:03:42.881Z INFO  [api-gateway] POST /api/cart 201 85ms
+2026-03-14T09:03:43.320Z INFO  [api-gateway] GET /api/orders/3746 200 59ms
+2026-03-14T09:03:45.281Z DEBUG [auth-service] Token validated for client web-8
+2026-03-14T09:03:47.176Z INFO  [inventory-service] Reserved 4 units of SKU-497
+2026-03-14T09:03:47.640Z INFO  [inventory-service] Reserved 4 units of SKU-663
+2026-03-14T09:03:49.027Z INFO  [api-gateway] POST /api/cart 201 63ms
+2026-03-14T09:03:50.255Z INFO  [order-service] Order 73735 created for customer 736
+2026-03-14T09:03:51.402Z DEBUG [auth-service] Token validated for client web-3
+2026-03-14T09:03:52.975Z INFO  [payment-service] Payment authorized in 120ms
+2026-03-14T09:03:54.022Z INFO  [api-gateway] GET /api/orders/9738 200 23ms
+2026-03-14T09:03:55.187Z INFO  [auth-service] Session refreshed
+2026-03-14T09:03:55.911Z INFO  [api-gateway] GET /api/orders/9489 200 98ms
+2026-03-14T09:03:57.411Z DEBUG [auth-service] Token validated for client web-1
+2026-03-14T09:03:59.055Z INFO  [api-gateway] POST /api/cart 201 75ms
+2026-03-14T09:03:59.759Z DEBUG [order-service] Cache hit ratio 89 for key namespace orders
+2026-03-14T09:04:00.509Z DEBUG [order-service] Cache hit ratio 85 for key namespace orders
+2026-03-14T09:04:00.982Z DEBUG [order-service] Cache hit ratio 83 for key namespace orders
+2026-03-14T09:04:02.504Z DEBUG [auth-service] Token validated for client web-3
+2026-03-14T09:04:04.033Z DEBUG [order-service] Cache hit ratio 86 for key namespace orders
+2026-03-14T09:04:05.277Z DEBUG [order-service] Cache hit ratio 89 for key namespace orders
+2026-03-14T09:04:06.340Z DEBUG [auth-service] Token validated for client web-9
+2026-03-14T09:04:07.682Z INFO  [order-service] Order 68983 created for customer 999
+2026-03-14T09:04:08.306Z DEBUG [auth-service] Token validated for client web-7
+2026-03-14T09:04:08.833Z INFO  [api-gateway] GET /api/orders/5715 200 63ms
+2026-03-14T09:04:09.845Z DEBUG [auth-service] Token validated for client web-5
+2026-03-14T09:04:11.954Z INFO  [api-gateway] POST /api/cart 201 83ms
+2026-03-14T09:04:13.252Z DEBUG [auth-service] Token validated for client web-2
+2026-03-14T09:04:14.323Z INFO  [payment-service] Payment authorized in 158ms
+2026-03-14T09:04:16.152Z INFO  [inventory-service] Reserved 5 units of SKU-411
+2026-03-14T09:04:16.799Z INFO  [order-service] Order 21313 created for customer 883
+2026-03-14T09:04:18.753Z INFO  [payment-service] Payment authorized in 279ms
+2026-03-14T09:04:19.649Z INFO  [auth-service] Session refreshed
+2026-03-14T09:04:20.430Z INFO  [payment-service] Payment authorized in 98ms
+2026-03-14T09:04:20.878Z INFO  [inventory-service] Reserved 1 units of SKU-507
+2026-03-14T09:04:22.417Z INFO  [api-gateway] POST /api/cart 201 38ms
+2026-03-14T09:04:23.377Z INFO  [order-service] Order 18532 created for customer 662
+2026-03-14T09:04:23.972Z INFO  [payment-service] Payment authorized in 110ms
+2026-03-14T09:04:25.781Z DEBUG [order-service] Cache hit ratio 96 for key namespace orders
+2026-03-14T09:04:27.673Z INFO  [order-service] Order 64717 created for customer 743
+2026-03-14T09:04:29.535Z INFO  [order-service] Order 18726 created for customer 694
+2026-03-14T09:04:30.014Z INFO  [payment-service] Payment authorized in 119ms
+2026-03-14T09:04:30.928Z INFO  [api-gateway] POST /api/cart 201 82ms
+2026-03-14T09:04:32.673Z INFO  [payment-service] Payment authorized in 272ms
+2026-03-14T09:04:34.174Z DEBUG [auth-service] Token validated for client web-9
+2026-03-14T09:04:34.821Z DEBUG [order-service] Cache hit ratio 87 for key namespace orders
+2026-03-14T09:04:36.858Z INFO  [api-gateway] GET /api/orders/6874 200 103ms
+2026-03-14T09:04:37.884Z DEBUG [auth-service] Token validated for client web-5
+2026-03-14T09:04:39.368Z DEBUG [auth-service] Token validated for client web-3
+2026-03-14T09:04:40.364Z INFO  [inventory-service] Reserved 3 units of SKU-865
+2026-03-14T09:04:41.358Z DEBUG [auth-service] Token validated for client web-9
+2026-03-14T09:04:42.610Z DEBUG [order-service] Cache hit ratio 99 for key namespace orders
+2026-03-14T09:04:43.139Z INFO  [api-gateway] GET /api/orders/4734 200 27ms
+2026-03-14T09:04:44.600Z INFO  [api-gateway] GET /api/orders/8375 200 43ms
+2026-03-14T09:04:46.646Z DEBUG [auth-service] Token validated for client web-3
+2026-03-14T09:04:48.276Z INFO  [api-gateway] POST /api/cart 201 78ms
+2026-03-14T09:04:48.870Z DEBUG [auth-service] Token validated for client web-3
+2026-03-14T09:04:50.024Z DEBUG [order-service] Cache hit ratio 95 for key namespace orders
+2026-03-14T09:04:51.168Z DEBUG [order-service] Cache hit ratio 97 for key namespace orders
+2026-03-14T09:04:53.338Z DEBUG [auth-service] Token validated for client web-6
+2026-03-14T09:04:55.527Z INFO  [auth-service] Session refreshed
+2026-03-14T09:04:56.254Z DEBUG [order-service] Cache hit ratio 88 for key namespace orders
+2026-03-14T09:04:58.381Z INFO  [auth-service] Session refreshed
+2026-03-14T09:04:59.390Z INFO  [auth-service] Session refreshed
+2026-03-14T09:05:01.356Z INFO  [order-service] Order 34492 created for customer 326
+2026-03-14T09:05:03.517Z INFO  [payment-service] Payment authorized in 193ms
+2026-03-14T09:05:04.311Z INFO  [api-gateway] GET /api/orders/3967 200 105ms
+2026-03-14T09:05:05.893Z INFO  [api-gateway] POST /api/cart 201 17ms
+2026-03-14T09:05:06.528Z INFO  [inventory-service] Reserved 1 units of SKU-216
+2026-03-14T09:05:08.234Z INFO  [api-gateway] GET /api/orders/6642 200 89ms
+2026-03-14T09:05:08.781Z INFO  [auth-service] Session refreshed
+2026-03-14T09:05:10.413Z INFO  [auth-service] Session refreshed
+2026-03-14T09:05:11.370Z DEBUG [order-service] Cache hit ratio 86 for key namespace orders
+2026-03-14T09:05:12.815Z DEBUG [auth-service] Token validated for client web-2
+2026-03-14T09:05:13.520Z DEBUG [auth-service] Token validated for client web-5
+2026-03-14T09:05:14.154Z DEBUG [auth-service] Token validated for client web-6
+2026-03-14T09:05:15.795Z DEBUG [auth-service] Token validated for client web-6
+2026-03-14T09:05:16.891Z INFO  [api-gateway] POST /api/cart 201 47ms
+2026-03-14T09:05:18.826Z INFO  [payment-service] Payment authorized in 79ms
+2026-03-14T09:05:20.004Z INFO  [api-gateway] POST /api/cart 201 52ms
+2026-03-14T09:05:20.624Z INFO  [api-gateway] GET /api/orders/8136 200 74ms
+2026-03-14T09:05:21.618Z INFO  [payment-service] Payment authorized in 190ms
+2026-03-14T09:05:22.774Z INFO  [inventory-service] Reserved 2 units of SKU-528
+2026-03-14T09:05:23.482Z DEBUG [auth-service] Token validated for client web-7
+2026-03-14T09:05:24.069Z INFO  [order-service] Order 17594 created for customer 964
+2026-03-14T09:05:24.744Z INFO  [order-service] Order 14672 created for customer 237
+2026-03-14T09:05:25.912Z DEBUG [order-service] Cache hit ratio 95 for key namespace orders
+2026-03-14T09:05:26.492Z INFO  [auth-service] Session refreshed
+2026-03-14T09:05:28.596Z INFO  [api-gateway] GET /api/orders/2002 200 118ms
+2026-03-14T09:05:29.314Z INFO  [api-gateway] POST /api/cart 201 20ms
+2026-03-14T09:05:30.968Z INFO  [inventory-service] Reserved 2 units of SKU-720
+2026-03-14T09:05:32.543Z DEBUG [order-service] Cache hit ratio 93 for key namespace orders
+2026-03-14T09:05:34.446Z INFO  [inventory-service] Reserved 5 units of SKU-488
+2026-03-14T09:05:35.473Z DEBUG [auth-service] Token validated for client web-9
+2026-03-14T09:05:37.134Z INFO  [inventory-service] Reserved 4 units of SKU-125
+2026-03-14T09:05:38.511Z INFO  [payment-service] Payment authorized in 68ms
+2026-03-14T09:05:40.069Z INFO  [api-gateway] GET /api/orders/5880 200 67ms
+2026-03-14T09:05:41.792Z INFO  [order-service] Order 25656 created for customer 620
+2026-03-14T09:05:42.726Z INFO  [api-gateway] POST /api/cart 201 33ms
+2026-03-14T09:05:43.241Z INFO  [order-service] Order 17359 created for customer 451
+2026-03-14T09:05:43.759Z INFO  [order-service] Order 14110 created for customer 410
+2026-03-14T09:05:45.597Z INFO  [inventory-service] Reserved 5 units of SKU-546
+2026-03-14T09:05:46.987Z DEBUG [auth-service] Token validated for client web-6
+2026-03-14T09:05:47.647Z INFO  [order-service] Order 84508 created for customer 542
+2026-03-14T09:05:48.093Z DEBUG [order-service] Cache hit ratio 88 for key namespace orders
+2026-03-14T09:05:49.032Z DEBUG [auth-service] Token validated for client web-2
+2026-03-14T09:05:50.343Z INFO  [api-gateway] GET /api/orders/7901 200 107ms
+2026-03-14T09:05:52.092Z DEBUG [order-service] Cache hit ratio 99 for key namespace orders
+2026-03-14T09:05:52.606Z INFO  [api-gateway] POST /api/cart 201 90ms
+2026-03-14T09:05:54.189Z WARN  [order-service] Slow query detected: 1218ms (select_order_items)
+2026-03-14T09:05:55.830Z INFO  [api-gateway] POST /api/cart 201 74ms
+2026-03-14T09:05:57.156Z INFO  [auth-service] Session refreshed
+2026-03-14T09:05:58.985Z INFO  [inventory-service] Reserved 4 units of SKU-679
+2026-03-14T09:06:01.090Z INFO  [order-service] Order 29696 created for customer 382
+2026-03-14T09:06:02.506Z INFO  [api-gateway] GET /api/orders/3793 200 103ms
+2026-03-14T09:06:03.718Z INFO  [inventory-service] Reserved 3 units of SKU-872
+2026-03-14T09:06:04.476Z INFO  [api-gateway] POST /api/cart 201 18ms
+2026-03-14T09:06:05.005Z INFO  [api-gateway] GET /api/orders/8193 200 56ms
+2026-03-14T09:06:06.368Z INFO  [api-gateway] POST /api/cart 201 43ms
+2026-03-14T09:06:08.504Z INFO  [payment-service] Payment authorized in 205ms
+2026-03-14T09:06:10.556Z INFO  [payment-service] Payment authorized in 51ms
+2026-03-14T09:06:11.677Z INFO  [order-service] Order 47796 created for customer 455
+2026-03-14T09:06:12.087Z DEBUG [order-service] Cache hit ratio 97 for key namespace orders
+2026-03-14T09:06:14.256Z DEBUG [auth-service] Token validated for client web-3
+2026-03-14T09:06:16.453Z INFO  [inventory-service] Reserved 1 units of SKU-929
+2026-03-14T09:06:17.265Z DEBUG [auth-service] Token validated for client web-4
+2026-03-14T09:06:17.797Z INFO  [inventory-service] Reserved 1 units of SKU-935
+2026-03-14T09:06:18.505Z INFO  [auth-service] Session refreshed
+2026-03-14T09:06:19.391Z INFO  [auth-service] Session refreshed
+2026-03-14T09:06:20.514Z DEBUG [order-service] Cache hit ratio 89 for key namespace orders
+2026-03-14T09:06:22.628Z INFO  [api-gateway] GET /api/orders/4250 200 55ms
+2026-03-14T09:06:23.725Z INFO  [api-gateway] POST /api/cart 201 73ms
+2026-03-14T09:06:24.394Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=2) correlation_id=req-7e6e3b9b
+2026-03-14T09:06:25.539Z INFO  [auth-service] Session refreshed
+2026-03-14T09:06:26.130Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=2) correlation_id=req-9ca6f916
+2026-03-14T09:06:28.190Z INFO  [auth-service] Session refreshed
+2026-03-14T09:06:29.523Z INFO  [api-gateway] GET /api/orders/1408 200 114ms
+2026-03-14T09:06:31.082Z INFO  [api-gateway] POST /api/cart 201 51ms
+2026-03-14T09:06:31.544Z INFO  [api-gateway] POST /api/cart 201 69ms
+2026-03-14T09:06:32.020Z INFO  [api-gateway] GET /api/orders/7088 200 49ms
+2026-03-14T09:06:33.755Z INFO  [inventory-service] Reserved 4 units of SKU-115
+2026-03-14T09:06:34.361Z DEBUG [auth-service] Token validated for client web-3
+2026-03-14T09:06:35.478Z DEBUG [auth-service] Token validated for client web-9
+2026-03-14T09:06:36.667Z INFO  [auth-service] Session refreshed
+2026-03-14T09:06:38.784Z INFO  [order-service] Order 20428 created for customer 358
+2026-03-14T09:06:39.915Z INFO  [payment-service] Payment authorized in 52ms
+2026-03-14T09:06:41.383Z INFO  [auth-service] Session refreshed
+2026-03-14T09:06:42.117Z INFO  [api-gateway] POST /api/cart 201 12ms
+2026-03-14T09:06:43.726Z INFO  [inventory-service] Reserved 3 units of SKU-781
+2026-03-14T09:06:45.847Z DEBUG [order-service] Cache hit ratio 93 for key namespace orders
+2026-03-14T09:06:46.796Z INFO  [api-gateway] GET /api/orders/5194 200 97ms
+2026-03-14T09:06:48.225Z INFO  [auth-service] Session refreshed
+2026-03-14T09:06:49.044Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=1) correlation_id=req-aaaa9d53
+2026-03-14T09:06:49.880Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=1) correlation_id=req-e8521b9a
+2026-03-14T09:06:51.663Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=3) correlation_id=req-4c011919
+2026-03-14T09:06:52.848Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=2) correlation_id=req-577cdbfe
+2026-03-14T09:06:53.555Z INFO  [api-gateway] GET /api/orders/5223 200 101ms
+2026-03-14T09:06:54.142Z INFO  [inventory-service] Reserved 4 units of SKU-521
+2026-03-14T09:06:54.900Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=2) correlation_id=req-78b3bdfd
+2026-03-14T09:06:55.539Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=1) correlation_id=req-7a8b6ad6
+2026-03-14T09:06:56.725Z DEBUG [auth-service] Token validated for client web-2
+2026-03-14T09:06:58.075Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=2) correlation_id=req-09156979
+2026-03-14T09:06:59.674Z INFO  [order-service] Order 35831 created for customer 193
+2026-03-14T09:07:00.118Z INFO  [order-service] Order 30217 created for customer 186
+2026-03-14T09:07:02.219Z DEBUG [order-service] Cache hit ratio 89 for key namespace orders
+2026-03-14T09:07:03.639Z INFO  [order-service] Order 33315 created for customer 169
+2026-03-14T09:07:04.815Z INFO  [inventory-service] Reserved 3 units of SKU-166
+2026-03-14T09:07:06.900Z INFO  [api-gateway] GET /api/orders/5165 200 91ms
+2026-03-14T09:07:08.180Z INFO  [payment-service] Payment authorized in 220ms
+2026-03-14T09:07:10.230Z INFO  [api-gateway] GET /api/orders/3857 200 60ms
+2026-03-14T09:07:11.160Z DEBUG [order-service] Cache hit ratio 94 for key namespace orders
+2026-03-14T09:07:12.055Z DEBUG [order-service] Cache hit ratio 86 for key namespace orders
+2026-03-14T09:07:12.839Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=3) correlation_id=req-606faeac
+2026-03-14T09:07:13.641Z INFO  [order-service] Order 54573 created for customer 256
+2026-03-14T09:07:14.608Z INFO  [api-gateway] POST /api/cart 201 22ms
+2026-03-14T09:07:15.373Z INFO  [api-gateway] GET /api/orders/7489 200 84ms
+2026-03-14T09:07:17.122Z INFO  [order-service] Order 95765 created for customer 221
+2026-03-14T09:07:18.294Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=3) correlation_id=req-bb1e5cfc
+2026-03-14T09:07:20.424Z INFO  [api-gateway] POST /api/cart 201 70ms
+2026-03-14T09:07:22.025Z DEBUG [order-service] Cache hit ratio 87 for key namespace orders
+2026-03-14T09:07:23.574Z INFO  [inventory-service] Reserved 3 units of SKU-425
+2026-03-14T09:07:23.991Z INFO  [payment-service] Payment authorized in 212ms
+2026-03-14T09:07:25.796Z INFO  [payment-service] Payment authorized in 124ms
+2026-03-14T09:07:27.239Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=2) correlation_id=req-c57ddf63
+2026-03-14T09:07:27.640Z DEBUG [order-service] Cache hit ratio 87 for key namespace orders
+2026-03-14T09:07:29.037Z INFO  [inventory-service] Reserved 1 units of SKU-149
+2026-03-14T09:07:31.171Z INFO  [api-gateway] POST /api/cart 201 60ms
+2026-03-14T09:07:31.804Z INFO  [auth-service] Session refreshed
+2026-03-14T09:07:33.243Z DEBUG [order-service] Cache hit ratio 96 for key namespace orders
+2026-03-14T09:07:34.291Z DEBUG [order-service] Cache hit ratio 97 for key namespace orders
+2026-03-14T09:07:35.652Z DEBUG [order-service] Cache hit ratio 85 for key namespace orders
+2026-03-14T09:07:36.573Z INFO  [api-gateway] GET /api/orders/1690 200 116ms
+2026-03-14T09:07:38.241Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=2) correlation_id=req-df64f3d5
+2026-03-14T09:07:38.747Z DEBUG [order-service] Cache hit ratio 86 for key namespace orders
+2026-03-14T09:07:40.186Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=2) correlation_id=req-2a09cb90
+2026-03-14T09:07:42.346Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=1) correlation_id=req-ac98c6f3
+2026-03-14T09:07:43.619Z INFO  [order-service] Order 58250 created for customer 176
+2026-03-14T09:07:45.604Z INFO  [api-gateway] POST /api/cart 201 55ms
+2026-03-14T09:07:46.467Z INFO  [payment-service] Payment authorized in 132ms
+2026-03-14T09:07:48.666Z INFO  [inventory-service] Reserved 2 units of SKU-781
+2026-03-14T09:07:49.272Z INFO  [payment-service] Payment authorized in 224ms
+2026-03-14T09:07:51.283Z INFO  [payment-service] Payment authorized in 99ms
+2026-03-14T09:07:51.759Z INFO  [auth-service] Session refreshed
+2026-03-14T09:07:53.296Z INFO  [auth-service] Session refreshed
+2026-03-14T09:07:54.953Z INFO  [payment-service] Payment authorized in 67ms
+2026-03-14T09:07:56.696Z DEBUG [auth-service] Token validated for client web-6
+2026-03-14T09:07:58.092Z INFO  [api-gateway] GET /api/orders/6448 200 24ms
+2026-03-14T09:07:58.940Z INFO  [inventory-service] Reserved 2 units of SKU-528
+2026-03-14T09:07:59.536Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=2) correlation_id=req-ded9fdd2
+2026-03-14T09:08:01.554Z DEBUG [order-service] Cache hit ratio 83 for key namespace orders
+2026-03-14T09:08:02.406Z DEBUG [auth-service] Token validated for client web-3
+2026-03-14T09:08:04.548Z INFO  [api-gateway] POST /api/cart 201 84ms
+2026-03-14T09:08:05.041Z INFO  [order-service] Order 80067 created for customer 698
+2026-03-14T09:08:05.648Z INFO  [api-gateway] GET /api/orders/7905 200 75ms
+2026-03-14T09:08:07.415Z DEBUG [order-service] Cache hit ratio 95 for key namespace orders
+2026-03-14T09:08:08.891Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=1) correlation_id=req-9de4e9bf
+2026-03-14T09:08:09.950Z INFO  [api-gateway] POST /api/cart 201 56ms
+2026-03-14T09:08:11.987Z DEBUG [auth-service] Token validated for client web-3
+2026-03-14T09:08:13.571Z INFO  [api-gateway] GET /api/orders/8096 200 74ms
+2026-03-14T09:08:14.275Z INFO  [auth-service] Session refreshed
+2026-03-14T09:08:15.740Z DEBUG [order-service] Cache hit ratio 90 for key namespace orders
+2026-03-14T09:08:17.261Z DEBUG [auth-service] Token validated for client web-1
+2026-03-14T09:08:18.221Z INFO  [payment-service] Payment authorized in 195ms
+2026-03-14T09:08:19.701Z INFO  [payment-service] Payment authorized in 109ms
+2026-03-14T09:08:20.225Z INFO  [api-gateway] GET /api/orders/1948 200 52ms
+2026-03-14T09:08:21.575Z INFO  [api-gateway] POST /api/cart 201 74ms
+2026-03-14T09:08:22.230Z DEBUG [auth-service] Token validated for client web-7
+2026-03-14T09:08:24.029Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=2) correlation_id=req-acd62393
+2026-03-14T09:08:25.604Z INFO  [order-service] Order 35882 created for customer 685
+2026-03-14T09:08:27.467Z DEBUG [auth-service] Token validated for client web-7
+2026-03-14T09:08:27.903Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=1) correlation_id=req-d66e667d
+2026-03-14T09:08:29.043Z INFO  [inventory-service] Reserved 2 units of SKU-580
+2026-03-14T09:08:30.349Z INFO  [inventory-service] Reserved 4 units of SKU-978
+2026-03-14T09:08:30.950Z INFO  [api-gateway] GET /api/orders/9393 200 114ms
+2026-03-14T09:08:32.003Z INFO  [payment-service] Payment authorized in 257ms
+2026-03-14T09:08:32.473Z INFO  [inventory-service] Reserved 3 units of SKU-981
+2026-03-14T09:08:33.742Z INFO  [inventory-service] Reserved 2 units of SKU-348
+2026-03-14T09:08:34.917Z INFO  [api-gateway] POST /api/cart 201 85ms
+2026-03-14T09:08:36.917Z INFO  [api-gateway] POST /api/cart 201 24ms
+2026-03-14T09:08:38.896Z INFO  [auth-service] Session refreshed
+2026-03-14T09:08:39.842Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=1) correlation_id=req-64088fe4
+2026-03-14T09:08:40.867Z WARN  [order-service] Slow query detected: 3638ms (select_order_items)
+2026-03-14T09:08:41.529Z INFO  [order-service] Order 62255 created for customer 218
+2026-03-14T09:08:42.117Z INFO  [api-gateway] POST /api/cart 201 84ms
+2026-03-14T09:08:43.069Z INFO  [order-service] Order 93421 created for customer 722
+2026-03-14T09:08:43.916Z DEBUG [order-service] Cache hit ratio 93 for key namespace orders
+2026-03-14T09:08:44.863Z DEBUG [order-service] Cache hit ratio 94 for key namespace orders
+2026-03-14T09:08:46.153Z INFO  [payment-service] Payment authorized in 44ms
+2026-03-14T09:08:46.778Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=2) correlation_id=req-cd6fdf0e
+2026-03-14T09:08:48.911Z INFO  [api-gateway] GET /api/orders/9536 200 38ms
+2026-03-14T09:08:50.671Z DEBUG [auth-service] Token validated for client web-7
+2026-03-14T09:08:51.429Z INFO  [api-gateway] GET /api/orders/3104 200 74ms
+2026-03-14T09:08:52.127Z DEBUG [auth-service] Token validated for client web-4
+2026-03-14T09:08:53.748Z INFO  [api-gateway] POST /api/cart 201 61ms
+2026-03-14T09:08:55.096Z DEBUG [auth-service] Token validated for client web-3
+2026-03-14T09:08:56.551Z DEBUG [order-service] Cache hit ratio 93 for key namespace orders
+2026-03-14T09:08:57.548Z DEBUG [order-service] Cache hit ratio 83 for key namespace orders
+2026-03-14T09:08:59.095Z INFO  [payment-service] Payment authorized in 243ms
+2026-03-14T09:08:59.838Z INFO  [api-gateway] POST /api/cart 201 39ms
+2026-03-14T09:09:00.904Z INFO  [auth-service] Session refreshed
+2026-03-14T09:09:01.734Z INFO  [api-gateway] POST /api/cart 201 25ms
+2026-03-14T09:09:03.859Z DEBUG [auth-service] Token validated for client web-4
+2026-03-14T09:09:05.624Z INFO  [auth-service] Session refreshed
+2026-03-14T09:09:06.375Z INFO  [api-gateway] POST /api/cart 201 17ms
+2026-03-14T09:09:08.278Z INFO  [api-gateway] POST /api/cart 201 66ms
+2026-03-14T09:09:08.962Z INFO  [order-service] Order 46578 created for customer 985
+2026-03-14T09:09:09.709Z INFO  [inventory-service] Reserved 3 units of SKU-785
+2026-03-14T09:09:10.573Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=3) correlation_id=req-e0bd3662
+2026-03-14T09:09:12.663Z INFO  [inventory-service] Reserved 5 units of SKU-750
+2026-03-14T09:09:13.516Z INFO  [inventory-service] Reserved 4 units of SKU-263
+2026-03-14T09:09:14.395Z INFO  [api-gateway] GET /api/orders/8434 200 56ms
+2026-03-14T09:09:16.562Z INFO  [order-service] Order 14506 created for customer 294
+2026-03-14T09:09:18.260Z DEBUG [auth-service] Token validated for client web-6
+2026-03-14T09:09:19.756Z INFO  [api-gateway] POST /api/cart 201 42ms
+2026-03-14T09:09:21.754Z INFO  [order-service] Order 47702 created for customer 451
+2026-03-14T09:09:23.236Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=2) correlation_id=req-6843971d
+2026-03-14T09:09:23.874Z INFO  [auth-service] Session refreshed
+2026-03-14T09:09:25.619Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=3) correlation_id=req-2cc4d3fc
+2026-03-14T09:09:26.177Z INFO  [api-gateway] POST /api/cart 201 24ms
+2026-03-14T09:09:27.559Z INFO  [inventory-service] Reserved 3 units of SKU-745
+2026-03-14T09:09:29.717Z INFO  [auth-service] Session refreshed
+2026-03-14T09:09:30.448Z INFO  [order-service] Order 81326 created for customer 437
+2026-03-14T09:09:31.610Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=3) correlation_id=req-0ce3bb88
+2026-03-14T09:09:33.416Z DEBUG [auth-service] Token validated for client web-9
+2026-03-14T09:09:34.992Z INFO  [api-gateway] GET /api/orders/6333 200 106ms
+2026-03-14T09:09:35.786Z DEBUG [order-service] Cache hit ratio 95 for key namespace orders
+2026-03-14T09:09:36.343Z DEBUG [auth-service] Token validated for client web-2
+2026-03-14T09:09:37.974Z INFO  [api-gateway] POST /api/cart 201 46ms
+2026-03-14T09:09:39.843Z INFO  [payment-service] Payment authorized in 195ms
+2026-03-14T09:09:41.669Z DEBUG [order-service] Cache hit ratio 98 for key namespace orders
+2026-03-14T09:09:42.197Z INFO  [auth-service] Session refreshed
+2026-03-14T09:09:43.682Z INFO  [inventory-service] Reserved 2 units of SKU-254
+2026-03-14T09:09:44.419Z DEBUG [order-service] Cache hit ratio 88 for key namespace orders
+2026-03-14T09:09:45.917Z DEBUG [auth-service] Token validated for client web-3
+2026-03-14T09:09:47.926Z DEBUG [auth-service] Token validated for client web-7
+2026-03-14T09:09:49.739Z INFO  [auth-service] Session refreshed
+2026-03-14T09:09:50.657Z INFO  [order-service] Order 29120 created for customer 408
+2026-03-14T09:09:51.645Z INFO  [api-gateway] POST /api/cart 201 16ms
+2026-03-14T09:09:52.047Z INFO  [inventory-service] Reserved 5 units of SKU-320
+2026-03-14T09:09:52.499Z DEBUG [order-service] Cache hit ratio 82 for key namespace orders
+2026-03-14T09:09:54.281Z INFO  [inventory-service] Reserved 5 units of SKU-270
+2026-03-14T09:09:55.214Z INFO  [order-service] Order 44622 created for customer 371
+2026-03-14T09:09:56.514Z INFO  [payment-service] Payment authorized in 43ms
+2026-03-14T09:09:58.705Z INFO  [auth-service] Session refreshed
+2026-03-14T09:09:59.169Z DEBUG [auth-service] Token validated for client web-2
+2026-03-14T09:10:01.025Z INFO  [order-service] Order 81567 created for customer 193
+2026-03-14T09:10:01.764Z INFO  [order-service] Order 72708 created for customer 300
+2026-03-14T09:10:02.302Z DEBUG [auth-service] Token validated for client web-1
+2026-03-14T09:10:04.267Z INFO  [inventory-service] Reserved 2 units of SKU-996
+2026-03-14T09:10:05.040Z INFO  [order-service] Order 91594 created for customer 991
+2026-03-14T09:10:06.742Z DEBUG [order-service] Cache hit ratio 88 for key namespace orders
+2026-03-14T09:10:08.799Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=3) correlation_id=req-f13eb242
+2026-03-14T09:10:10.817Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=2) correlation_id=req-efe8d96c
+2026-03-14T09:10:11.854Z DEBUG [auth-service] Token validated for client web-1
+2026-03-14T09:10:13.005Z INFO  [order-service] Order 10707 created for customer 124
+2026-03-14T09:10:13.426Z DEBUG [auth-service] Token validated for client web-4
+2026-03-14T09:10:14.492Z DEBUG [order-service] Cache hit ratio 96 for key namespace orders
+2026-03-14T09:10:16.562Z DEBUG [auth-service] Token validated for client web-7
+2026-03-14T09:10:18.151Z INFO  [payment-service] Payment authorized in 41ms
+2026-03-14T09:10:19.615Z INFO  [api-gateway] GET /api/orders/1211 200 38ms
+2026-03-14T09:10:21.715Z INFO  [auth-service] Session refreshed
+2026-03-14T09:10:22.129Z INFO  [inventory-service] Reserved 4 units of SKU-938
+2026-03-14T09:10:24.260Z INFO  [api-gateway] GET /api/orders/2606 200 50ms
+2026-03-14T09:10:25.060Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=3) correlation_id=req-75fb8560
+2026-03-14T09:10:26.868Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=3) correlation_id=req-2da34f0f
+2026-03-14T09:10:28.264Z INFO  [order-service] Order 26771 created for customer 963
+2026-03-14T09:10:29.258Z DEBUG [order-service] Cache hit ratio 84 for key namespace orders
+2026-03-14T09:10:30.391Z INFO  [api-gateway] GET /api/orders/3614 200 111ms
+2026-03-14T09:10:30.915Z INFO  [order-service] Order 23956 created for customer 272
+2026-03-14T09:10:33.000Z INFO  [payment-service] Payment authorized in 279ms
+2026-03-14T09:10:34.670Z INFO  [api-gateway] POST /api/cart 201 23ms
+2026-03-14T09:10:36.738Z INFO  [api-gateway] GET /api/orders/8068 200 118ms
+2026-03-14T09:10:37.460Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=2) correlation_id=req-74fa4922
+2026-03-14T09:10:38.898Z INFO  [auth-service] Session refreshed
+2026-03-14T09:10:39.500Z INFO  [api-gateway] GET /api/orders/7795 200 53ms
+2026-03-14T09:10:41.054Z INFO  [payment-service] Payment authorized in 56ms
+2026-03-14T09:10:42.405Z INFO  [api-gateway] POST /api/cart 201 16ms
+2026-03-14T09:10:43.997Z INFO  [auth-service] Session refreshed
+2026-03-14T09:10:46.139Z INFO  [auth-service] Session refreshed
+2026-03-14T09:10:46.737Z INFO  [inventory-service] Reserved 4 units of SKU-694
+2026-03-14T09:10:48.115Z INFO  [inventory-service] Reserved 3 units of SKU-343
+2026-03-14T09:10:49.644Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=2) correlation_id=req-4ebf72f8
+2026-03-14T09:10:50.658Z DEBUG [order-service] Cache hit ratio 84 for key namespace orders
+2026-03-14T09:10:52.352Z DEBUG [auth-service] Token validated for client web-6
+2026-03-14T09:10:53.581Z INFO  [payment-service] Payment authorized in 199ms
+2026-03-14T09:10:54.694Z WARN  [order-service] Slow query detected: 4567ms (select_order_items)
+2026-03-14T09:10:56.488Z INFO  [api-gateway] GET /api/orders/2353 200 31ms
+2026-03-14T09:10:57.190Z DEBUG [order-service] Cache hit ratio 80 for key namespace orders
+2026-03-14T09:10:58.557Z DEBUG [order-service] Cache hit ratio 98 for key namespace orders
+2026-03-14T09:11:00.607Z INFO  [inventory-service] Reserved 3 units of SKU-401
+2026-03-14T09:11:01.130Z DEBUG [auth-service] Token validated for client web-2
+2026-03-14T09:11:03.051Z INFO  [api-gateway] POST /api/cart 201 63ms
+2026-03-14T09:11:04.336Z INFO  [inventory-service] Reserved 5 units of SKU-992
+2026-03-14T09:11:05.342Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=2) correlation_id=req-8157fe3b
+2026-03-14T09:11:07.379Z INFO  [api-gateway] GET /api/orders/9139 200 100ms
+2026-03-14T09:11:09.123Z INFO  [payment-service] Payment authorized in 145ms
+2026-03-14T09:11:09.892Z INFO  [order-service] Order 32205 created for customer 837
+2026-03-14T09:11:10.786Z INFO  [auth-service] Session refreshed
+2026-03-14T09:11:12.482Z INFO  [order-service] Order 59252 created for customer 815
+2026-03-14T09:11:13.131Z INFO  [api-gateway] POST /api/cart 201 82ms
+2026-03-14T09:11:13.934Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=2) correlation_id=req-5ff4de23
+2026-03-14T09:11:15.220Z DEBUG [auth-service] Token validated for client web-1
+2026-03-14T09:11:16.913Z DEBUG [order-service] Cache hit ratio 96 for key namespace orders
+2026-03-14T09:11:18.917Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=3) correlation_id=req-54dbcb5c
+2026-03-14T09:11:19.907Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=1) correlation_id=req-88cf77dd
+2026-03-14T09:11:21.968Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=1) correlation_id=req-512bbcc9
+2026-03-14T09:11:23.566Z DEBUG [auth-service] Token validated for client web-9
+2026-03-14T09:11:24.515Z DEBUG [order-service] Cache hit ratio 98 for key namespace orders
+2026-03-14T09:11:25.290Z DEBUG [order-service] Cache hit ratio 81 for key namespace orders
+2026-03-14T09:11:26.199Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=3) correlation_id=req-91b7ef49
+2026-03-14T09:11:27.478Z INFO  [order-service] Order 92878 created for customer 532
+2026-03-14T09:11:29.252Z INFO  [auth-service] Session refreshed
+2026-03-14T09:11:29.832Z INFO  [api-gateway] GET /api/orders/3655 200 19ms
+2026-03-14T09:11:31.223Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=2) correlation_id=req-31b5c407
+2026-03-14T09:11:31.761Z INFO  [auth-service] Session refreshed
+2026-03-14T09:11:32.558Z INFO  [inventory-service] Reserved 4 units of SKU-325
+2026-03-14T09:11:33.075Z INFO  [payment-service] Payment authorized in 251ms
+2026-03-14T09:11:34.523Z DEBUG [order-service] Cache hit ratio 92 for key namespace orders
+2026-03-14T09:11:36.500Z INFO  [auth-service] Session refreshed
+2026-03-14T09:11:38.042Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=2) correlation_id=req-5f16440d
+2026-03-14T09:11:39.060Z INFO  [auth-service] Session refreshed
+2026-03-14T09:11:40.453Z INFO  [api-gateway] GET /api/orders/2145 200 68ms
+2026-03-14T09:11:40.993Z INFO  [payment-service] Payment authorized in 137ms
+2026-03-14T09:11:42.573Z INFO  [order-service] Order 36113 created for customer 502
+2026-03-14T09:11:43.761Z INFO  [auth-service] Session refreshed
+2026-03-14T09:11:45.722Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=3) correlation_id=req-08dbc84c
+2026-03-14T09:11:47.143Z INFO  [api-gateway] POST /api/cart 201 83ms
+2026-03-14T09:11:48.501Z INFO  [order-service] Order 26699 created for customer 446
+2026-03-14T09:11:49.696Z ERROR [api-gateway] Upstream order-service responded 503 Service Unavailable correlation_id=req-9fee26f0
+2026-03-14T09:11:51.691Z DEBUG [order-service] Cache hit ratio 89 for key namespace orders
+2026-03-14T09:11:53.467Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=2) correlation_id=req-cf47b027
+2026-03-14T09:11:54.902Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=1) correlation_id=req-7f4b9638
+2026-03-14T09:11:57.001Z INFO  [api-gateway] POST /api/cart 201 12ms
+2026-03-14T09:11:57.764Z ERROR [api-gateway] Upstream order-service responded 503 Service Unavailable correlation_id=req-584178b7
+2026-03-14T09:11:58.881Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=1) correlation_id=req-e615d2f8
+2026-03-14T09:11:59.640Z INFO  [payment-service] Payment authorized in 117ms
+2026-03-14T09:12:01.348Z INFO  [api-gateway] GET /api/orders/7177 200 74ms
+2026-03-14T09:12:02.908Z INFO  [api-gateway] GET /api/orders/1434 200 68ms
+2026-03-14T09:12:04.924Z INFO  [api-gateway] POST /api/cart 201 86ms
+2026-03-14T09:12:05.410Z INFO  [auth-service] Session refreshed
+2026-03-14T09:12:06.937Z INFO  [payment-service] Payment authorized in 218ms
+2026-03-14T09:12:08.714Z INFO  [api-gateway] POST /api/cart 201 84ms
+2026-03-14T09:12:09.556Z DEBUG [order-service] Cache hit ratio 95 for key namespace orders
+2026-03-14T09:12:11.457Z INFO  [payment-service] Payment authorized in 192ms
+2026-03-14T09:12:13.563Z DEBUG [order-service] Cache hit ratio 83 for key namespace orders
+2026-03-14T09:12:14.351Z INFO  [api-gateway] POST /api/cart 201 81ms
+2026-03-14T09:12:15.070Z INFO  [auth-service] Session refreshed
+2026-03-14T09:12:16.038Z DEBUG [auth-service] Token validated for client web-7
+2026-03-14T09:12:17.609Z INFO  [inventory-service] Reserved 4 units of SKU-150
+2026-03-14T09:12:19.222Z DEBUG [auth-service] Token validated for client web-7
+2026-03-14T09:12:20.763Z INFO  [api-gateway] GET /api/orders/7465 200 38ms
+2026-03-14T09:12:22.453Z INFO  [order-service] Order 58211 created for customer 638
+2026-03-14T09:12:23.444Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=1) correlation_id=req-6b0aa987
+2026-03-14T09:12:24.330Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=1) correlation_id=req-6785b787
+2026-03-14T09:12:26.345Z INFO  [auth-service] Session refreshed
+2026-03-14T09:12:28.437Z INFO  [auth-service] Session refreshed
+2026-03-14T09:12:29.203Z INFO  [auth-service] Session refreshed
+2026-03-14T09:12:30.689Z INFO  [api-gateway] POST /api/cart 201 21ms
+2026-03-14T09:12:31.908Z INFO  [inventory-service] Reserved 4 units of SKU-612
+2026-03-14T09:12:33.102Z INFO  [auth-service] Session refreshed
+2026-03-14T09:12:33.567Z DEBUG [auth-service] Token validated for client web-8
+2026-03-14T09:12:34.922Z INFO  [payment-service] Payment authorized in 277ms
+2026-03-14T09:12:36.617Z INFO  [inventory-service] Reserved 4 units of SKU-152
+2026-03-14T09:12:37.881Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=1) correlation_id=req-f68ae925
+2026-03-14T09:12:38.570Z INFO  [api-gateway] POST /api/cart 201 25ms
+2026-03-14T09:12:39.057Z INFO  [auth-service] Session refreshed
+2026-03-14T09:12:40.788Z INFO  [api-gateway] POST /api/cart 201 52ms
+2026-03-14T09:12:41.663Z DEBUG [auth-service] Token validated for client web-2
+2026-03-14T09:12:43.051Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=1) correlation_id=req-e84c102d
+2026-03-14T09:12:44.917Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=3) correlation_id=req-ae34041a
+2026-03-14T09:12:45.716Z DEBUG [auth-service] Token validated for client web-7
+2026-03-14T09:12:47.374Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=2) correlation_id=req-42d585fd
+2026-03-14T09:12:49.156Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=2) correlation_id=req-31a8bbcb
+2026-03-14T09:12:50.947Z DEBUG [order-service] Cache hit ratio 80 for key namespace orders
+2026-03-14T09:12:51.853Z INFO  [payment-service] Payment authorized in 148ms
+2026-03-14T09:12:53.438Z DEBUG [order-service] Cache hit ratio 81 for key namespace orders
+2026-03-14T09:12:54.504Z DEBUG [auth-service] Token validated for client web-3
+2026-03-14T09:12:56.562Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=3) correlation_id=req-d053f8e6
+2026-03-14T09:12:57.002Z INFO  [order-service] Order 20621 created for customer 159
+2026-03-14T09:12:59.158Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=1) correlation_id=req-a5216bd3
+2026-03-14T09:13:00.725Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=3) correlation_id=req-13d80c82
+2026-03-14T09:13:02.254Z DEBUG [auth-service] Token validated for client web-2
+2026-03-14T09:13:04.251Z DEBUG [auth-service] Token validated for client web-8
+2026-03-14T09:13:06.282Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=1) correlation_id=req-ccc62f66
+2026-03-14T09:13:08.410Z INFO  [api-gateway] GET /api/orders/8105 200 106ms
+2026-03-14T09:13:09.653Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=2) correlation_id=req-2ce428d5
+2026-03-14T09:13:11.231Z INFO  [auth-service] Session refreshed
+2026-03-14T09:13:13.390Z INFO  [api-gateway] POST /api/cart 201 38ms
+2026-03-14T09:13:14.006Z INFO  [payment-service] Payment authorized in 59ms
+2026-03-14T09:13:15.002Z INFO  [api-gateway] POST /api/cart 201 74ms
+2026-03-14T09:13:16.792Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=3) correlation_id=req-8c39cf28
+2026-03-14T09:13:17.255Z INFO  [api-gateway] GET /api/orders/9978 200 50ms
+2026-03-14T09:13:18.668Z INFO  [api-gateway] GET /api/orders/9124 200 12ms
+2026-03-14T09:13:19.425Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=2) correlation_id=req-2ac6f395
+2026-03-14T09:13:21.080Z DEBUG [auth-service] Token validated for client web-6
+2026-03-14T09:13:22.623Z INFO  [order-service] Order 91584 created for customer 635
+2026-03-14T09:13:23.479Z INFO  [order-service] Order 41850 created for customer 375
+2026-03-14T09:13:24.673Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=1) correlation_id=req-f86ece46
+2026-03-14T09:13:25.473Z INFO  [auth-service] Session refreshed
+2026-03-14T09:13:26.233Z INFO  [payment-service] Payment authorized in 233ms
+2026-03-14T09:13:27.325Z INFO  [auth-service] Session refreshed
+2026-03-14T09:13:28.219Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=2) correlation_id=req-7b5efa65
+2026-03-14T09:13:30.038Z INFO  [payment-service] Payment authorized in 67ms
+2026-03-14T09:13:31.989Z DEBUG [auth-service] Token validated for client web-2
+2026-03-14T09:13:33.315Z INFO  [inventory-service] Reserved 5 units of SKU-275
+2026-03-14T09:13:34.496Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=1) correlation_id=req-9b46e928
+2026-03-14T09:13:36.474Z ERROR [api-gateway] Upstream order-service responded 503 Service Unavailable correlation_id=req-3678eab4
+2026-03-14T09:13:38.437Z DEBUG [auth-service] Token validated for client web-9
+2026-03-14T09:13:39.368Z INFO  [order-service] Order 42978 created for customer 354
+2026-03-14T09:13:40.537Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=1) correlation_id=req-0a7e6af2
+2026-03-14T09:13:41.468Z INFO  [api-gateway] POST /api/cart 201 73ms
+2026-03-14T09:13:41.953Z WARN  [order-service] Slow query detected: 3718ms (select_order_items)
+2026-03-14T09:13:42.866Z INFO  [payment-service] Payment authorized in 74ms
+2026-03-14T09:13:44.826Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=1) correlation_id=req-66bdcbf2
+2026-03-14T09:13:45.782Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=2) correlation_id=req-d97ee8ae
+2026-03-14T09:13:46.842Z INFO  [api-gateway] POST /api/cart 201 87ms
+2026-03-14T09:13:47.346Z DEBUG [order-service] Cache hit ratio 80 for key namespace orders
+2026-03-14T09:13:48.756Z INFO  [order-service] Order 15458 created for customer 573
+2026-03-14T09:13:50.665Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=2) correlation_id=req-f856af54
+2026-03-14T09:13:52.825Z INFO  [api-gateway] POST /api/cart 201 67ms
+2026-03-14T09:13:53.867Z INFO  [payment-service] Payment authorized in 136ms
+2026-03-14T09:13:54.342Z INFO  [payment-service] Payment authorized in 219ms
+2026-03-14T09:13:56.175Z INFO  [api-gateway] POST /api/cart 201 81ms
+2026-03-14T09:13:57.138Z INFO  [payment-service] Payment authorized in 182ms
+2026-03-14T09:13:59.072Z DEBUG [order-service] Cache hit ratio 95 for key namespace orders
+2026-03-14T09:13:59.513Z INFO  [order-service] Order 34104 created for customer 786
+2026-03-14T09:14:01.704Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=3) correlation_id=req-caa002f4
+2026-03-14T09:14:03.490Z DEBUG [auth-service] Token validated for client web-7
+2026-03-14T09:14:03.952Z DEBUG [order-service] Cache hit ratio 97 for key namespace orders
+2026-03-14T09:14:04.787Z INFO  [payment-service] Payment authorized in 266ms
+2026-03-14T09:14:06.251Z INFO  [auth-service] Session refreshed
+2026-03-14T09:14:07.909Z INFO  [order-service] Order 11524 created for customer 767
+2026-03-14T09:14:09.648Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=2) correlation_id=req-525e5e68
+2026-03-14T09:14:10.506Z INFO  [auth-service] Session refreshed
+2026-03-14T09:14:12.525Z INFO  [auth-service] Session refreshed
+2026-03-14T09:14:13.572Z INFO  [api-gateway] GET /api/orders/5534 200 57ms
+2026-03-14T09:14:14.840Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=1) correlation_id=req-bf37ef76
+2026-03-14T09:14:16.040Z INFO  [api-gateway] POST /api/cart 201 17ms
+2026-03-14T09:14:17.559Z INFO  [auth-service] Session refreshed
+2026-03-14T09:14:18.785Z DEBUG [order-service] Cache hit ratio 85 for key namespace orders
+2026-03-14T09:14:19.437Z DEBUG [auth-service] Token validated for client web-2
+2026-03-14T09:14:20.912Z INFO  [auth-service] Session refreshed
+2026-03-14T09:14:22.530Z DEBUG [auth-service] Token validated for client web-1
+2026-03-14T09:14:24.425Z INFO  [api-gateway] GET /api/orders/1317 200 63ms
+2026-03-14T09:14:24.922Z INFO  [order-service] Order 39391 created for customer 592
+2026-03-14T09:14:25.405Z DEBUG [order-service] Cache hit ratio 80 for key namespace orders
+2026-03-14T09:14:26.889Z INFO  [payment-service] Payment authorized in 219ms
+2026-03-14T09:14:27.556Z INFO  [api-gateway] POST /api/cart 201 31ms
+2026-03-14T09:14:28.409Z WARN  [order-service] Slow query detected: 1529ms (select_order_items)
+2026-03-14T09:14:29.811Z INFO  [api-gateway] GET /api/orders/3000 200 20ms
+2026-03-14T09:14:30.307Z INFO  [api-gateway] GET /api/orders/3845 200 41ms
+2026-03-14T09:14:31.308Z DEBUG [order-service] Cache hit ratio 98 for key namespace orders
+2026-03-14T09:14:32.862Z DEBUG [auth-service] Token validated for client web-8
+2026-03-14T09:14:34.277Z DEBUG [auth-service] Token validated for client web-5
+2026-03-14T09:14:36.098Z DEBUG [order-service] Cache hit ratio 90 for key namespace orders
+2026-03-14T09:14:37.367Z INFO  [api-gateway] GET /api/orders/4753 200 26ms
+2026-03-14T09:14:37.988Z INFO  [order-service] Order 70868 created for customer 838
+2026-03-14T09:14:38.516Z INFO  [auth-service] Session refreshed
+2026-03-14T09:14:39.803Z DEBUG [auth-service] Token validated for client web-1
+2026-03-14T09:14:40.454Z INFO  [inventory-service] Reserved 5 units of SKU-169
+2026-03-14T09:14:41.021Z DEBUG [order-service] Cache hit ratio 97 for key namespace orders
+2026-03-14T09:14:41.880Z INFO  [auth-service] Session refreshed
+2026-03-14T09:14:43.545Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=3) correlation_id=req-563064c9
+2026-03-14T09:14:45.550Z DEBUG [order-service] Cache hit ratio 91 for key namespace orders
+2026-03-14T09:14:47.318Z INFO  [api-gateway] GET /api/orders/2112 200 43ms
+2026-03-14T09:14:48.308Z INFO  [api-gateway] GET /api/orders/7494 200 20ms
+2026-03-14T09:14:49.845Z ERROR [api-gateway] Upstream order-service responded 503 Service Unavailable correlation_id=req-ec4ddf7b
+2026-03-14T09:14:51.685Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=2) correlation_id=req-461cb374
+2026-03-14T09:14:52.735Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=1) correlation_id=req-037032f4
+2026-03-14T09:14:53.941Z INFO  [order-service] Order 26863 created for customer 737
+2026-03-14T09:14:55.865Z INFO  [inventory-service] Reserved 5 units of SKU-658
+2026-03-14T09:14:57.395Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=1) correlation_id=req-fb26d611
+2026-03-14T09:14:57.863Z INFO  [api-gateway] POST /api/cart 201 24ms
+2026-03-14T09:14:58.941Z INFO  [api-gateway] GET /api/orders/9156 200 119ms
+2026-03-14T09:15:00.037Z INFO  [api-gateway] GET /api/orders/8656 200 54ms
+2026-03-14T09:15:01.178Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=3) correlation_id=req-0e8f5733
+2026-03-14T09:15:03.343Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=3) correlation_id=req-6ba9e43b
+2026-03-14T09:15:04.563Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=2) correlation_id=req-1abc3e49
+2026-03-14T09:15:06.176Z DEBUG [order-service] Cache hit ratio 87 for key namespace orders
+2026-03-14T09:15:07.656Z DEBUG [auth-service] Token validated for client web-2
+2026-03-14T09:15:09.433Z INFO  [api-gateway] POST /api/cart 201 56ms
+2026-03-14T09:15:10.662Z INFO  [inventory-service] Reserved 4 units of SKU-647
+2026-03-14T09:15:11.706Z DEBUG [order-service] Cache hit ratio 98 for key namespace orders
+2026-03-14T09:15:13.142Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=2) correlation_id=req-11510150
+2026-03-14T09:15:14.979Z INFO  [order-service] Order 92821 created for customer 362
+2026-03-14T09:15:15.732Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=2) correlation_id=req-37554054
+2026-03-14T09:15:16.367Z INFO  [auth-service] Session refreshed
+2026-03-14T09:15:18.529Z INFO  [auth-service] Session refreshed
+2026-03-14T09:15:19.740Z ERROR [api-gateway] Upstream order-service responded 503 Service Unavailable correlation_id=req-15494572
+2026-03-14T09:15:21.861Z INFO  [api-gateway] GET /api/orders/2016 200 17ms
+2026-03-14T09:15:23.781Z INFO  [api-gateway] POST /api/cart 201 74ms
+2026-03-14T09:15:24.710Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=2) correlation_id=req-62d50d24
+2026-03-14T09:15:26.468Z INFO  [auth-service] Session refreshed
+2026-03-14T09:15:27.596Z INFO  [api-gateway] GET /api/orders/6053 200 88ms
+2026-03-14T09:15:28.210Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=2) correlation_id=req-b536bfc0
+2026-03-14T09:15:29.065Z INFO  [payment-service] Payment authorized in 223ms
+2026-03-14T09:15:30.180Z INFO  [order-service] Order 33554 created for customer 892
+2026-03-14T09:15:31.273Z DEBUG [order-service] Cache hit ratio 82 for key namespace orders
+2026-03-14T09:15:33.145Z INFO  [api-gateway] GET /api/orders/9865 200 51ms
+2026-03-14T09:15:33.949Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=1) correlation_id=req-8142c5b2
+2026-03-14T09:15:34.487Z DEBUG [order-service] Cache hit ratio 80 for key namespace orders
+2026-03-14T09:15:35.717Z DEBUG [order-service] Cache hit ratio 98 for key namespace orders
+2026-03-14T09:15:36.664Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=3) correlation_id=req-29dbb916
+2026-03-14T09:15:38.350Z INFO  [payment-service] Payment authorized in 284ms
+2026-03-14T09:15:40.455Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=2) correlation_id=req-37e2c62c
+2026-03-14T09:15:42.527Z DEBUG [order-service] Cache hit ratio 88 for key namespace orders
+2026-03-14T09:15:44.177Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=3) correlation_id=req-3b151a1b
+2026-03-14T09:15:45.869Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=2) correlation_id=req-04b36b16
+2026-03-14T09:15:46.850Z INFO  [api-gateway] POST /api/cart 201 79ms
+2026-03-14T09:15:48.226Z DEBUG [auth-service] Token validated for client web-8
+2026-03-14T09:15:49.926Z INFO  [auth-service] Session refreshed
+2026-03-14T09:15:50.429Z DEBUG [auth-service] Token validated for client web-7
+2026-03-14T09:15:50.856Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=2) correlation_id=req-c1cadc5e
+2026-03-14T09:15:51.853Z INFO  [api-gateway] POST /api/cart 201 60ms
+2026-03-14T09:15:53.149Z DEBUG [order-service] Cache hit ratio 82 for key namespace orders
+2026-03-14T09:15:55.300Z INFO  [api-gateway] POST /api/cart 201 45ms
+2026-03-14T09:15:57.489Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=1) correlation_id=req-94fd3ddc
+2026-03-14T09:15:58.873Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=3) correlation_id=req-912fdfc4
+2026-03-14T09:16:00.881Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=1) correlation_id=req-5834c799
+2026-03-14T09:16:02.902Z INFO  [api-gateway] POST /api/cart 201 65ms
+2026-03-14T09:16:04.480Z INFO  [payment-service] Payment authorized in 218ms
+2026-03-14T09:16:05.626Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=2) correlation_id=req-0aadbf5f
+2026-03-14T09:16:06.723Z INFO  [order-service] Order 24542 created for customer 742
+2026-03-14T09:16:07.821Z ERROR [api-gateway] Upstream order-service responded 503 Service Unavailable correlation_id=req-3b7f559b
+2026-03-14T09:16:09.057Z INFO  [payment-service] Payment authorized in 192ms
+2026-03-14T09:16:09.662Z INFO  [api-gateway] POST /api/cart 201 71ms
+2026-03-14T09:16:11.761Z INFO  [api-gateway] GET /api/orders/6458 200 97ms
+2026-03-14T09:16:12.369Z INFO  [api-gateway] POST /api/cart 201 44ms
+2026-03-14T09:16:13.726Z DEBUG [order-service] Cache hit ratio 95 for key namespace orders
+2026-03-14T09:16:14.300Z INFO  [auth-service] Session refreshed
+2026-03-14T09:16:16.448Z ERROR [api-gateway] Upstream order-service responded 503 Service Unavailable correlation_id=req-856b1ac4
+2026-03-14T09:16:18.270Z INFO  [payment-service] Payment authorized in 257ms
+2026-03-14T09:16:19.246Z ERROR [api-gateway] Upstream order-service responded 503 Service Unavailable correlation_id=req-8b1aadc0
+2026-03-14T09:16:20.861Z DEBUG [order-service] Cache hit ratio 88 for key namespace orders
+2026-03-14T09:16:22.649Z INFO  [order-service] Order 97341 created for customer 677
+2026-03-14T09:16:24.127Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=3) correlation_id=req-16ab8017
+2026-03-14T09:16:24.995Z WARN  [order-service] Slow query detected: 4786ms (select_order_items)
+2026-03-14T09:16:26.860Z DEBUG [auth-service] Token validated for client web-8
+2026-03-14T09:16:28.626Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=3) correlation_id=req-99721664
+2026-03-14T09:16:30.147Z INFO  [auth-service] Session refreshed
+2026-03-14T09:16:31.314Z DEBUG [auth-service] Token validated for client web-6
+2026-03-14T09:16:33.248Z INFO  [order-service] Order 50871 created for customer 323
+2026-03-14T09:16:33.869Z INFO  [auth-service] Session refreshed
+2026-03-14T09:16:34.313Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=2) correlation_id=req-ed244cdb
+2026-03-14T09:16:35.111Z INFO  [inventory-service] Reserved 4 units of SKU-898
+2026-03-14T09:16:36.639Z INFO  [auth-service] Session refreshed
+2026-03-14T09:16:37.931Z DEBUG [order-service] Cache hit ratio 90 for key namespace orders
+2026-03-14T09:16:38.976Z ERROR [api-gateway] Upstream order-service responded 503 Service Unavailable correlation_id=req-42fa706a
+2026-03-14T09:16:40.348Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=3) correlation_id=req-76a0de32
+2026-03-14T09:16:41.016Z INFO  [auth-service] Session refreshed
+2026-03-14T09:16:41.944Z INFO  [inventory-service] Reserved 3 units of SKU-256
+2026-03-14T09:16:43.182Z INFO  [api-gateway] POST /api/cart 201 57ms
+2026-03-14T09:16:43.776Z DEBUG [order-service] Cache hit ratio 88 for key namespace orders
+2026-03-14T09:16:45.039Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=2) correlation_id=req-6803d146
+2026-03-14T09:16:45.590Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=3) correlation_id=req-a256817b
+2026-03-14T09:16:47.571Z INFO  [api-gateway] POST /api/cart 201 89ms
+2026-03-14T09:16:48.767Z INFO  [inventory-service] Reserved 2 units of SKU-602
+2026-03-14T09:16:50.741Z DEBUG [auth-service] Token validated for client web-8
+2026-03-14T09:16:52.245Z DEBUG [auth-service] Token validated for client web-5
+2026-03-14T09:16:53.538Z INFO  [inventory-service] Reserved 5 units of SKU-990
+2026-03-14T09:16:55.075Z INFO  [order-service] Order 56290 created for customer 527
+2026-03-14T09:16:56.263Z INFO  [order-service] Order 19760 created for customer 727
+2026-03-14T09:16:57.657Z INFO  [order-service] Order 36053 created for customer 531
+2026-03-14T09:16:59.750Z INFO  [order-service] Order 30596 created for customer 352
+2026-03-14T09:17:01.170Z DEBUG [order-service] Cache hit ratio 96 for key namespace orders
+2026-03-14T09:17:02.926Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=2) correlation_id=req-5987f4e3
+2026-03-14T09:17:04.348Z DEBUG [order-service] Cache hit ratio 96 for key namespace orders
+2026-03-14T09:17:05.868Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=3) correlation_id=req-c1eab037
+2026-03-14T09:17:07.953Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=1) correlation_id=req-96f203de
+2026-03-14T09:17:09.471Z ERROR [api-gateway] Upstream order-service responded 503 Service Unavailable correlation_id=req-63ed0566
+2026-03-14T09:17:10.919Z DEBUG [order-service] Cache hit ratio 94 for key namespace orders
+2026-03-14T09:17:13.075Z INFO  [auth-service] Session refreshed
+2026-03-14T09:17:14.778Z INFO  [auth-service] Session refreshed
+2026-03-14T09:17:16.866Z INFO  [api-gateway] GET /api/orders/1768 200 65ms
+2026-03-14T09:17:18.073Z DEBUG [auth-service] Token validated for client web-3
+2026-03-14T09:17:19.410Z INFO  [payment-service] Payment authorized in 129ms
+2026-03-14T09:17:20.864Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=2) correlation_id=req-9d983cd6
+2026-03-14T09:17:22.459Z INFO  [api-gateway] GET /api/orders/2001 200 16ms
+2026-03-14T09:17:23.446Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=1) correlation_id=req-af19231e
+2026-03-14T09:17:24.950Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=3) correlation_id=req-1f453893
+2026-03-14T09:17:26.692Z INFO  [order-service] Order 51496 created for customer 148
+2026-03-14T09:17:27.100Z INFO  [api-gateway] GET /api/orders/8321 200 55ms
+2026-03-14T09:17:28.902Z DEBUG [auth-service] Token validated for client web-8
+2026-03-14T09:17:30.480Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=2) correlation_id=req-0eaa0856
+2026-03-14T09:17:31.132Z INFO  [api-gateway] GET /api/orders/7830 200 72ms
+2026-03-14T09:17:32.779Z INFO  [auth-service] Session refreshed
+2026-03-14T09:17:34.070Z INFO  [api-gateway] GET /api/orders/4230 200 90ms
+2026-03-14T09:17:34.889Z INFO  [auth-service] Session refreshed
+2026-03-14T09:17:35.604Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=2) correlation_id=req-725c0ab8
+2026-03-14T09:17:37.697Z INFO  [api-gateway] GET /api/orders/5257 200 119ms
+2026-03-14T09:17:38.763Z INFO  [api-gateway] POST /api/cart 201 43ms
+2026-03-14T09:17:39.452Z INFO  [inventory-service] Reserved 1 units of SKU-218
+2026-03-14T09:17:41.409Z DEBUG [order-service] Cache hit ratio 87 for key namespace orders
+2026-03-14T09:17:42.886Z DEBUG [auth-service] Token validated for client web-5
+2026-03-14T09:17:43.377Z INFO  [api-gateway] POST /api/cart 201 56ms
+2026-03-14T09:17:44.257Z ERROR [api-gateway] Upstream order-service responded 503 Service Unavailable correlation_id=req-0c87c9c3
+2026-03-14T09:17:45.955Z INFO  [api-gateway] POST /api/cart 201 68ms
+2026-03-14T09:17:47.856Z DEBUG [auth-service] Token validated for client web-8
+2026-03-14T09:17:49.126Z INFO  [api-gateway] GET /api/orders/8198 200 56ms
+2026-03-14T09:17:50.025Z INFO  [api-gateway] POST /api/cart 201 77ms
+2026-03-14T09:17:51.026Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=3) correlation_id=req-d51a81a2
+2026-03-14T09:17:52.262Z DEBUG [auth-service] Token validated for client web-5
+2026-03-14T09:17:53.322Z INFO  [inventory-service] Reserved 5 units of SKU-678
+2026-03-14T09:17:55.192Z DEBUG [auth-service] Token validated for client web-8
+2026-03-14T09:17:55.807Z INFO  [auth-service] Session refreshed
+2026-03-14T09:17:57.356Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=1) correlation_id=req-6a403f1a
+2026-03-14T09:17:59.327Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=1) correlation_id=req-055cc0ef
+2026-03-14T09:17:59.762Z INFO  [auth-service] Session refreshed
+2026-03-14T09:18:00.519Z ERROR [api-gateway] Upstream order-service responded 503 Service Unavailable correlation_id=req-bb5649b5
+2026-03-14T09:18:01.273Z INFO  [api-gateway] POST /api/cart 201 12ms
+2026-03-14T09:18:02.779Z DEBUG [auth-service] Token validated for client web-1
+2026-03-14T09:18:03.282Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=3) correlation_id=req-dff9e42d
+2026-03-14T09:18:05.223Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=2) correlation_id=req-eb6874e1
+2026-03-14T09:18:07.303Z INFO  [auth-service] Session refreshed
+2026-03-14T09:18:08.056Z DEBUG [order-service] Cache hit ratio 83 for key namespace orders
+2026-03-14T09:18:09.767Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=3) correlation_id=req-90e23a7a
+2026-03-14T09:18:10.697Z INFO  [inventory-service] Reserved 1 units of SKU-925
+2026-03-14T09:18:12.697Z INFO  [api-gateway] POST /api/cart 201 77ms
+2026-03-14T09:18:13.852Z DEBUG [auth-service] Token validated for client web-6
+2026-03-14T09:18:14.830Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=2) correlation_id=req-b6df230c
+2026-03-14T09:18:16.858Z INFO  [auth-service] Session refreshed
+2026-03-14T09:18:17.754Z DEBUG [auth-service] Token validated for client web-4
+2026-03-14T09:18:18.296Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=2) correlation_id=req-ad6626d9
+2026-03-14T09:18:20.292Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=1) correlation_id=req-6a626cc2
+2026-03-14T09:18:22.193Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=2) correlation_id=req-0aa7097d
+2026-03-14T09:18:22.929Z ERROR [api-gateway] Upstream order-service responded 503 Service Unavailable correlation_id=req-ff7b61b2
+2026-03-14T09:18:23.795Z INFO  [api-gateway] GET /api/orders/4559 200 53ms
+2026-03-14T09:18:24.993Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=3) correlation_id=req-11782488
+2026-03-14T09:18:26.658Z DEBUG [order-service] Cache hit ratio 89 for key namespace orders
+2026-03-14T09:18:27.257Z INFO  [api-gateway] GET /api/orders/1521 200 42ms
+2026-03-14T09:18:28.695Z INFO  [order-service] Order 13587 created for customer 611
+2026-03-14T09:18:30.544Z DEBUG [order-service] Cache hit ratio 95 for key namespace orders
+2026-03-14T09:18:31.236Z INFO  [order-service] Order 98360 created for customer 570
+2026-03-14T09:18:33.333Z INFO  [auth-service] Session refreshed
+2026-03-14T09:18:35.331Z INFO  [api-gateway] POST /api/cart 201 84ms
+2026-03-14T09:18:36.166Z INFO  [api-gateway] POST /api/cart 201 21ms
+2026-03-14T09:18:36.840Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=2) correlation_id=req-c531bf10
+2026-03-14T09:18:37.380Z DEBUG [auth-service] Token validated for client web-6
+2026-03-14T09:18:39.191Z INFO  [auth-service] Session refreshed
+2026-03-14T09:18:40.171Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=1) correlation_id=req-589debb3
+2026-03-14T09:18:42.324Z INFO  [api-gateway] GET /api/orders/5488 200 112ms
+2026-03-14T09:18:42.907Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=2) correlation_id=req-f3e5651d
+2026-03-14T09:18:44.659Z INFO  [api-gateway] GET /api/orders/1238 200 84ms
+2026-03-14T09:18:45.506Z WARN  [order-service] Slow query detected: 3626ms (select_order_items)
+2026-03-14T09:18:47.271Z INFO  [inventory-service] Reserved 4 units of SKU-331
+2026-03-14T09:18:47.919Z INFO  [inventory-service] Reserved 2 units of SKU-438
+2026-03-14T09:18:50.074Z INFO  [payment-service] Payment authorized in 44ms
+2026-03-14T09:18:51.228Z INFO  [auth-service] Session refreshed
+2026-03-14T09:18:52.437Z INFO  [auth-service] Session refreshed
+2026-03-14T09:18:54.590Z INFO  [payment-service] Payment authorized in 40ms
+2026-03-14T09:18:56.409Z INFO  [api-gateway] POST /api/cart 201 15ms
+2026-03-14T09:18:57.931Z INFO  [api-gateway] POST /api/cart 201 14ms
+2026-03-14T09:18:58.344Z ERROR [api-gateway] Upstream order-service responded 503 Service Unavailable correlation_id=req-2518eff7
+2026-03-14T09:18:59.731Z DEBUG [order-service] Cache hit ratio 83 for key namespace orders
+2026-03-14T09:19:01.611Z DEBUG [order-service] Cache hit ratio 96 for key namespace orders
+2026-03-14T09:19:03.385Z INFO  [auth-service] Session refreshed
+2026-03-14T09:19:04.032Z INFO  [api-gateway] GET /api/orders/8892 200 27ms
+2026-03-14T09:19:04.845Z DEBUG [auth-service] Token validated for client web-8
+2026-03-14T09:19:06.771Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=3) correlation_id=req-c3a9d396
+2026-03-14T09:19:07.584Z INFO  [api-gateway] POST /api/cart 201 12ms
+2026-03-14T09:19:08.975Z INFO  [auth-service] Session refreshed
+2026-03-14T09:19:09.927Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=1) correlation_id=req-bb62e86b
+2026-03-14T09:19:11.442Z INFO  [order-service] Order 95652 created for customer 332
+2026-03-14T09:19:13.617Z INFO  [inventory-service] Reserved 2 units of SKU-675
+2026-03-14T09:19:15.568Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=3) correlation_id=req-1bb81e2b
+2026-03-14T09:19:16.091Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=1) correlation_id=req-32407437
+2026-03-14T09:19:17.454Z INFO  [api-gateway] POST /api/cart 201 18ms
+2026-03-14T09:19:19.170Z DEBUG [order-service] Cache hit ratio 97 for key namespace orders
+2026-03-14T09:19:21.246Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=1) correlation_id=req-4a294c4e
+2026-03-14T09:19:21.879Z INFO  [auth-service] Session refreshed
+2026-03-14T09:19:22.873Z ERROR [api-gateway] Upstream order-service responded 503 Service Unavailable correlation_id=req-6c562458
+2026-03-14T09:19:24.016Z DEBUG [order-service] Cache hit ratio 94 for key namespace orders
+2026-03-14T09:19:26.198Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=2) correlation_id=req-5626a22e
+2026-03-14T09:19:26.638Z INFO  [order-service] Order 39820 created for customer 581
+2026-03-14T09:19:27.458Z DEBUG [auth-service] Token validated for client web-9
+2026-03-14T09:19:28.321Z INFO  [auth-service] Session refreshed
+2026-03-14T09:19:29.549Z INFO  [auth-service] Session refreshed
+2026-03-14T09:19:31.617Z INFO  [order-service] Order 24132 created for customer 796
+2026-03-14T09:19:32.458Z DEBUG [auth-service] Token validated for client web-8
+2026-03-14T09:19:34.201Z INFO  [auth-service] Session refreshed
+2026-03-14T09:19:35.589Z INFO  [auth-service] Session refreshed
+2026-03-14T09:19:36.774Z INFO  [api-gateway] POST /api/cart 201 58ms
+2026-03-14T09:19:37.289Z INFO  [api-gateway] GET /api/orders/1890 200 68ms
+2026-03-14T09:19:38.763Z INFO  [inventory-service] Reserved 1 units of SKU-716
+2026-03-14T09:19:39.744Z INFO  [order-service] Order 36527 created for customer 684
+2026-03-14T09:19:41.115Z INFO  [payment-service] Payment authorized in 193ms
+2026-03-14T09:19:42.331Z DEBUG [order-service] Cache hit ratio 87 for key namespace orders
+2026-03-14T09:19:42.766Z INFO  [inventory-service] Reserved 4 units of SKU-945
+2026-03-14T09:19:43.810Z INFO  [inventory-service] Reserved 4 units of SKU-628
+2026-03-14T09:19:45.695Z INFO  [auth-service] Session refreshed
+2026-03-14T09:19:46.833Z DEBUG [auth-service] Token validated for client web-5
+2026-03-14T09:19:47.865Z DEBUG [auth-service] Token validated for client web-9
+2026-03-14T09:19:48.962Z INFO  [order-service] Order 93143 created for customer 759
+2026-03-14T09:19:49.363Z DEBUG [auth-service] Token validated for client web-3
+2026-03-14T09:19:50.558Z DEBUG [auth-service] Token validated for client web-7
+2026-03-14T09:19:50.958Z INFO  [order-service] Order 19820 created for customer 401
+2026-03-14T09:19:52.764Z WARN  [order-service] Slow query detected: 1293ms (select_order_items)
+2026-03-14T09:19:54.505Z ERROR [api-gateway] Upstream order-service responded 503 Service Unavailable correlation_id=req-d739181d
+2026-03-14T09:19:55.211Z INFO  [api-gateway] POST /api/cart 201 30ms
+2026-03-14T09:19:55.704Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=3) correlation_id=req-f62d3f54
+2026-03-14T09:19:56.640Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=2) correlation_id=req-ff76007d
+2026-03-14T09:19:58.826Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=3) correlation_id=req-47da5232
+2026-03-14T09:20:00.036Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=2) correlation_id=req-b4d81c49
+2026-03-14T09:20:01.204Z INFO  [auth-service] Session refreshed
+2026-03-14T09:20:02.361Z INFO  [api-gateway] GET /api/orders/1432 200 33ms
+2026-03-14T09:20:03.752Z ERROR [api-gateway] Upstream order-service responded 503 Service Unavailable correlation_id=req-92370357
+2026-03-14T09:20:05.613Z INFO  [payment-service] Payment authorized in 268ms
+2026-03-14T09:20:07.615Z INFO  [api-gateway] GET /api/orders/8291 200 36ms
+2026-03-14T09:20:09.578Z INFO  [order-service] Order 27206 created for customer 205
+2026-03-14T09:20:10.170Z INFO  [inventory-service] Reserved 2 units of SKU-141
+2026-03-14T09:20:10.636Z INFO  [payment-service] Payment authorized in 256ms
+2026-03-14T09:20:12.279Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=3) correlation_id=req-6290fc68
+2026-03-14T09:20:13.050Z INFO  [payment-service] Payment authorized in 246ms
+2026-03-14T09:20:13.982Z DEBUG [order-service] Cache hit ratio 96 for key namespace orders
+2026-03-14T09:20:16.178Z INFO  [order-service] Order 76311 created for customer 369
+2026-03-14T09:20:17.161Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=3) correlation_id=req-70631cfc
+2026-03-14T09:20:19.224Z INFO  [order-service] Order 14380 created for customer 566
+2026-03-14T09:20:21.279Z INFO  [api-gateway] POST /api/cart 201 48ms
+2026-03-14T09:20:21.863Z DEBUG [auth-service] Token validated for client web-1
+2026-03-14T09:20:22.434Z WARN  [order-service] Slow query detected: 3911ms (select_order_items)
+2026-03-14T09:20:23.774Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=1) correlation_id=req-83c6e9bf
+2026-03-14T09:20:24.672Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=2) correlation_id=req-a9ec6d41
+2026-03-14T09:20:25.851Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=3) correlation_id=req-9fe00d26
+2026-03-14T09:20:26.555Z INFO  [payment-service] Payment authorized in 264ms
+2026-03-14T09:20:28.527Z INFO  [auth-service] Session refreshed
+2026-03-14T09:20:30.085Z WARN  [order-service] Slow query detected: 1848ms (select_order_items)
+2026-03-14T09:20:31.315Z DEBUG [auth-service] Token validated for client web-4
+2026-03-14T09:20:32.231Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=1) correlation_id=req-783c14cb
+2026-03-14T09:20:32.854Z INFO  [payment-service] Payment authorized in 187ms
+2026-03-14T09:20:34.577Z INFO  [payment-service] Payment authorized in 143ms
+2026-03-14T09:20:36.726Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=2) correlation_id=req-00bb67dd
+2026-03-14T09:20:37.596Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=1) correlation_id=req-7339ad1c
+2026-03-14T09:20:39.305Z INFO  [api-gateway] POST /api/cart 201 61ms
+2026-03-14T09:20:41.387Z INFO  [order-service] Order 20489 created for customer 885
+2026-03-14T09:20:42.056Z INFO  [inventory-service] Reserved 2 units of SKU-655
+2026-03-14T09:20:43.734Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=1) correlation_id=req-0c42bd0f
+2026-03-14T09:20:45.054Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=2) correlation_id=req-6747fd98
+2026-03-14T09:20:46.122Z INFO  [order-service] Order 10588 created for customer 752
+2026-03-14T09:20:46.624Z INFO  [payment-service] Payment authorized in 244ms
+2026-03-14T09:20:47.638Z INFO  [api-gateway] GET /api/orders/4375 200 44ms
+2026-03-14T09:20:49.669Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=2) correlation_id=req-9c5fd66b
+2026-03-14T09:20:50.205Z DEBUG [auth-service] Token validated for client web-2
+2026-03-14T09:20:51.506Z INFO  [api-gateway] GET /api/orders/8572 200 13ms
+2026-03-14T09:20:53.522Z INFO  [api-gateway] POST /api/cart 201 45ms
+2026-03-14T09:20:54.138Z DEBUG [order-service] Cache hit ratio 97 for key namespace orders
+2026-03-14T09:20:55.500Z ERROR [api-gateway] Upstream order-service responded 503 Service Unavailable correlation_id=req-3467aad0
+2026-03-14T09:20:56.778Z INFO  [payment-service] Payment authorized in 192ms
+2026-03-14T09:20:58.868Z INFO  [order-service] Order 71212 created for customer 868
+2026-03-14T09:21:00.885Z INFO  [order-service] Order 99707 created for customer 709
+2026-03-14T09:21:02.722Z WARN  [order-service] Slow query detected: 2479ms (select_order_items)
+2026-03-14T09:21:04.633Z INFO  [api-gateway] GET /api/orders/5889 200 32ms
+2026-03-14T09:21:06.717Z WARN  [order-service] Slow query detected: 3781ms (select_order_items)
+2026-03-14T09:21:08.550Z INFO  [auth-service] Session refreshed
+2026-03-14T09:21:09.353Z DEBUG [order-service] Cache hit ratio 93 for key namespace orders
+2026-03-14T09:21:09.929Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=3) correlation_id=req-082354eb
+2026-03-14T09:21:11.786Z DEBUG [order-service] Cache hit ratio 83 for key namespace orders
+2026-03-14T09:21:13.654Z INFO  [auth-service] Session refreshed
+2026-03-14T09:21:15.445Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=2) correlation_id=req-a3b4fc94
+2026-03-14T09:21:16.482Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=2) correlation_id=req-657a9f80
+2026-03-14T09:21:18.630Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=3) correlation_id=req-79810e1c
+2026-03-14T09:21:20.246Z INFO  [auth-service] Session refreshed
+2026-03-14T09:21:20.900Z DEBUG [order-service] Cache hit ratio 83 for key namespace orders
+2026-03-14T09:21:22.356Z DEBUG [order-service] Cache hit ratio 96 for key namespace orders
+2026-03-14T09:21:24.420Z INFO  [order-service] Order 88965 created for customer 756
+2026-03-14T09:21:26.493Z INFO  [order-service] Order 47410 created for customer 260
+2026-03-14T09:21:27.365Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=2) correlation_id=req-56e0c82e
+2026-03-14T09:21:28.185Z INFO  [api-gateway] POST /api/cart 201 32ms
+2026-03-14T09:21:30.376Z INFO  [inventory-service] Reserved 4 units of SKU-299
+2026-03-14T09:21:31.979Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=1) correlation_id=req-427ccb75
+2026-03-14T09:21:32.530Z INFO  [api-gateway] GET /api/orders/8864 200 113ms

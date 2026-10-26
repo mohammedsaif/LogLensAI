@@ -1,0 +1,29 @@
+[project]
+name = "loglens-backend"
+version = "1.0.0"
+description = "LogLens AI backend: deterministic log intelligence pipeline + Claude analysis"
+requires-python = ">=3.12"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+markers = [
+  "performance: larger-file timing tests",
+]
+filterwarnings = ["ignore::DeprecationWarning:passlib.*"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "S"]
+ignore = ["S101", "B008", "E501"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["S", "E501"]
+"eval/*" = ["S", "E501"]
+"app/samples/*" = ["S311"]
+
+[tool.coverage.run]
+source = ["app"]

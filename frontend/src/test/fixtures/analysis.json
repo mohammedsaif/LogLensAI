@@ -1,0 +1,993 @@
+{
+ "detail": {
+  "id": "99879ee7a62d4ea99a68e493211cea80",
+  "filename": "sample-pool_exhaustion-1000.log",
+  "status": "completed",
+  "stage": "completed",
+  "progress": 100,
+  "error_code": null,
+  "error_message": null,
+  "created_at": "2026-10-26T06:58:51.874286Z",
+  "completed_at": "2026-10-26T06:58:51.933437Z",
+  "source": "sample",
+  "size_bytes": 88940,
+  "total_lines": 1000,
+  "ai_status": "ok",
+  "ai_provider": "mock",
+  "confidence": "medium",
+  "errors": 161,
+  "warnings": 16,
+  "critical": 0,
+  "incident_title": "Database query timeouts after database connection pool exhaustion (order-service)",
+  "parsed_lines": 1000,
+  "malformed_lines": 0,
+  "ai_model": "loglens-mock-1",
+  "prompt_version": "incident-analysis/v1.0.0",
+  "summary_lines": [
+   "Incident: Database query timeouts after database connection pool exhaustion (order-service) (2026-03-14T09:00:01.787Z to 2026-03-14T09:21:32.530Z)",
+   "Impact: 143 ERROR event(s) from order-service (\"Database query timed out after <n>ms (query=select_order_items, attem\u2026\"); services with errors: api-gateway, order-service. Observed: 161 errors, 16 warnings, 0 critical events; 2 service(s) with errors.",
+   "Evidence: L120 @ 2026-03-14T09:02:29.232Z WARN \"Connection pool usage reached 95%\" (critical signal); L303\u2013L999 @ 2026-03-14T09:06:24.394Z 143\u00d7 ERROR \"Database query timed out after <n>ms (query=select_order_items, attem\u2026\"; L559\u2013L976 @ 2026-03-14T09:11:49.696Z 18\u00d7 ERROR \"Upstream order-service responded <n> Service Unavailable correlation_\u2026\"",
+   "Possible Cause (hypothesis, medium confidence, not confirmed): The WARN at L120 (Connection pool usage reached 95%) preceded 143\u00d7 ERROR events starting at L303; the database connection pool is saturated: connections are held too long (slow queries, leaked connections or long transactions) or the pool is undersized for current load. [E1\u2192L120, E2\u2192L303\u2013L999]",
+   "Recommended Action: Check connection-pool metrics (active, idle, waiting) and the database's active sessions; look for long-running queries or transactions holding connections. Then: Inspect database latency, locks and slow-query logs for the affected time window."
+  ],
+  "analysis": {
+   "incident_title": "Database query timeouts after database connection pool exhaustion (order-service)",
+   "impact": "143 ERROR event(s) from order-service (\"Database query timed out after <n>ms (query=select_order_items, attem\u2026\"); services with errors: api-gateway, order-service.",
+   "observed_facts": [
+    {
+     "statement": "WARN in order-service at L120 at 2026-03-14T09:02:29.232Z: \"Connection pool usage reached 95%\"",
+     "evidence_ids": [
+      "E1"
+     ]
+    },
+    {
+     "statement": "143\u00d7 ERROR in order-service: \"Database query timed out after <n>ms (query=select_order_items, attempt=<id>) correlation\u2026\" (L303\u2013L999, 2026-03-14T09:06:24.394Z to 2026-03-14T09:21:31.979Z)",
+     "evidence_ids": [
+      "E2"
+     ]
+    },
+    {
+     "statement": "18\u00d7 ERROR in api-gateway: \"Upstream order-service responded <n> Service Unavailable correlation_id=<id>\" (L559\u2013L976, 2026-03-14T09:11:49.696Z to 2026-03-14T09:20:55.500Z)",
+     "evidence_ids": [
+      "E3"
+     ]
+    },
+    {
+     "statement": "3\u00d7 WARN in payment-service: \"Retrying webhook delivery (attempt <n>/<n>)\" (L110\u2013L149, 2026-03-14T09:02:17.496Z to 2026-03-14T09:03:08.302Z)",
+     "evidence_ids": [
+      "E4"
+     ]
+    },
+    {
+     "statement": "12\u00d7 WARN in order-service: \"Slow query detected: <n>ms (select_order_items)\" (L280\u2013L982, 2026-03-14T09:05:54.189Z to 2026-03-14T09:21:06.717Z)",
+     "evidence_ids": [
+      "E5"
+     ]
+    }
+   ],
+   "hypotheses": [
+    {
+     "statement": "The WARN at L120 (Connection pool usage reached 95%) preceded 143\u00d7 ERROR events starting at L303; the database connection pool is saturated: connections are held too long (slow queries, leaked connections or long transactions) or the pool is undersized for current load.",
+     "confidence": "medium",
+     "rationale": "Temporal order: a resource-pressure warning in a related category appears before the error burst.",
+     "evidence_ids": [
+      "E1",
+      "E2"
+     ]
+    }
+   ],
+   "recommendations": [
+    {
+     "action": "Check connection-pool metrics (active, idle, waiting) and the database's active sessions; look for long-running queries or transactions holding connections.",
+     "priority": "immediate",
+     "evidence_ids": [
+      "E1"
+     ]
+    },
+    {
+     "action": "If saturation is verified, temporarily raise the pool size or shed load, and review recent deploys that changed query patterns or pool settings.",
+     "priority": "short_term",
+     "evidence_ids": [
+      "E1"
+     ]
+    },
+    {
+     "action": "Inspect database latency, locks and slow-query logs for the affected time window.",
+     "priority": "immediate",
+     "evidence_ids": [
+      "E2"
+     ]
+    },
+    {
+     "action": "Review query plans and indexes for the timed-out queries; add circuit breaking so retries do not amplify load.",
+     "priority": "short_term",
+     "evidence_ids": [
+      "E2"
+     ]
+    }
+   ],
+   "critical_evidence_ids": [
+    "E1"
+   ],
+   "overall_confidence": "medium",
+   "uncertainty_notes": [
+    "Generated by the offline mock model (rule-based); enable Claude for model-written analysis."
+   ],
+   "ai_status": "ok",
+   "failure_reason": null,
+   "provider": "mock",
+   "model": "loglens-mock-1",
+   "prompt_version": "incident-analysis/v1.0.0",
+   "attempts": 1,
+   "reattached_evidence_ids": [],
+   "validation_warnings": [],
+   "usage": {
+    "input_tokens": 1051,
+    "output_tokens": 656
+   }
+  },
+  "evidence": {
+   "items": [
+    {
+     "id": "E1",
+     "source": "signal",
+     "kind": "precursor",
+     "severity": "WARN",
+     "service": "order-service",
+     "count": 1,
+     "first_line": 120,
+     "last_line": 120,
+     "line_refs": [
+      120
+     ],
+     "first_ts": "2026-03-14T09:02:29.232Z",
+     "last_ts": "2026-03-14T09:02:29.232Z",
+     "text": "Connection pool usage reached 95%",
+     "template": "Connection pool usage reached <n>%",
+     "pattern_ids": [
+      "pool_exhaustion"
+     ],
+     "must_include": true,
+     "reason": "Rare WARN (occurs 1\u00d7 in file); Matches pattern: connection pool exhaustion / pressure; Resource threshold breach (peak 95% \u2265 80% at L120); Precedes 143\u00d7 ERROR database timeout starting at L303",
+     "risk_score": 90,
+     "group_fingerprint": "9086d5c2e993c0e8"
+    },
+    {
+     "id": "E2",
+     "source": "signal",
+     "kind": "pattern",
+     "severity": "ERROR",
+     "service": "order-service",
+     "count": 143,
+     "first_line": 303,
+     "last_line": 999,
+     "line_refs": [
+      303,
+      305,
+      323,
+      996,
+      999
+     ],
+     "first_ts": "2026-03-14T09:06:24.394Z",
+     "last_ts": "2026-03-14T09:21:31.979Z",
+     "text": "Database query timed out after 5000ms (query=select_order_items, attempt=2) correlation_id=req-7e6e3b9b",
+     "template": "Database query timed out after <n>ms (query=select_order_items, attempt=<id>) correlation_id=<id>",
+     "pattern_ids": [
+      "db_timeout"
+     ],
+     "must_include": false,
+     "reason": "Matches pattern: database timeout",
+     "risk_score": 67,
+     "group_fingerprint": "3c0176415d08b62e"
+    },
+    {
+     "id": "E3",
+     "source": "signal",
+     "kind": "pattern",
+     "severity": "ERROR",
+     "service": "api-gateway",
+     "count": 18,
+     "first_line": 559,
+     "last_line": 976,
+     "line_refs": [
+      559,
+      564,
+      637,
+      936,
+      976
+     ],
+     "first_ts": "2026-03-14T09:11:49.696Z",
+     "last_ts": "2026-03-14T09:20:55.500Z",
+     "text": "Upstream order-service responded 503 Service Unavailable correlation_id=req-9fee26f0",
+     "template": "Upstream order-service responded <n> Service Unavailable correlation_id=<id>",
+     "pattern_ids": [
+      "service_failure"
+     ],
+     "must_include": false,
+     "reason": "Matches pattern: service failure / unavailability",
+     "risk_score": 60,
+     "group_fingerprint": "793acba8850965c7"
+    },
+    {
+     "id": "E4",
+     "source": "signal",
+     "kind": "rare_high_severity",
+     "severity": "WARN",
+     "service": "payment-service",
+     "count": 3,
+     "first_line": 110,
+     "last_line": 149,
+     "line_refs": [
+      110,
+      123,
+      149
+     ],
+     "first_ts": "2026-03-14T09:02:17.496Z",
+     "last_ts": "2026-03-14T09:03:08.302Z",
+     "text": "Retrying webhook delivery (attempt 2/5)",
+     "template": "Retrying webhook delivery (attempt <n>/<n>)",
+     "pattern_ids": [],
+     "must_include": false,
+     "reason": "Rare WARN (occurs 3\u00d7 in file)",
+     "risk_score": 29,
+     "group_fingerprint": "afc8b013f4cb9165"
+    },
+    {
+     "id": "E5",
+     "source": "group",
+     "kind": null,
+     "severity": "WARN",
+     "service": "order-service",
+     "count": 12,
+     "first_line": 280,
+     "last_line": 982,
+     "line_refs": [
+      280,
+      412,
+      516,
+      980,
+      982
+     ],
+     "first_ts": "2026-03-14T09:05:54.189Z",
+     "last_ts": "2026-03-14T09:21:06.717Z",
+     "text": "Slow query detected: 1218ms (select_order_items)",
+     "template": "Slow query detected: <n>ms (select_order_items)",
+     "pattern_ids": [],
+     "must_include": false,
+     "reason": null,
+     "risk_score": 24,
+     "group_fingerprint": "9eb541856051fdcb"
+    }
+   ],
+   "stats": {
+    "total_lines": 1000,
+    "event_count": 1000,
+    "severity_counts": {
+     "DEBUG": 229,
+     "INFO": 594,
+     "WARN": 16,
+     "ERROR": 161,
+     "CRITICAL": 0,
+     "UNKNOWN": 0
+    },
+    "affected_services": [
+     "api-gateway",
+     "order-service"
+    ],
+    "services": [
+     "order-service",
+     "auth-service",
+     "api-gateway",
+     "payment-service",
+     "inventory-service"
+    ],
+    "time_range": {
+     "start": "2026-03-14T09:00:01.787Z",
+     "end": "2026-03-14T09:21:32.530Z",
+     "duration_seconds": 1290
+    },
+    "pattern_counts": {
+     "db_timeout": 143,
+     "service_failure": 18,
+     "pool_exhaustion": 1
+    },
+    "malformed_lines": 0,
+    "duplicate_event_count": 987
+   },
+   "omitted_group_count": 0,
+   "token_estimate": 1287,
+   "redaction_counts": {}
+  },
+  "stats": {
+   "total_lines": 1000,
+   "event_count": 1000,
+   "blank_lines": 0,
+   "continuation_lines": 0,
+   "parsed_lines": 1000,
+   "malformed_lines": 0,
+   "formats": {
+    "text": 1000
+   },
+   "severity_counts": {
+    "DEBUG": 229,
+    "INFO": 594,
+    "WARN": 16,
+    "ERROR": 161,
+    "CRITICAL": 0,
+    "UNKNOWN": 0
+   },
+   "errors": 161,
+   "warnings": 16,
+   "critical": 0,
+   "services": [
+    {
+     "name": "order-service",
+     "count": 365,
+     "errors": 143
+    },
+    {
+     "name": "auth-service",
+     "count": 231,
+     "errors": 0
+    },
+    {
+     "name": "api-gateway",
+     "count": 222,
+     "errors": 18
+    },
+    {
+     "name": "payment-service",
+     "count": 98,
+     "errors": 0
+    },
+    {
+     "name": "inventory-service",
+     "count": 84,
+     "errors": 0
+    }
+   ],
+   "affected_services": [
+    "api-gateway",
+    "order-service"
+   ],
+   "time_range": {
+    "start": "2026-03-14T09:00:01.787Z",
+    "end": "2026-03-14T09:21:32.530Z",
+    "duration_seconds": 1290
+   },
+   "timeline": [
+    {
+     "t": "2026-03-14T09:00:00.000Z",
+     "DEBUG": 19,
+     "INFO": 28,
+     "WARN": 0,
+     "ERROR": 0,
+     "CRITICAL": 0,
+     "UNKNOWN": 0,
+     "total": 47
+    },
+    {
+     "t": "2026-03-14T09:01:00.000Z",
+     "DEBUG": 11,
+     "INFO": 39,
+     "WARN": 0,
+     "ERROR": 0,
+     "CRITICAL": 0,
+     "UNKNOWN": 0,
+     "total": 50
+    },
+    {
+     "t": "2026-03-14T09:02:00.000Z",
+     "DEBUG": 8,
+     "INFO": 35,
+     "WARN": 3,
+     "ERROR": 0,
+     "CRITICAL": 0,
+     "UNKNOWN": 0,
+     "total": 46
+    },
+    {
+     "t": "2026-03-14T09:03:00.000Z",
+     "DEBUG": 7,
+     "INFO": 35,
+     "WARN": 1,
+     "ERROR": 0,
+     "CRITICAL": 0,
+     "UNKNOWN": 0,
+     "total": 43
+    },
+    {
+     "t": "2026-03-14T09:04:00.000Z",
+     "DEBUG": 22,
+     "INFO": 26,
+     "WARN": 0,
+     "ERROR": 0,
+     "CRITICAL": 0,
+     "UNKNOWN": 0,
+     "total": 48
+    },
+    {
+     "t": "2026-03-14T09:05:00.000Z",
+     "DEBUG": 13,
+     "INFO": 35,
+     "WARN": 1,
+     "ERROR": 0,
+     "CRITICAL": 0,
+     "UNKNOWN": 0,
+     "total": 49
+    },
+    {
+     "t": "2026-03-14T09:06:00.000Z",
+     "DEBUG": 8,
+     "INFO": 33,
+     "WARN": 0,
+     "ERROR": 9,
+     "CRITICAL": 0,
+     "UNKNOWN": 0,
+     "total": 50
+    },
+    {
+     "t": "2026-03-14T09:07:00.000Z",
+     "DEBUG": 10,
+     "INFO": 29,
+     "WARN": 0,
+     "ERROR": 7,
+     "CRITICAL": 0,
+     "UNKNOWN": 0,
+     "total": 46
+    }
+   ],
+   "timeline_bucket_seconds": 60,
+   "pattern_counts": {
+    "db_timeout": 143,
+    "service_failure": 18,
+    "pool_exhaustion": 1
+   },
+   "group_count": 13,
+   "duplicate_group_count": 12,
+   "duplicate_event_count": 987,
+   "with_correlation_id": 161
+  },
+  "redaction_counts": {},
+  "timings_ms": {
+   "parse": 9.99,
+   "aggregate": 18.8,
+   "signals_stats": 3.03,
+   "evidence": 1.1
+  },
+  "signals": [
+   {
+    "kind": "precursor",
+    "tags": [
+     "rare_high_severity",
+     "pattern",
+     "threshold",
+     "precursor"
+    ],
+    "pattern_ids": [
+     "pool_exhaustion"
+    ],
+    "severity": "WARN",
+    "service": "order-service",
+    "line_no": 120,
+    "line_numbers": [
+     120
+    ],
+    "ts": "2026-03-14T09:02:29.232000Z",
+    "message": "Connection pool usage reached 95%",
+    "reason": "Rare WARN (occurs 1\u00d7 in file); Matches pattern: connection pool exhaustion / pressure; Resource threshold breach (peak 95% \u2265 80% at L120); Precedes 143\u00d7 ERROR database timeout starting at L303",
+    "must_include": true,
+    "count": 1,
+    "risk_score": 90
+   },
+   {
+    "kind": "pattern",
+    "tags": [
+     "pattern"
+    ],
+    "pattern_ids": [
+     "db_timeout"
+    ],
+    "severity": "ERROR",
+    "service": "order-service",
+    "line_no": 303,
+    "line_numbers": [
+     303,
+     305,
+     323,
+     324,
+     325,
+     996,
+     999
+    ],
+    "ts": "2026-03-14T09:06:24.394000Z",
+    "message": "Database query timed out after 5000ms (query=select_order_items, attempt=2) correlation_id=req-7e6e3b9b",
+    "reason": "Matches pattern: database timeout",
+    "must_include": false,
+    "count": 143,
+    "risk_score": 67
+   },
+   {
+    "kind": "pattern",
+    "tags": [
+     "pattern"
+    ],
+    "pattern_ids": [
+     "service_failure"
+    ],
+    "severity": "ERROR",
+    "service": "api-gateway",
+    "line_no": 559,
+    "line_numbers": [
+     559,
+     564,
+     637,
+     697,
+     719,
+     936,
+     976
+    ],
+    "ts": "2026-03-14T09:11:49.696000Z",
+    "message": "Upstream order-service responded 503 Service Unavailable correlation_id=req-9fee26f0",
+    "reason": "Matches pattern: service failure / unavailability",
+    "must_include": false,
+    "count": 18,
+    "risk_score": 60
+   },
+   {
+    "kind": "rare_high_severity",
+    "tags": [
+     "rare_high_severity"
+    ],
+    "pattern_ids": [],
+    "severity": "WARN",
+    "service": "payment-service",
+    "line_no": 110,
+    "line_numbers": [
+     110,
+     123,
+     149
+    ],
+    "ts": "2026-03-14T09:02:17.496000Z",
+    "message": "Retrying webhook delivery (attempt 2/5)",
+    "reason": "Rare WARN (occurs 3\u00d7 in file)",
+    "must_include": false,
+    "count": 3,
+    "risk_score": 29
+   }
+  ],
+  "groups": [
+   {
+    "fingerprint": "9086d5c2e993c0e8",
+    "template": "Connection pool usage reached <n>%",
+    "severity": "WARN",
+    "service": "order-service",
+    "count": 1,
+    "first_line": 120,
+    "last_line": 120,
+    "first_ts": "2026-03-14T09:02:29.232000Z",
+    "last_ts": "2026-03-14T09:02:29.232000Z",
+    "sample_lines": [
+     120
+    ],
+    "patterns": [
+     "pool_exhaustion"
+    ],
+    "risk_score": 90,
+    "score_breakdown": {
+     "severity": 15,
+     "pattern": 25,
+     "rarity": 10,
+     "threshold": 15,
+     "precursor": 25
+    }
+   },
+   {
+    "fingerprint": "3c0176415d08b62e",
+    "template": "Database query timed out after <n>ms (query=select_order_items, attempt=<id>) correlation_id=<id>",
+    "severity": "ERROR",
+    "service": "order-service",
+    "count": 143,
+    "first_line": 303,
+    "last_line": 999,
+    "first_ts": "2026-03-14T09:06:24.394000Z",
+    "last_ts": "2026-03-14T09:21:31.979000Z",
+    "sample_lines": [
+     303,
+     305,
+     323,
+     324,
+     325,
+     996,
+     999
+    ],
+    "patterns": [
+     "db_timeout"
+    ],
+    "risk_score": 67,
+    "score_breakdown": {
+     "severity": 30,
+     "pattern": 20,
+     "volume": 17
+    }
+   },
+   {
+    "fingerprint": "793acba8850965c7",
+    "template": "Upstream order-service responded <n> Service Unavailable correlation_id=<id>",
+    "severity": "ERROR",
+    "service": "api-gateway",
+    "count": 18,
+    "first_line": 559,
+    "last_line": 976,
+    "first_ts": "2026-03-14T09:11:49.696000Z",
+    "last_ts": "2026-03-14T09:20:55.500000Z",
+    "sample_lines": [
+     559,
+     564,
+     637,
+     697,
+     719,
+     936,
+     976
+    ],
+    "patterns": [
+     "service_failure"
+    ],
+    "risk_score": 60,
+    "score_breakdown": {
+     "severity": 30,
+     "pattern": 20,
+     "volume": 10
+    }
+   },
+   {
+    "fingerprint": "afc8b013f4cb9165",
+    "template": "Retrying webhook delivery (attempt <n>/<n>)",
+    "severity": "WARN",
+    "service": "payment-service",
+    "count": 3,
+    "first_line": 110,
+    "last_line": 149,
+    "first_ts": "2026-03-14T09:02:17.496000Z",
+    "last_ts": "2026-03-14T09:03:08.302000Z",
+    "sample_lines": [
+     110,
+     123,
+     149
+    ],
+    "patterns": [],
+    "risk_score": 29,
+    "score_breakdown": {
+     "severity": 15,
+     "volume": 4,
+     "rarity": 10
+    }
+   },
+   {
+    "fingerprint": "9eb541856051fdcb",
+    "template": "Slow query detected: <n>ms (select_order_items)",
+    "severity": "WARN",
+    "service": "order-service",
+    "count": 12,
+    "first_line": 280,
+    "last_line": 982,
+    "first_ts": "2026-03-14T09:05:54.189000Z",
+    "last_ts": "2026-03-14T09:21:06.717000Z",
+    "sample_lines": [
+     280,
+     412,
+     516,
+     642,
+     679,
+     980,
+     982
+    ],
+    "patterns": [],
+    "risk_score": 24,
+    "score_breakdown": {
+     "severity": 15,
+     "volume": 9
+    }
+   },
+   {
+    "fingerprint": "dc7d2252b2319411",
+    "template": "Payment authorized in <n>ms",
+    "severity": "INFO",
+    "service": "payment-service",
+    "count": 95,
+    "first_line": 2,
+    "last_line": 977,
+    "first_ts": "2026-03-14T09:00:03.112000Z",
+    "last_ts": "2026-03-14T09:20:56.778000Z",
+    "sample_lines": [
+     2,
+     9,
+     27,
+     34,
+     36,
+     969,
+     977
+    ],
+    "patterns": [],
+    "risk_score": 18,
+    "score_breakdown": {
+     "severity": 2,
+     "volume": 16
+    }
+   },
+   {
+    "fingerprint": "33e7647a14e20898",
+    "template": "Session refreshed",
+    "severity": "INFO",
+    "service": "auth-service",
+    "count": 113,
+    "first_line": 3,
+    "last_line": 991,
+    "first_ts": "2026-03-14T09:00:04.821000Z",
+    "last_ts": "2026-03-14T09:21:20.246000Z",
+    "sample_lines": [
+     3,
+     21,
+     24,
+     25,
+     37,
+     987,
+     991
+    ],
+    "patterns": [],
+    "risk_score": 18,
+    "score_breakdown": {
+     "severity": 2,
+     "volume": 16
+    }
+   },
+   {
+    "fingerprint": "820f8d5aaf09997b",
+    "template": "POST /api/cart <n> <n>ms",
+    "severity": "INFO",
+    "service": "api-gateway",
+    "count": 105,
+    "first_line": 4,
+    "last_line": 997,
+    "first_ts": "2026-03-14T09:00:06.722000Z",
+    "last_ts": "2026-03-14T09:21:28.185000Z",
+    "sample_lines": [
+     4,
+     6,
+     10,
+     11,
+     23,
+     974,
+     997
+    ],
+    "patterns": [],
+    "risk_score": 18,
+    "score_breakdown": {
+     "severity": 2,
+     "volume": 16
+    }
+   },
+   {
+    "fingerprint": "1dc7796b38154a7c",
+    "template": "GET /api/orders/<n> <n> <n>ms",
+    "severity": "INFO",
+    "service": "api-gateway",
+    "count": 99,
+    "first_line": 8,
+    "last_line": 1000,
+    "first_ts": "2026-03-14T09:00:12.825000Z",
+    "last_ts": "2026-03-14T09:21:32.530000Z",
+    "sample_lines": [
+     8,
+     12,
+     16,
+     29,
+     69,
+     981,
+     1000
+    ],
+    "patterns": [],
+    "risk_score": 18,
+    "score_breakdown": {
+     "severity": 2,
+     "volume": 16
+    }
+   },
+   {
+    "fingerprint": "017c27e7d01cd7d6",
+    "template": "Order <n> created for customer <n>",
+    "severity": "INFO",
+    "service": "order-service",
+    "count": 98,
+    "first_line": 31,
+    "last_line": 995,
+    "first_ts": "2026-03-14T09:00:40.006000Z",
+    "last_ts": "2026-03-14T09:21:26.493000Z",
+    "sample_lines": [
+     31,
+     38,
+     39,
+     51,
+     66,
+     994,
+     995
+    ],
+    "patterns": [],
+    "risk_score": 18,
+    "score_breakdown": {
+     "severity": 2,
+     "volume": 16
+    }
+   },
+   {
+    "fingerprint": "b94d5d6055423785",
+    "template": "Token validated for client web-<n>",
+    "severity": "DEBUG",
+    "service": "auth-service",
+    "count": 118,
+    "first_line": 1,
+    "last_line": 972,
+    "first_ts": "2026-03-14T09:00:01.787000Z",
+    "last_ts": "2026-03-14T09:20:50.205000Z",
+    "sample_lines": [
+     1,
+     7,
+     15,
+     20,
+     28,
+     957,
+     972
+    ],
+    "patterns": [],
+    "risk_score": 17,
+    "score_breakdown": {
+     "severity": 0,
+     "volume": 17
+    }
+   },
+   {
+    "fingerprint": "a9c3bed01609dbdb",
+    "template": "Reserved <n> units of SKU-<n>",
+    "severity": "INFO",
+    "service": "inventory-service",
+    "count": 84,
+    "first_line": 19,
+    "last_line": 998,
+    "first_ts": "2026-03-14T09:00:25.328000Z",
+    "last_ts": "2026-03-14T09:21:30.376000Z",
+    "sample_lines": [
+     19,
+     45,
+     46,
+     49,
+     54,
+     965,
+     998
+    ],
+    "patterns": [],
+    "risk_score": 17,
+    "score_breakdown": {
+     "severity": 2,
+     "volume": 15
+    }
+   },
+   {
+    "fingerprint": "6bef836bb5bd5a12",
+    "template": "Cache hit ratio <n> for key namespace orders",
+    "severity": "DEBUG",
+    "service": "order-service",
+    "count": 111,
+    "first_line": 5,
+    "last_line": 993,
+    "first_ts": "2026-03-14T09:00:08.330000Z",
+    "last_ts": "2026-03-14T09:21:22.356000Z",
+    "sample_lines": [
+     5,
+     13,
+     14,
+     17,
+     18,
+     992,
+     993
+    ],
+    "patterns": [],
+    "risk_score": 16,
+    "score_breakdown": {
+     "severity": 0,
+     "volume": 16
+    }
+   }
+  ],
+  "services": [
+   "api-gateway",
+   "auth-service",
+   "inventory-service",
+   "order-service",
+   "payment-service"
+  ]
+ },
+ "lines": {
+  "items": [
+   {
+    "line_no": 120,
+    "ts": "2026-03-14T09:02:29.232000Z",
+    "severity": "WARN",
+    "service": "order-service",
+    "correlation_id": null,
+    "message": "Connection pool usage reached 95%",
+    "raw": "2026-03-14T09:02:29.232Z WARN  [order-service] Connection pool usage reached 95%",
+    "parse_ok": true,
+    "is_continuation": false
+   },
+   {
+    "line_no": 303,
+    "ts": "2026-03-14T09:06:24.394000Z",
+    "severity": "ERROR",
+    "service": "order-service",
+    "correlation_id": "req-7e6e3b9b",
+    "message": "Database query timed out after 5000ms (query=select_order_items, attempt=2) correlation_id=req-7e6e3b9b",
+    "raw": "2026-03-14T09:06:24.394Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=2) correlation_id=req-7e6e3b9b",
+    "parse_ok": true,
+    "is_continuation": false
+   },
+   {
+    "line_no": 999,
+    "ts": "2026-03-14T09:21:31.979000Z",
+    "severity": "ERROR",
+    "service": "order-service",
+    "correlation_id": "req-427ccb75",
+    "message": "Database query timed out after 5000ms (query=select_order_items, attempt=1) correlation_id=req-427ccb75",
+    "raw": "2026-03-14T09:21:31.979Z ERROR [order-service] Database query timed out after 5000ms (query=select_order_items, attempt=1) correlation_id=req-427ccb75",
+    "parse_ok": true,
+    "is_continuation": false
+   }
+  ],
+  "total": 3,
+  "page": 1,
+  "page_size": 100
+ },
+ "config": {
+  "app_name": "LogLens AI",
+  "version": "1.0.0",
+  "environment": "test",
+  "ai_provider": "mock",
+  "ai_model": "loglens-mock-1",
+  "ai_mode_label": "Mock AI (offline, deterministic)",
+  "prompt_version": "incident-analysis/v1.0.0",
+  "ai_timeout_seconds": 2.0,
+  "ai_max_retries": 2,
+  "evidence_token_budget": 6000,
+  "max_upload_mb": 10.0,
+  "max_lines": 200000,
+  "allowed_extensions": [
+   ".log",
+   ".txt",
+   ".jsonl"
+  ],
+  "retention_days": 0,
+  "redaction_enabled": true,
+  "redact_ip_addresses": true,
+  "scenarios": [
+   {
+    "id": "pool_exhaustion",
+    "description": "Connection pool pressure followed by a burst of database timeouts"
+   },
+   {
+    "id": "auth_attack",
+    "description": "Credential-stuffing burst with account lockout (contains fake secrets to demo redaction)"
+   },
+   {
+    "id": "memory_leak",
+    "description": "Rising heap usage ending in an OOM kill and restarts"
+   },
+   {
+    "id": "healthy",
+    "description": "Normal traffic with no incident"
+   },
+   {
+    "id": "prompt_injection",
+    "description": "Errors mixed with log lines that try to instruct the AI"
+   }
+  ]
+ }
+}

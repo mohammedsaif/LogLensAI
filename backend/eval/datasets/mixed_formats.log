@@ -1,0 +1,19 @@
+2026-05-02 08:00:01,120 INFO checkout-api - Service started on port 8080
+2026-05-02 08:00:02,004 INFO checkout-api - Connected to postgres://app:s3cretPass@db.internal:5432/shop
+May  2 08:00:03 web-01 nginx[2211]: GET /healthz 200
+{"timestamp":"2026-05-02T08:00:04.500Z","level":"info","service":"cart","message":"cart loaded","request_id":"r-1001"}
+{"ts":1777708805,"lvl":40,"logger":"cart","msg":"Disk usage at 91% on /var/lib/cart"}
+2026-05-02T08:00:06Z ERROR [checkout-api] Unhandled exception in /checkout handler request_id=r-1002
+Traceback (most recent call last):
+  File "/app/checkout.py", line 88, in submit
+    charge(card)
+ValueError: card declined
+this line is garbage without any structure
+2026-05-02T08:00:07Z WARN [payments] Login failed for user ops@example.com: invalid credentials
+{"timestamp":"2026-05-02T08:00:08Z","level":"FATAL","service":"payments","message":"Payment processor circuit breaker open"}
+{not valid json at all
+2026-05-02T08:00:09Z ERROR [checkout-api] Upstream payments responded 503 request_id=r-1003
+2026-05-02T08:00:10Z ERROR [checkout-api] Upstream payments responded 503 request_id=r-1004
+2026-05-02T08:00:11Z ERROR [checkout-api] Upstream payments responded 503 request_id=r-1005
+
+2026-05-02T08:00:12Z INFO [checkout-api] Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjMifQ.c2lnbmF0dXJlLXZhbHVl
