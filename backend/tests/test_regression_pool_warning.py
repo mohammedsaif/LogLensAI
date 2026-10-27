@@ -65,7 +65,9 @@ def test_warning_is_in_evidence_pack_and_prompt(scenario):
 
 @pytest.mark.parametrize("token_budget", [6000, 800, 50])
 def test_warning_survives_any_token_budget(token_budget):
-    result = run_pipeline(generate_sample("pool_exhaustion"), make_settings(evidence_token_budget=token_budget, evidence_max_items=2))
+    result = run_pipeline(
+        generate_sample("pool_exhaustion"), make_settings(evidence_token_budget=token_budget, evidence_max_items=2)
+    )
     assert _warning_items(result.evidence), f"warning dropped at budget={token_budget}"
 
 
@@ -86,7 +88,9 @@ async def test_warning_preserved_even_if_model_ignores_it(scenario, scripted):
         "incident_title": "Database timeouts",
         "impact": "Queries failed.",
         "observed_facts": [{"statement": "143 timeouts", "evidence_ids": [burst.id]}],
-        "hypotheses": [{"statement": "Database slow", "confidence": "low", "rationale": "", "evidence_ids": [burst.id]}],
+        "hypotheses": [
+            {"statement": "Database slow", "confidence": "low", "rationale": "", "evidence_ids": [burst.id]}
+        ],
         "recommendations": [{"action": "Check the database.", "priority": "immediate", "evidence_ids": []}],
         "critical_evidence_ids": [],
         "overall_confidence": "low",

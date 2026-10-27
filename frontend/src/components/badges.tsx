@@ -46,6 +46,16 @@ export function ConfidenceBadge({ confidence }: { confidence: Confidence | null 
   );
 }
 
+// Display names for the provider recorded on each analysis.
+export const PROVIDER_NAMES: Record<string, string> = {
+  anthropic: "Claude",
+  openai: "OpenAI",
+  "openai-compatible": "OpenAI-compatible",
+  gemini: "Gemini",
+  ollama: "Local model",
+  mock: "Mock AI",
+};
+
 export function AiStatusBadge({ status, provider }: { status: AIStatus | null; provider: string | null }) {
   if (status === "fallback")
     return (
@@ -60,8 +70,8 @@ export function AiStatusBadge({ status, provider }: { status: AIStatus | null; p
       </Badge>
     );
   return (
-    <Badge variant={provider === "anthropic" ? "navy" : "teal"}>
-      <Bot className="size-3" aria-hidden /> {provider === "anthropic" ? "Claude" : "Mock AI"}
+    <Badge variant={provider === "mock" ? "teal" : "navy"}>
+      <Bot className="size-3" aria-hidden /> {PROVIDER_NAMES[provider ?? ""] ?? provider ?? "AI"}
     </Badge>
   );
 }

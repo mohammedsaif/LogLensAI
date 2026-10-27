@@ -151,6 +151,7 @@ class ConfigOut(BaseModel):
     ai_provider: str
     ai_model: str
     ai_mode_label: str
+    ai_external: bool = False  # True when redacted evidence is sent to a third-party AI service
     prompt_version: str
     ai_timeout_seconds: float
     ai_max_retries: int

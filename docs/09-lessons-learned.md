@@ -29,7 +29,8 @@ Status key: ✅ implemented and verified by automated tests · ◐ implemented w
 | NFR | Runs with Docker Compose | ✅ | Verified locally on PostgreSQL 16 |
 | NFR | Works without a paid API key | ✅ | Mock AI default, labelled in the UI |
 | — | GitHub Actions CI | ◐ | Workflow written. Not executed (no remote). |
-| — | Live Claude quality evaluation | ✗ | Requires a key and spend. Harness ready (`--provider anthropic`). |
+| — | Multi-provider + local models | ✅ | Claude, OpenAI/OpenAI-compatible, Gemini, Ollama; real local run in `06-testing.md` §5a |
+| — | Live cloud-model quality evaluation | ✗ | Requires keys and spend. Harness ready (`--provider anthropic`, `openai` or `gemini`). |
 | — | Authentication / multi-tenancy | ✗ | Out of MVP scope by design (PRD §8) |
 
 ## 2. Phase summaries
@@ -39,9 +40,9 @@ Status key: ✅ implemented and verified by automated tests · ◐ implemented w
 | 1 Discovery | `docs/01-prd.md` | Deterministic-first framing; acceptance criteria tied to tests | Reviewed against the final matrix (above) |
 | 2 Design | `docs/02-architecture.md` | 8 ADRs (must_include re-attachment, code-rendered summary, qualitative confidence, BackgroundTasks MVP, portable SQL types) | Implemented as designed. The ER diagram matches the Alembic migration. |
 | 3 UI/UX | `docs/03-ui-design.md` | Navy/teal; facts solid vs hypotheses dashed | Palette re-validated (CRITICAL moved to fuchsia, bar chart instead of donut); doc updated |
-| 4 Backend | `backend/app/**` | FastAPI factory, versioned `/api/v1`, error envelope, JSON logs, health checks | 189 pytest tests, 98% coverage |
+| 4 Backend | `backend/app/**` | FastAPI factory, versioned `/api/v1`, error envelope, JSON logs, health checks | 231 pytest tests, 97% coverage |
 | 5 AI | `backend/app/ai/**`, `eval/` | Prompt v1.0.0; structured outputs; server-side fallbacks; retries owned by the app | Validation, injection and regression suites; eval 81/81 |
-| 6 Frontend | `frontend/src/**` | TanStack Query for server state; shadcn-style primitives in-repo | 30 Vitest tests; manual review in the browser + screenshots |
+| 6 Frontend | `frontend/src/**` | TanStack Query for server state; shadcn-style primitives in-repo | 37 Vitest tests; manual review in the browser + screenshots |
 | 7 Testing | tests, E2E, eval | Mocked AI everywhere | See `06-testing.md` |
 | 8 DevOps | Dockerfiles, compose, CI, `.env.example` | Migrations in the entrypoint (skippable); non-root image; CSP | Compose up on PostgreSQL; migration down/up |
 | 9 Docs | README + docs 01–09 | — | — |
@@ -65,13 +66,13 @@ Status key: ✅ implemented and verified by automated tests · ◐ implemented w
 >
 > **1:05 – Why it's trustworthy (35 s).** Show the Critical signals panel: "Deterministic rules flagged this as rare, a threshold breach, and a precursor that precedes 143 errors. It is guaranteed to be in the output. If the model omits it, LogLens re-attaches it; if the AI times out, there's a deterministic fallback. A regression test fails if L120 ever disappears." Show the Privacy card: "Secrets are redacted before the model call." Mention the prompt-injection sample: "log lines that try to instruct the model are flagged and withheld."
 >
-> **1:40 – Engineering (20 s).** "FastAPI + PostgreSQL + React. Claude sits behind a provider abstraction, with structured outputs validated by Pydantic. A mock mode runs without a key. 189 backend tests at 98% coverage, 30 component tests, 10 Playwright E2E tests, and an eval set with 100% critical-signal recall. It runs with `docker compose up`."
+> **1:40 – Engineering (20 s).** "FastAPI + PostgreSQL + React. Claude, OpenAI, Gemini or a local Ollama model sit behind one provider abstraction, with structured outputs validated by Pydantic. A mock mode runs without a key, and local models keep logs on the machine. 231 backend tests at 97% coverage, 37 component tests, 10 Playwright E2E tests, and an eval set with 100% critical-signal recall. It runs with `docker compose up`."
 
 ## 5. Resume bullets (grounded in implemented functionality)
 
 - Built **LogLens AI**, a FastAPI/PostgreSQL/React log-intelligence platform that turns 1,000+ log lines into an evidence-referenced five-line incident summary. Deterministic parsing, duplicate aggregation and a 7-pattern detection catalog run before a schema-validated Claude analysis. The pipeline processes 50k lines in ~1.2 s, after profiling cut it from 8.1 s.
 - Designed a **critical-signal preservation layer** (precursor, threshold-breach and rarity rules, plus post-AI re-attachment). It guarantees that rare warnings, such as a 95% connection-pool warning hidden among 143 timeouts, survive token budgets, model omissions and AI outages. It is enforced by a regression suite and an evaluation set with 100% critical-signal recall (20/20).
-- Hardened the LLM integration with **secret/PII redaction, prompt-injection detection and withholding**, non-forgeable evidence delimiters, Pydantic-validated structured outputs, bounded retries/timeouts and a deterministic fallback. Shipped it with 189 backend tests (98% coverage), 30 React Testing Library tests, Playwright E2E tests, Docker Compose and a GitHub Actions pipeline.
+- Hardened the LLM integration with **secret/PII redaction, prompt-injection detection and withholding**, non-forgeable evidence delimiters, Pydantic-validated structured outputs, bounded retries/timeouts and a deterministic fallback. Added pluggable providers (Claude, OpenAI/OpenAI-compatible, Gemini, local Ollama models) behind one validation path. Shipped it with 231 backend tests (97% coverage), 37 React Testing Library tests, Playwright E2E tests, Docker Compose and a GitHub Actions pipeline.
 
 ## 6. Lessons learned
 
@@ -83,6 +84,8 @@ Status key: ✅ implemented and verified by automated tests · ◐ implemented w
 6. **Tooling risk is real.** Playwright's Chromium download hung on this Windows/Node 24 setup. A `PW_CHANNEL` switch to the installed Edge kept the E2E suite runnable, but it surfaced an Edge-specific download/teardown quirk that needed a workaround.
 
 ## 7. Remaining issues / next steps
+
+0. Re-run the local eval with a 7B+ model (e.g. `ollama pull llama3.1:8b`) and run the cloud providers with real keys.
 
 1. Run CI on GitHub (needs a remote) and confirm the Chromium E2E path, including real browser downloads.
 2. Budget-capped live Claude evaluation (`eval.run_eval --provider anthropic`) and prompt iteration based on it.

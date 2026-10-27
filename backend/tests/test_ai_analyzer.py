@@ -188,7 +188,9 @@ def test_fit_pack_to_budget_keeps_must_include():
     fitted = fit_pack_to_budget(big, 1200)
     assert set(big.must_include_ids()) <= {i.id for i in fitted.items}
     assert len(fitted.items) < len(big.items)
-    assert estimate_tokens(SYSTEM_PROMPT + build_user_prompt(fitted)) <= 1200 or all(i.must_include for i in fitted.items)
+    assert estimate_tokens(SYSTEM_PROMPT + build_user_prompt(fitted)) <= 1200 or all(
+        i.must_include for i in fitted.items
+    )
 
 
 def test_extract_json_errors():
@@ -200,3 +202,12 @@ def test_extract_json_errors():
 
 def test_pydantic_schema_matches_provider_schema_fields():
     assert set(AI_OUTPUT_JSON_SCHEMA["required"]) == set(AIAnalysis.model_fields)
+
+
+async def test_over_long_lists_are_trimmed_not_rejected(pack):
+    # Found with a real local model (llama3.2 3B), which returned 13 observed facts.
+    out = good_output(pack)
+    out["observed_facts"] = out["observed_facts"] * 7  # 14 facts
+    analysis, warnings = validate_output(json.dumps(out), pack)
+    assert len(analysis.observed_facts) == 10
+    assert any("Trimmed observed_facts from 14 to 10" in w for w in warnings)

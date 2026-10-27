@@ -111,7 +111,9 @@ async def test_anthropic_errors_map_to_provider_errors(exc, kind, retryable):
 async def test_anthropic_stop_reasons(stop_reason, kind):
     client, _ = fake_client(message(stop_reason=stop_reason))
     with pytest.raises(ProviderError) as info:
-        await AnthropicProvider("k", "m", client=client).complete(system="S", user="U", json_schema={}, max_tokens=10, timeout=1)
+        await AnthropicProvider("k", "m", client=client).complete(
+            system="S", user="U", json_schema={}, max_tokens=10, timeout=1
+        )
     assert info.value.kind == kind
 
 
@@ -126,4 +128,6 @@ async def test_factory_without_key_yields_not_configured_fallback():
 def test_factory_modes():
     assert get_provider(make_settings(ai_provider="disabled")) is None
     assert get_provider(make_settings(ai_provider="mock")).name == "mock"
-    assert isinstance(get_provider(make_settings(ai_provider="anthropic", anthropic_api_key="sk-test")), AnthropicProvider)
+    assert isinstance(
+        get_provider(make_settings(ai_provider="anthropic", anthropic_api_key="sk-test")), AnthropicProvider
+    )

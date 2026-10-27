@@ -25,6 +25,13 @@ _CERTAINTY = re.compile(
     r"(?<!not )(?<!never )\b(confirmed|proven|definitively|definitely|certainly|undoubtedly)\b", re.I
 )
 _CONF_ORDER = {"low": 0, "medium": 1, "high": 2}
+LIST_LIMITS = {
+    "observed_facts": 10,
+    "hypotheses": 5,
+    "recommendations": 6,
+    "critical_evidence_ids": 40,
+    "uncertainty_notes": 6,
+}
 
 
 class OutputRejected(Exception):
@@ -51,6 +58,13 @@ def extract_json(text: str) -> dict:
 def validate_output(text: str, pack: EvidencePack) -> tuple[AIAnalysis, list[str]]:
     """Parse and validate model output against the schema and the evidence pack. Returns (analysis, warnings)."""
     data = extract_json(text)
+    warnings: list[str] = []
+    # Over-long lists are trimmed (keeping the model's own ordering) instead of discarding an otherwise valid answer.
+    for field, limit in LIST_LIMITS.items():
+        value = data.get(field)
+        if isinstance(value, list) and len(value) > limit:
+            data[field] = value[:limit]
+            warnings.append(f"Trimmed {field} from {len(value)} to {limit} items")
     try:
         analysis = AIAnalysis.model_validate(data)
     except ValidationError as exc:
@@ -58,7 +72,6 @@ def validate_output(text: str, pack: EvidencePack) -> tuple[AIAnalysis, list[str
         raise OutputRejected(f"schema validation failed at {'/'.join(map(str, first['loc']))}: {first['msg']}") from exc
 
     valid_ids = set(pack.by_id()) | {STATS_REF}
-    warnings: list[str] = []
 
     def keep(ids: list[str], where: str) -> list[str]:
         unknown = [i for i in ids if i not in valid_ids]
@@ -148,6 +161,7 @@ async def analyze(pack: EvidencePack, provider: AIProvider | None, settings: Set
     fitted = fit_pack_to_budget(pack, prompt_budget)
     correction: str | None = None
     failure: str | None = None
+    detail = ""
     attempts = 0
     max_attempts = 1 + max(0, settings.ai_max_retries)
 
@@ -172,6 +186,7 @@ async def analyze(pack: EvidencePack, provider: AIProvider | None, settings: Set
             continue
         except ProviderError as exc:
             failure = exc.kind
+            detail = str(exc)  # provider messages are written by LogLens and never contain secrets
             log.warning("ai_provider_error", extra={"attempt": attempts, "kind": exc.kind, "error": str(exc)})
             if not exc.retryable:
                 break
@@ -198,7 +213,7 @@ async def analyze(pack: EvidencePack, provider: AIProvider | None, settings: Set
         "rate_limited": "AI provider rate limit reached",
         "provider_error": "AI provider error",
         "refusal": "AI provider declined the request",
-        "not_configured": "AI provider not configured (missing or invalid API key)",
+        "not_configured": f"AI provider not configured: {detail}",
         "bad_request": "AI provider rejected the request",
         "invalid_output": f"AI output failed validation ({correction})",
     }.get(failure or "", "AI analysis failed")

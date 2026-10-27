@@ -1,6 +1,6 @@
 # LogLens AI — Testing Strategy & Results
 
-All results below were produced by actually running the commands on 2026-10-26 (Windows 11, Python 3.12.10, Node 24.16.0). AI calls in every automated test are **mocked**: no Anthropic API key was used, and nothing was billed.
+All results below were produced by actually running the commands on 2026-10-26 (multi-provider additions re-verified 2026-10-27) (Windows 11, Python 3.12.10, Node 24.16.0). AI calls in every automated test are **mocked**: no Anthropic API key was used, and nothing was billed.
 
 ## 1. Test pyramid
 
@@ -10,14 +10,15 @@ All results below were produced by actually running the commands on 2026-10-26 (
 | Unit: patterns, aggregation, signals, scoring, stats | pytest | `backend/tests/test_detection.py` | 32 |
 | Unit: evidence selection & token budget | pytest | `backend/tests/test_evidence.py` | 5 |
 | Privacy / redaction | pytest | `backend/tests/test_redaction.py` | 16 |
-| AI response validation, retries, timeouts, fallback | pytest + scripted providers | `backend/tests/test_ai_analyzer.py` | 23 |
+| AI response validation, retries, timeouts, fallback | pytest + scripted providers | `backend/tests/test_ai_analyzer.py` | 24 |
 | Prompt-injection | pytest | `backend/tests/test_prompt_injection.py` | 5 |
 | Summary rendering + Anthropic adapter (fake SDK client) | pytest | `backend/tests/test_summary_provider.py` | 18 |
+| OpenAI / OpenAI-compatible, Gemini, Ollama adapters + factory (fake clients, mocked HTTP) | pytest | `backend/tests/test_providers_multi.py` | 41 |
 | Config & filename sanitization | pytest | `backend/tests/test_config.py` | 4 |
 | API integration | FastAPI TestClient + SQLite | `backend/tests/test_api.py` | 29 |
 | **Critical regression (L120 pool warning)** | pytest | `backend/tests/test_regression_pool_warning.py` | 18 |
 | Performance + evaluation dataset | pytest (`-m performance`) | `backend/tests/test_performance_eval.py` | 11 |
-| Frontend components & pages | Vitest + React Testing Library | `frontend/src/**/*.test.tsx` | 30 |
+| Frontend components & pages | Vitest + React Testing Library | `frontend/src/**/*.test.tsx` | 37 |
 | End-to-end | Playwright | `frontend/e2e/*.spec.ts` | 10 |
 | Offline evaluation harness | `python -m eval.run_eval` | `backend/eval/` | 81 checks |
 
@@ -26,17 +27,17 @@ All results below were produced by actually running the commands on 2026-10-26 (
 ```bash
 cd backend
 ruff check app tests eval && ruff format --check app      # All checks passed! / 45 files already formatted
-pytest -q --cov=app --cov-report=term                     # 189 passed; TOTAL coverage 98%
+pytest -q --cov=app --cov-report=term                     # 231 passed; TOTAL coverage 97%
 python -m eval.run_eval                                   # Checks passed: 81/81; critical-signal recall 20/20
 
 cd frontend
 npx tsc --noEmit -p .                                     # no errors
-npx vitest run --coverage                                 # 30 passed; line coverage 88.9 %
+npx vitest run --coverage                                 # 37 passed; line coverage 89.0 %
 npx vite build                                            # built; chunks 99 kB app / 205 kB react / 384 kB charts (min)
 PW_CHANNEL=msedge npx playwright test                     # 10 passed (≈ 37 s)
 ```
 
-Coverage details: backend 98% of 1,912 statements (`pytest-cov`). The lowest backend module is `core/logging.py` (69%: the plain-text formatter branch is unused in tests). Frontend: 88.9% lines, 76.7% branches.
+Coverage details: backend 97% of 2,088 statements (`pytest-cov`). The lowest backend module is `core/logging.py` (69%: the plain-text formatter branch is unused in tests). Frontend: 89.0% lines, 76.2% branches.
 
 ## 3. The critical regression test
 
@@ -73,6 +74,31 @@ API end to end (upload → mock AI → persisted), from pytest budgets: 1,000 li
 
 Profiling fixed one hotspot along the way. The first version took 8.1 s for 50k lines; a keyword prefilter before the pattern regexes and a per-message template/pattern cache cut it to 1.2 s.
 
+## 5a. Real local-model run (Ollama, no mocks)
+
+Run on 2026-10-27 with the model already installed on this machine (`llama3.2:latest`, 3B parameters, CPU only):
+
+```bash
+OLLAMA_MODEL=llama3.2:latest AI_TIMEOUT_SECONDS=300 python -m eval.run_eval --provider ollama
+```
+
+| File | AI status | Reason |
+|---|---|---|
+| pool_exhaustion_1000.log | fallback | AI request timed out (300 s) |
+| pool_exhaustion_1000.jsonl | fallback | Output failed validation: no observed fact cited a valid evidence id |
+| memory_leak_800.log | **ok** | Real model analysis accepted |
+| auth_attack_600.log | fallback | Output failed validation: 13 observed facts (limit 10) |
+| healthy_500.log | fallback | AI request timed out |
+| prompt_injection_1000.log | fallback | Output failed validation: no valid evidence id |
+| mixed_formats.log | fallback | Output failed validation: empty incident title |
+
+- **Deterministic checks: 81/81. Critical-signal recall: 20/20.** Every guarantee held even when the model failed.
+- Each call took about 45 s to 2.5 min on this CPU.
+- The accepted analysis (memory leak) correctly cited the heap warnings, the OOM kill at L676 and the downstream errors. Its wording was terse (Impact: "High").
+- **Conclusion:** the Ollama integration works end to end, but a 3B model is too small for reliable structured incident analysis on this hardware. Use a 7B+ model, a GPU, or a cloud provider for production quality.
+- **Fix that came out of it:** the analyzer now trims over-long lists (for example 13 facts down to 10) with a warning instead of rejecting the whole answer (`test_over_long_lists_are_trimmed_not_rejected`). The local eval was **not** re-run after this fix.
+- OpenAI and Gemini were **not** run against the real APIs (no keys). They are verified with fake clients only.
+
 ## 6. Defects found by testing (and fixed)
 
 | # | Found by | Defect | Fix |
@@ -89,6 +115,6 @@ Profiling fixed one hotspot along the way. The first version took 8.1 s for 50k 
 - **Playwright browser:** downloading the bundled Chromium (Playwright 1.49.0) **hung during archive extraction twice** on this machine (Node 24 on Windows). The E2E suite was therefore run against the installed **Microsoft Edge** via `PW_CHANNEL=msedge`. CI is configured for bundled Chromium on Linux (Node 22), which was **not executed** here.
 - **Edge download quirk:** under headless Edge, any browser download caused Playwright to close the browser after the test, so the *next* test failed with `TargetClosedError`. The export E2E test therefore verifies the export links by fetching their URLs when `PW_CHANNEL` is set. The real browser-download branch only runs on bundled Chromium and **has not been executed locally**.
 - **GitHub Actions** workflow is written but has **not run** (no remote).
-- **No live Claude evaluation** was performed. The Anthropic provider is verified only against a fake client. `python -m eval.run_eval --provider anthropic` is ready but billed.
+- **No live cloud-model evaluation** (Claude, OpenAI, Gemini) was performed; those providers are verified only against fake clients. A real local model was run (section 5a). `python -m eval.run_eval --provider anthropic` is ready but billed.
 - Frontend tests assert chart presence and text alternatives, not pixel output. Charts were reviewed visually via screenshots.
 - No load/concurrency test of many simultaneous uploads.

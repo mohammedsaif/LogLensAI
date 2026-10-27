@@ -78,8 +78,10 @@ export function IncidentPage() {
         <Alert variant="info">
           <ShieldCheck aria-hidden />
           <span>
-            <strong>Mock AI mode.</strong> This summary was written by LogLens's offline rule-based model, not Claude. Set{" "}
-            <code className="font-mono">AI_PROVIDER=anthropic</code> to enable Claude.
+            <strong>Mock AI mode.</strong> This summary was written by LogLens's offline rule-based model, not an LLM. Set{" "}
+            <code className="font-mono">AI_PROVIDER</code> to <code className="font-mono">anthropic</code>,{" "}
+            <code className="font-mono">openai</code>, <code className="font-mono">gemini</code> or{" "}
+            <code className="font-mono">ollama</code> (local) to use a real model.
           </span>
         </Alert>
       )}

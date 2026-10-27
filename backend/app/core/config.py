@@ -33,11 +33,22 @@ class Settings(BaseSettings):
     burst_min_count: int = 10
 
     # Evidence / AI
-    ai_provider: Literal["mock", "anthropic", "disabled"] = "mock"
+    ai_provider: Literal["mock", "anthropic", "openai", "gemini", "ollama", "disabled"] = "mock"
     anthropic_api_key: SecretStr | None = None
     anthropic_model: str = "claude-opus-5-5"
     anthropic_effort: Literal["low", "medium", "high", "xhigh", "max"] = "medium"
     anthropic_server_fallbacks: bool = True
+    # OpenAI or any OpenAI-compatible server (set OPENAI_BASE_URL for Groq, OpenRouter, LM Studio, vLLM, ...).
+    openai_api_key: SecretStr | None = None
+    openai_model: str | None = None
+    openai_base_url: str | None = None
+    openai_response_format: Literal["json_schema", "json_object"] = "json_schema"
+    gemini_api_key: SecretStr | None = None
+    gemini_model: str | None = None
+    # Local models: nothing leaves your machine/network.
+    ollama_base_url: str = "http://localhost:11434"
+    ollama_model: str = "llama3.1:8b"
+    ollama_num_ctx: int = 16384
     ai_timeout_seconds: float = 45.0
     ai_max_retries: int = 2
     ai_backoff_seconds: float = 0.5

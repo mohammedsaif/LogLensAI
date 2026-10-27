@@ -136,7 +136,13 @@ def test_rare_only_must_include_is_bounded():
 
 def test_stats_counts_services_and_time_range():
     text = "\n".join(
-        [line(1, "INFO", "a", "x"), line(2, "WARN", "a", "y"), line(3, "ERROR", "b", "z"), "garbage", line(5, "CRITICAL", "b", "w")]
+        [
+            line(1, "INFO", "a", "x"),
+            line(2, "WARN", "a", "y"),
+            line(3, "ERROR", "b", "z"),
+            "garbage",
+            line(5, "CRITICAL", "b", "w"),
+        ]
     )
     records, groups, _ = run(text)
     stats = compute_stats(records, groups)
@@ -148,7 +154,9 @@ def test_stats_counts_services_and_time_range():
     assert sum(b["total"] for b in stats["timeline"]) == 4
 
 
-@pytest.mark.parametrize("message", ["Reserved 3 units of SKU-503", "Order 77 created for customer 502", "request 4290 ok"])
+@pytest.mark.parametrize(
+    "message", ["Reserved 3 units of SKU-503", "Order 77 created for customer 502", "request 4290 ok"]
+)
 def test_status_code_patterns_need_http_context(message):
     assert match_patterns(message) == []
 

@@ -4,7 +4,7 @@
 
 1. **Uploaded logs are untrusted input.** They are parsed as strings only and are never executed, evaluated, templated or passed to a shell.
 2. **Logs are data, never instructions.** See the prompt-injection defenses in `05-ai-prompt-design.md` §8.
-3. **Least data out.** Only a bounded, redacted evidence pack leaves the system, and only when `AI_PROVIDER=anthropic`.
+3. **Least data out.** Only a bounded, redacted evidence pack leaves the system, and only when a cloud provider is configured (`anthropic`, `openai` with a remote base URL, `gemini`). With `ollama` (or an OpenAI-compatible server on your own machine), nothing leaves your network. The Settings page shows where evidence is sent.
 4. **Deterministic guarantees do not depend on the model.** Counts, line references and critical signals are computed in code.
 5. **No secrets in the repo.** Configuration comes from the environment. `.env` is git-ignored and `.env.example` holds placeholders only.
 
@@ -60,7 +60,7 @@ See `02-architecture.md` §7 for the full STRIDE table. Key residual risks:
 
 ## 6. Secrets handling
 
-- `ANTHROPIC_API_KEY` is a `SecretStr`. It is never logged and never returned by `/api/v1/config` (asserted by `test_config_exposes_no_secrets`).
+- `ANTHROPIC_API_KEY`, `OPENAI_API_KEY` and `GEMINI_API_KEY` are `SecretStr`. They are never logged and never returned by `/api/v1/config` (asserted by `test_config_exposes_no_secrets` and `test_config_endpoint_per_provider`).
 - The Anthropic SDK logger is pinned to WARNING, so request bodies are not logged.
 - Docker Compose requires `POSTGRES_PASSWORD` from `.env` (`${POSTGRES_PASSWORD:?…}`), so a default password cannot be shipped silently.
 - The CI uses a throwaway Postgres password scoped to the job.

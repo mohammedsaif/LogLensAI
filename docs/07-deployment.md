@@ -57,11 +57,15 @@ LogLens is a stateless API, a static SPA and a PostgreSQL database. Any containe
 | Variable | Default | Notes |
 |---|---|---|
 | `DATABASE_URL` | `sqlite:///./loglens.db` | `postgresql+psycopg://…` in production |
-| `AI_PROVIDER` | `mock` | `mock` \| `anthropic` \| `disabled` |
+| `AI_PROVIDER` | `mock` | `mock` \| `anthropic` \| `openai` \| `gemini` \| `ollama` \| `disabled` |
 | `ANTHROPIC_API_KEY` | – | Required for `anthropic` |
 | `ANTHROPIC_MODEL` | `claude-opus-5-5` | |
 | `ANTHROPIC_EFFORT` | `medium` | `low` … `max` |
 | `ANTHROPIC_SERVER_FALLBACKS` | `true` | Server-side refusal fallback |
+| `OPENAI_API_KEY` / `OPENAI_MODEL` / `OPENAI_BASE_URL` | – | Model required. Base URL for OpenAI-compatible servers. |
+| `OPENAI_RESPONSE_FORMAT` | `json_schema` | `json_object` for servers without JSON-schema support |
+| `GEMINI_API_KEY` / `GEMINI_MODEL` | – | Both required for `gemini` |
+| `OLLAMA_BASE_URL` / `OLLAMA_MODEL` / `OLLAMA_NUM_CTX` | `http://localhost:11434` / `llama3.1:8b` / `16384` | In Docker Compose the backend uses `OLLAMA_DOCKER_URL` (default `http://host.docker.internal:11434`) |
 | `AI_TIMEOUT_SECONDS` / `AI_MAX_RETRIES` | `45` / `2` | |
 | `AI_MAX_OUTPUT_TOKENS` | `4000` | |
 | `EVIDENCE_TOKEN_BUDGET` / `EVIDENCE_MAX_ITEMS` | `6000` / `25` | |
@@ -102,7 +106,10 @@ Suggested CD: on a tag, build and push the images (`ghcr.io/<org>/loglens-*:<sha
 |---|---|---|
 | Backend container `unhealthy`, `SettingsError … cors_origins` | Malformed list env var (fixed in 1.0.0: comma-separated values are accepted) | Use `CORS_ORIGINS=http://a,http://b` or a JSON list |
 | `/health/ready` returns 503 | Database unreachable / wrong `DATABASE_URL` | Check credentials, network and `docker compose logs db` |
-| Every analysis shows "Deterministic fallback: AI provider not configured" | `AI_PROVIDER=anthropic` without `ANTHROPIC_API_KEY` | Set the key or switch to `mock` |
+| Every analysis shows "Deterministic fallback: AI provider not configured: …" | Missing key or model for the selected provider | The reason names the missing variable. Set it, or switch to `mock`. |
+| Fallback reason "Cannot reach Ollama" | `ollama serve` not running, or the wrong URL from Docker | Start Ollama. In Compose, keep `OLLAMA_DOCKER_URL=http://host.docker.internal:11434`. |
+| Fallback reason "Model 'x' is not available" | Model not pulled | `ollama pull x` |
+| Local model analyses often fall back with "AI output failed validation" | Small model (about 3B) cannot follow the schema/rules | Use a 7B+ model or a cloud provider. Facts and critical signals are still correct. |
 | Fallback reason "AI request timed out" | Slow provider / large pack | Raise `AI_TIMEOUT_SECONDS` or lower `EVIDENCE_TOKEN_BUDGET` |
 | Upload returns 413 at the proxy before reaching the API | nginx `client_max_body_size` < `MAX_UPLOAD_MB` | Align both values |
 | Analyses stuck, then `INTERRUPTED` after a restart | In-process jobs lost on restart | Re-upload. Plan the queue migration. |

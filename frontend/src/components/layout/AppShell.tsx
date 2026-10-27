@@ -51,10 +51,10 @@ function Brand() {
 export function AiModeChip() {
   const { data } = useConfig();
   if (!data) return null;
-  const variant = data.ai_provider === "anthropic" ? "navy" : data.ai_provider === "mock" ? "teal" : "outline";
+  const variant = data.ai_provider === "mock" ? "teal" : data.ai_provider === "disabled" ? "outline" : "navy";
   const title =
     data.ai_provider === "mock"
-      ? "Summaries are produced by a deterministic offline model. Set AI_PROVIDER=anthropic to use Claude."
+      ? "Summaries are produced by a deterministic offline model. Set AI_PROVIDER to use a real model."
       : `Model ${data.ai_model}, prompt ${data.prompt_version}`;
   return (
     <Badge variant={variant} title={title} data-testid="ai-mode-chip">

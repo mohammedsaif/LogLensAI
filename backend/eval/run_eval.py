@@ -3,6 +3,7 @@
 Usage:
   python -m eval.run_eval                      # offline, mock provider (free, deterministic; used in CI)
   python -m eval.run_eval --provider anthropic # live Claude run (requires ANTHROPIC_API_KEY; billed)
+  python -m eval.run_eval --provider ollama    # local model (OLLAMA_MODEL), free, nothing leaves the machine
 """
 
 import argparse
@@ -104,7 +105,7 @@ async def evaluate_case(case: dict[str, Any], settings: Settings) -> dict[str, A
 
 async def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--provider", choices=["mock", "anthropic", "disabled"], default="mock")
+    parser.add_argument("--provider", choices=["mock", "anthropic", "openai", "gemini", "ollama", "disabled"], default="mock")
     args = parser.parse_args()
     settings = Settings(ai_provider=args.provider)
     spec = json.loads((DATASETS / "expected.json").read_text(encoding="utf-8"))

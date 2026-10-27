@@ -25,6 +25,16 @@ services:
       ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
       ANTHROPIC_MODEL: ${ANTHROPIC_MODEL:-claude-opus-5-5}
       ANTHROPIC_EFFORT: ${ANTHROPIC_EFFORT:-medium}
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      OPENAI_MODEL: ${OPENAI_MODEL:-}
+      OPENAI_BASE_URL: ${OPENAI_BASE_URL:-}
+      OPENAI_RESPONSE_FORMAT: ${OPENAI_RESPONSE_FORMAT:-json_schema}
+      GEMINI_API_KEY: ${GEMINI_API_KEY:-}
+      GEMINI_MODEL: ${GEMINI_MODEL:-}
+      # Ollama running on the Docker host (Windows/macOS/Linux via host-gateway below).
+      OLLAMA_BASE_URL: ${OLLAMA_DOCKER_URL:-http://host.docker.internal:11434}
+      OLLAMA_MODEL: ${OLLAMA_MODEL:-llama3.1:8b}
+      OLLAMA_NUM_CTX: ${OLLAMA_NUM_CTX:-16384}
       AI_TIMEOUT_SECONDS: ${AI_TIMEOUT_SECONDS:-45}
       AI_MAX_RETRIES: ${AI_MAX_RETRIES:-2}
       MAX_UPLOAD_MB: ${MAX_UPLOAD_MB:-10}
@@ -32,6 +42,8 @@ services:
       RETENTION_DAYS: ${RETENTION_DAYS:-30}
       CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost:8080}
       LOG_LEVEL: ${LOG_LEVEL:-INFO}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     depends_on:
       db:
         condition: service_healthy

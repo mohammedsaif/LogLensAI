@@ -56,7 +56,14 @@ def test_prompt_contains_no_secrets_end_to_end():
     )
     result = run_pipeline(log, make_settings())
     prompt = build_user_prompt(result.evidence)
-    for secret in ["sk-live-FAKE", "hunter2", "admin@example.com", "203.0.113.9", "abcDEF123456ghiJKL789mno", "p4ssw0rd"]:
+    for secret in [
+        "sk-live-FAKE",
+        "hunter2",
+        "admin@example.com",
+        "203.0.113.9",
+        "abcDEF123456ghiJKL789mno",
+        "p4ssw0rd",
+    ]:
         assert secret not in prompt
     assert "[REDACTED_" in prompt
     assert result.evidence.redaction_counts  # reported to the UI

@@ -21,6 +21,9 @@ Claude turns that pack into structured interpretation: a title, impact, observed
 | `schemas.py` | `AIAnalysis` (Pydantic, `extra="forbid"`), `IncidentAnalysis` (stored), and the JSON Schema sent to Claude |
 | `providers/base.py` | `AIProvider` protocol, `ProviderResponse`, `ProviderError(kind, retryable)` |
 | `providers/anthropic_provider.py` | Claude via the official `anthropic` SDK (2.3.0) |
+| `providers/openai_provider.py` | OpenAI and OpenAI-compatible servers via the `openai` SDK (3.39.0): strict `json_schema` or `json_object` response format |
+| `providers/gemini_provider.py` | Google Gemini via `google-genai` (2.33.0): `response_mime_type=application/json` + `response_json_schema` |
+| `providers/ollama_provider.py` | Local models via Ollama's native `/api/chat` (httpx): `format` = JSON schema, explicit `num_ctx`, temperature 0 |
 | `providers/mock_provider.py` | Offline deterministic model ("Mock AI") |
 | `providers/factory.py` | Picks the provider from `AI_PROVIDER` |
 | `heuristics.py` | Rule-based analysis from the evidence pack (fallback and mock) |
@@ -73,6 +76,19 @@ client.beta.messages.create(
 - **Server-side fallbacks** are on by default: if a safety classifier declines, the API retries on a fallback model inside the same call. Set `ANTHROPIC_SERVER_FALLBACKS=false` to use the plain `messages.create` path.
 - The SDK's own retries are disabled (`max_retries=0`). LogLens owns the retry policy, so the total wall-clock time stays bounded.
 - `stop_reason == "refusal"` maps to a non-retryable `refusal`. `max_tokens` maps to a retryable truncation.
+
+## 4a. Other providers (same prompt, same validation)
+
+| Provider | Structured output mechanism | Refusal / truncation mapping | Notes |
+|---|---|---|---|
+| OpenAI | `response_format` with `json_schema` and `strict: true` | `message.refusal` or `content_filter` maps to refusal; `length` maps to a retryable truncation | `max_completion_tokens`; SDK retries disabled |
+| OpenAI-compatible | same, or `OPENAI_RESPONSE_FORMAT=json_object` for servers without schema support | same | `OPENAI_BASE_URL`; no key needed for local servers |
+| Gemini | `response_json_schema` + JSON MIME type, `system_instruction` | `block_reason` or a `SAFETY`-type finish maps to refusal; `MAX_TOKENS` maps to truncation | timeout passed in milliseconds |
+| Ollama (local) | native `format` with the JSON schema | `done_reason=length` maps to truncation; 404 says "run `ollama pull <model>`"; connection refused asks whether `ollama serve` is running | `num_ctx` set explicitly (default 16384) because Ollama's default context would silently truncate the evidence |
+
+Every provider maps its errors to the same `ProviderError` kinds, so retries, fallback and the UI messages are identical regardless of model. Configuration problems (missing key or model, Ollama not running, model not pulled) produce an actionable fallback reason, for example `AI provider not configured: Model 'x' is not available. Run: ollama pull x`.
+
+**Local-model caveat:** small models follow the schema less reliably. Ollama's schema-constrained decoding helps, but semantic validation (references, certainty language) can still reject answers. LogLens then retries and finally falls back, so facts and critical signals are never affected.
 
 ## 5. Reliability controls
 

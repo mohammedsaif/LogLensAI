@@ -24,6 +24,9 @@ flowchart LR
     subgraph Providers
         MOCK[Mock provider<br/>offline, deterministic]
         CL[Anthropic Claude API]
+        OA[OpenAI / OpenAI-compatible]
+        GE[Google Gemini]
+        OL[Ollama local models]
     end
     DB[(PostgreSQL)]
 
@@ -31,6 +34,9 @@ flowchart LR
     API --> V --> P --> A --> S --> R --> E --> AI
     AI -->|provider abstraction| MOCK
     AI -->|provider abstraction| CL
+    AI -->|provider abstraction| OA
+    AI -->|provider abstraction| GE
+    AI -->|provider abstraction| OL
     AI --> SV
     SV -- invalid / timeout --> F
     SV --> SUM
@@ -58,7 +64,7 @@ The pipeline is **deterministic first**. Everything before the `AI analyzer` box
 | Evidence selection | `app/pipeline/evidence.py` | Builds `EvidencePack`: stable IDs (`E1…`), line refs, timestamps, redacted text. Must-include items first, then groups by risk score, within a token budget. |
 | Orchestrator | `app/pipeline/orchestrator.py` | Runs the stages, reports progress (`stage`, `progress`) and returns a `PipelineResult`. |
 | AI analyzer | `app/ai/analyzer.py` | Builds the versioned prompt, enforces the token budget, calls the provider with timeout and retries, parses JSON, validates schema and references, falls back deterministically. |
-| Providers | `app/ai/providers/*` | `AIProvider` protocol. `MockProvider` (offline) and `AnthropicProvider` (Claude via the official SDK). |
+| Providers | `app/ai/providers/*` | `AIProvider` protocol. `MockProvider` (offline), `AnthropicProvider`, `OpenAIProvider` (+ OpenAI-compatible), `GeminiProvider`, `OllamaProvider` (local). |
 | Summary renderer | `app/ai/summary.py` | Renders the five lines from validated structured data. Labels the hypothesis and confidence. |
 | Incident service | `app/services/incident_service.py` | Persists results, enforces must-include re-attachment, list/get/delete, line queries. |
 | Export service | `app/services/export_service.py` | JSON and Markdown renderers. |
@@ -279,6 +285,9 @@ Details: [`05-ai-prompt-design.md`](05-ai-prompt-design.md).
 
 ### ADR-003 — Provider abstraction with a mock provider
 **Context:** CI and local development must not need a paid key. **Decision:** `AIProvider` protocol. `MockProvider` produces schema-valid JSON from the evidence pack with transparent rules and is clearly labelled "Mock AI" in the UI. **Consequence:** Deterministic tests. Anthropic is a configuration switch.
+
+### ADR-003b — Multiple providers including local models
+**Context:** Teams use different AI vendors, and many cannot send logs to any third party. **Decision:** Add OpenAI (and OpenAI-compatible servers), Gemini and Ollama providers behind the same protocol, each mapping its errors to the shared `ProviderError` kinds and requesting schema-constrained JSON. **Consequence:** One prompt and one validation path for all models. Local models give a fully offline option. Weaker models degrade to the deterministic fallback rather than producing wrong facts.
 
 ### ADR-004 — Background tasks instead of a queue (MVP)
 **Context:** Analyses take seconds, not minutes. **Decision:** FastAPI `BackgroundTasks` plus status polling. **Consequence:** Simple to operate. Jobs are lost on restart (marked `INTERRUPTED`). A Redis/RQ or Celery queue is on the roadmap.

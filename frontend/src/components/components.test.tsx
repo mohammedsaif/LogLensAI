@@ -1,6 +1,7 @@
 import { fireEvent, render, screen, waitFor, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { afterEach, describe, expect, it, vi } from "vitest";
+import { AiStatusBadge } from "@/components/badges";
 import { CriticalSignalsPanel } from "@/components/CriticalSignalsPanel";
 import { Dropzone, validateFile } from "@/components/Dropzone";
 import { EvidenceList } from "@/components/EvidenceList";
@@ -151,5 +152,24 @@ describe("FactsAndHypotheses", () => {
     expect(screen.getByRole("heading", { name: /Observed facts/ })).toBeInTheDocument();
     expect(screen.getByRole("heading", { name: /Hypotheses/ })).toHaveTextContent("not confirmed");
     expect(screen.getAllByRole("link", { name: /E1 · L120/ }).length).toBeGreaterThan(0);
+  });
+});
+
+describe("AiStatusBadge", () => {
+  it.each([
+    ["anthropic", "Claude"],
+    ["openai", "OpenAI"],
+    ["openai-compatible", "OpenAI-compatible"],
+    ["gemini", "Gemini"],
+    ["ollama", "Local model"],
+    ["mock", "Mock AI"],
+  ])("labels provider %s as %s", (provider, label) => {
+    render(<AiStatusBadge status="ok" provider={provider} />);
+    expect(screen.getByText(label)).toBeInTheDocument();
+  });
+
+  it("prefers the fallback state over the provider name", () => {
+    render(<AiStatusBadge status="fallback" provider="ollama" />);
+    expect(screen.getByText("Deterministic fallback")).toBeInTheDocument();
   });
 });

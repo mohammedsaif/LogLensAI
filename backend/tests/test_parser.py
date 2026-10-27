@@ -42,7 +42,12 @@ def test_timezone_offset_is_normalized_to_utc():
     [
         ('{"timestamp":"2026-05-02T08:00:04.5Z","level":"info","service":"cart","message":"ok"}', "INFO", "cart", "ok"),
         ('{"ts":1777708805,"lvl":40,"logger":"cart","msg":"Disk 91%"}', "WARN", "cart", "Disk 91%"),
-        ('{"@timestamp":"2026-05-02T08:00:04Z","log.level":"error","service":{"name":"api"},"message":"x"}', "ERROR", "api", "x"),
+        (
+            '{"@timestamp":"2026-05-02T08:00:04Z","log.level":"error","service":{"name":"api"},"message":"x"}',
+            "ERROR",
+            "api",
+            "x",
+        ),
         ('{"time":"2026-05-02T08:00:04Z","severity":"FATAL","app":"pay","msg":"down"}', "CRITICAL", "pay", "down"),
     ],
 )
@@ -114,7 +119,16 @@ def test_very_long_lines_are_truncated_but_kept():
 
 @pytest.mark.parametrize(
     "value,expected",
-    [("warning", "WARN"), ("ERR", "ERROR"), ("fatal", "CRITICAL"), ("notice", "INFO"), (50, "ERROR"), (10, "DEBUG"), ("x", "UNKNOWN"), (None, "UNKNOWN")],
+    [
+        ("warning", "WARN"),
+        ("ERR", "ERROR"),
+        ("fatal", "CRITICAL"),
+        ("notice", "INFO"),
+        (50, "ERROR"),
+        (10, "DEBUG"),
+        ("x", "UNKNOWN"),
+        (None, "UNKNOWN"),
+    ],
 )
 def test_normalize_severity(value, expected):
     assert normalize_severity(value) == expected
@@ -127,8 +141,12 @@ def test_parse_timestamp_invalid_returns_none():
 
 
 def test_template_masks_variable_parts():
-    a = make_template("Query timed out after 5000ms id=abc123 from 10.0.0.1:5432 user bob@x.com uuid 123e4567-e89b-12d3-a456-426614174000")
-    b = make_template("Query timed out after 120ms id=zzz999 from 10.0.0.2:5432 user amy@y.org uuid 223e4567-e89b-12d3-a456-426614174000")
+    a = make_template(
+        "Query timed out after 5000ms id=abc123 from 10.0.0.1:5432 user bob@x.com uuid 123e4567-e89b-12d3-a456-426614174000"
+    )
+    b = make_template(
+        "Query timed out after 120ms id=zzz999 from 10.0.0.2:5432 user amy@y.org uuid 223e4567-e89b-12d3-a456-426614174000"
+    )
     assert a == b
     assert "<n>ms" in a and "<ip>" in a and "<email>" in a and "<uuid>" in a
 

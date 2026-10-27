@@ -6,6 +6,7 @@ from fastapi import APIRouter, BackgroundTasks, Depends, Query, Response, status
 
 from app import __version__
 from app.ai.prompts.v1 import PROMPT_VERSION
+from app.ai.providers.factory import provider_label, provider_model
 from app.api.deps import get_service, get_settings_dep
 from app.core.config import Settings
 from app.samples.generator import SCENARIOS, generate_sample
@@ -14,11 +15,10 @@ from app.services.incident_service import IncidentService
 
 router = APIRouter(tags=["config & samples"])
 
-_MODE_LABELS = {
-    "mock": "Mock AI (offline, deterministic)",
-    "anthropic": "Claude",
-    "disabled": "AI disabled (deterministic only)",
-}
+
+def _is_local(settings: Settings) -> bool:
+    base = (settings.openai_base_url or "").lower() if settings.ai_provider == "openai" else ""
+    return any(host in base for host in ("localhost", "127.0.0.1", "host.docker.internal"))
 
 
 @router.get("/config", response_model=ConfigOut)
@@ -29,8 +29,9 @@ def get_config(settings: Annotated[Settings, Depends(get_settings_dep)]) -> Conf
         version=__version__,
         environment=settings.environment,
         ai_provider=settings.ai_provider,
-        ai_model={"anthropic": settings.anthropic_model, "mock": "loglens-mock-1"}.get(settings.ai_provider, "none"),
-        ai_mode_label=_MODE_LABELS[settings.ai_provider],
+        ai_model=provider_model(settings) or "(not set)",
+        ai_mode_label=provider_label(settings),
+        ai_external=settings.ai_provider in ("anthropic", "openai", "gemini") and not _is_local(settings),
         prompt_version=PROMPT_VERSION,
         ai_timeout_seconds=settings.ai_timeout_seconds,
         ai_max_retries=settings.ai_max_retries,

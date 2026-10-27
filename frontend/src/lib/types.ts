@@ -205,9 +205,10 @@ export interface AppConfig {
   app_name: string;
   version: string;
   environment: string;
-  ai_provider: "mock" | "anthropic" | "disabled";
+  ai_provider: "mock" | "anthropic" | "openai" | "gemini" | "ollama" | "disabled";
   ai_model: string;
   ai_mode_label: string;
+  ai_external: boolean;
   prompt_version: string;
   ai_timeout_seconds: number;
   ai_max_retries: number;

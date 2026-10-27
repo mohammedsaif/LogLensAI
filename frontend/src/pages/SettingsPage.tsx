@@ -19,6 +19,7 @@ export function SettingsPage() {
     ? [
         ["AI mode", data.ai_mode_label],
         ["Model", data.ai_model],
+        ["Evidence sent to", data.ai_external ? "External AI service (redacted)" : "Nowhere outside your network"],
         ["Prompt version", data.prompt_version],
         ["AI timeout / retries", `${data.ai_timeout_seconds}s / ${data.ai_max_retries}`],
         ["Evidence token budget", `${data.evidence_token_budget.toLocaleString()} tokens`],
@@ -49,11 +50,14 @@ export function SettingsPage() {
                 </div>
               ))}
             </dl>
-            {data?.ai_provider !== "anthropic" && (
+            {(data?.ai_provider === "mock" || data?.ai_provider === "disabled") && (
               <Alert variant="info" className="mt-4">
                 <span>
-                  To use Claude, set <code className="font-mono">AI_PROVIDER=anthropic</code> and{" "}
-                  <code className="font-mono">ANTHROPIC_API_KEY</code> on the backend and restart it. Mock mode needs no key and sends nothing externally.
+                  To use a real model, set <code className="font-mono">AI_PROVIDER</code> on the backend to{" "}
+                  <code className="font-mono">anthropic</code>, <code className="font-mono">openai</code>,{" "}
+                  <code className="font-mono">gemini</code> (each with its API key and model), or{" "}
+                  <code className="font-mono">ollama</code> for a local model where logs never leave your machine. Mock mode
+                  needs no key and sends nothing externally.
                 </span>
               </Alert>
             )}
